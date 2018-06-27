@@ -1,10 +1,12 @@
+# frozen_string_literal: true
+
 module ApplicationHelper
   def title
-  title_elements = [title_text, "Register as a waste carrier", "GOV.UK"]
-  # Remove empty elements, for example if no specific title is set
-  title_elements.delete_if(&:empty?)
-  title_elements.join(" - ")
-end
+    title_elements = [title_text, "Register as a waste carrier", "GOV.UK"]
+    # Remove empty elements, for example if no specific title is set
+    title_elements.delete_if(&:empty?)
+    title_elements.join(" - ")
+  end
 
   private
 

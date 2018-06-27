@@ -1,5 +1,10 @@
 # Waste Carriers Front Office
 
+[![Build Status](https://travis-ci.org/DEFRA/waste-carriers-front-office.svg?branch=master)](https://travis-ci.org/DEFRA/waste-carriers-front-office)
+[![Maintainability](https://api.codeclimate.com/v1/badges/00c5905e3693b06dda9a/maintainability)](https://codeclimate.com/github/DEFRA/waste-carriers-front-office/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/00c5905e3693b06dda9a/test_coverage)](https://codeclimate.com/github/DEFRA/waste-carriers-front-office/test_coverage)
+[![security](https://hakiri.io/github/DEFRA/waste-carriers-front-office/master.svg)](https://hakiri.io/github/DEFRA/waste-carriers-front-office/master)
+
 The 'Register or renew as a waste carrier' service allows businesses, who deal with waste and have to register according to the regulations, to register online. Once registered, businesses can sign in again to edit their registrations if needed.
 
 The service also allows authorised agency users and NCCC staff to create and manage registrations on other users' behalf, e.g. to support 'Assisted Digital' registrations. The service provides an internal user account management facility which allows authorised administrators to create and manage other agency user accounts.
