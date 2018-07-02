@@ -24,20 +24,8 @@ gem "turbolinks"
 # Use Uglifier as compressor for JavaScript assets
 gem "uglifier", ">= 1.3.0"
 
-# Use ActiveModel has_secure_password
-# gem "bcrypt", "~> 3.1.7"
-
-# Use Unicorn as the app server
-# gem "unicorn"
-
-# See https://github.com/rails/execjs#readme for more supported runtimes
-# gem "therubyracer", platforms: :ruby
-
 # bundle exec rake doc:rails generates the API under doc/api.
 gem "sdoc", "~> 0.4.0", group: :doc
-
-# Use Capistrano for deployment
-# gem "capistrano-rails", group: :development
 
 # GOV.UK styling
 gem "govuk_elements_rails", "~> 3.1"
@@ -45,6 +33,11 @@ gem "govuk_template", "~> 0.23"
 
 # Use High Voltage for static pages
 gem "high_voltage", "~> 3.0"
+
+# Use the waste carriers engine for the user journey
+gem "waste_carriers_engine",
+    # TODO: Update this to use the git repo. This is just temporary for setting it up
+    path: "/Users/iris/Code/waste-carriers-renewals"
 
 group :development, :test do
   # Call "byebug" anywhere in the code to stop execution and get a debugger console
