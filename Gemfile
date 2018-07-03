@@ -34,6 +34,8 @@ gem "govuk_template", "~> 0.23"
 # Use High Voltage for static pages
 gem "high_voltage", "~> 3.0"
 
+gem "secure_headers", "~> 5.0"
+
 # Use the waste carriers engine for the user journey
 gem "waste_carriers_engine",
     # TODO: Update this to use the git repo. This is just temporary for setting it up
