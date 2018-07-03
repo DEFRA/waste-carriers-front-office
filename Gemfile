@@ -38,8 +38,8 @@ gem "secure_headers", "~> 5.0"
 
 # Use the waste carriers engine for the user journey
 gem "waste_carriers_engine",
-    # TODO: Update this to use the git repo. This is just temporary for setting it up
-    path: "/Users/iris/Code/waste-carriers-renewals"
+    git: "https://github.com/DEFRA/waste-carriers-renewals",
+    branch: "feature/convert-to-engine"
 
 group :development, :test do
   # Call "byebug" anywhere in the code to stop execution and get a debugger console

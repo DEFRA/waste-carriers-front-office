@@ -1,5 +1,7 @@
-PATH
-  remote: /Users/iris/Code/waste-carriers-renewals
+GIT
+  remote: https://github.com/DEFRA/waste-carriers-renewals
+  revision: 11cedb8c0919d09ccf38e006cb05f651faf3f510
+  branch: feature/convert-to-engine
   specs:
     waste_carriers_engine (1.0.0)
       aasm (~> 4.12)
@@ -291,7 +293,7 @@ GEM
     turbolinks-source (5.1.0)
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
-    uglifier (4.1.12)
+    uglifier (4.1.14)
       execjs (>= 0.3.0, < 3)
     uk_postcode (2.1.2)
     unf (0.1.4)
