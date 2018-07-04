@@ -29,6 +29,21 @@ Next download and install the dependencies
 bundle install
 ```
 
+## Running locally
+
+A [Vagrant](https://www.vagrantup.com/) instance has been created allowing easy setup of the waste carriers service. It includes installing all applications, databases and dependencies. This is located within GitLab (speak to the Ruby team).
+
+Download the Vagrant project and create the VM using the instructions in its README. It includes installing and running a version of the renewals app.
+
+However, if you intend to work with the renewals app locally (as opposed to on the Vagrant instance) and just use the box for dependencies, you'll need to:
+
+- Log in into the Vagrant instance
+- Using `ps ax`, identify the pid of the running renewals app
+- Kill it using `kill [pid id]`
+- Exit the vagrant instance
+
+Once you've created a `.env` file (see below) you should be ready to work with and run the project locally.
+
 ## Configuration
 
 Any configuration is expected to be driven by environment variables when the service is run in production as per [12 factor app](https://12factor.net/config).
@@ -36,6 +51,24 @@ Any configuration is expected to be driven by environment variables when the ser
 However when running locally in development mode or in test it makes use of the [Dotenv](https://github.com/bkeepers/dotenv) gem. This is a shim that will load values stored in a `.env` file into the environment which the service will then pick up as though they were there all along.
 
 Check out [.env.example](/.env.example) for details of what you need in your `.env` file, and what environment variables you'll need in production.
+
+## Databases
+
+If you are running the waste carriers Vagrant VM, you have nothing to do! All databases are already created and the appropriate ports opened for access from the host to the VM.
+
+If you intend to run it standalone, you'll need to create databases for the develop and test environments. There are 2 separate MongoDb databases for registration data and user data, so you'll need to create 4 databases in total. Multiple applications for the service use these databases, including this one.
+
+### Seed data
+
+The renewals process relies on users being created as part of waste-carriers-frontend. You should not be able to create a new user as part of a renewal.
+
+However, you can seed the database with a test user so you can log in and access the features (this won't work in production).
+
+The seed script also creates registrations to test the renewals process with.
+
+Seed the databases with:
+
+`bundle exec rake db:seed`
 
 ## Running the app
 
