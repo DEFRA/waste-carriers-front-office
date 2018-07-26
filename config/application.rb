@@ -28,8 +28,12 @@ module WasteCarriersFrontOffice
     # assets:precompile is being run and therefore programmtically set the
     # secret key, stopping devise from erroring.
     # https://stackoverflow.com/a/15767148/6117745
-    if Rails.env.production? && File.basename($0) == "rake"
-      config.secret_key_base = "iamonlyherefordeviseduringassetcompilation"
+    def apply_dummy_secret_key?
+      return false unless Rails.env.production?
+      return false unless File.basename($0) == "rake"
+      return false unless config.secret_key_base.blank?
+
+      true
     end
 
     # Set Time.zone default to the specified zone and make Active Record auto-convert to this zone.
@@ -95,5 +99,7 @@ module WasteCarriersFrontOffice
     config.application_version = "0.0.1".freeze
     config.application_name = "waste-carriers-front-office"
     config.git_repository_url = "https://github.com/DEFRA/#{config.application_name}"
+
+    config.secret_key_base = "iamonlyherefordevisewhenraketasksarecalled" if apply_dummy_secret_key?
   end
 end
