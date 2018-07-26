@@ -27,10 +27,10 @@ def parse_dates(seed, date)
   seed["metaData"]["dateRegistered"] = date
   seed["metaData"]["lastModified"] = date
   seed["metaData"]["dateActivated"] = date
-  seed["convictionSearchResult"]["searchedAt"] = date
+  seed["conviction_search_result"]["searched_at"] = date
   seed["expires_on"] = date + 3.years
-  seed["keyPeople"].each do |key_person|
-    key_person["convictionSearchResult"]["searchedAt"] = date
+  seed["key_people"].each do |key_person|
+    key_person["conviction_search_result"]["searched_at"] = date
   end
 end
 

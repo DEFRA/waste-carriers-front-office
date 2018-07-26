@@ -36,14 +36,14 @@
       "country": ""
     }
   ],
-  "keyPeople": [{
-    "firstName": "Test",
-    "lastName": "Employee",
-    "dateOfBirth": "1978-01-01",
+  "key_people": [{
+    "first_name": "Test",
+    "last_name": "Employee",
+    "dob": "1978-01-01",
     "position": "Director",
-    "personType": "KEY",
-    "convictionSearchResult": {
-      "matchResult": "NO",
+    "person_type": "KEY",
+    "conviction_search_result": {
+      "match_result": "NO",
       "confirmed": "no"
     }
   }],
@@ -57,8 +57,8 @@
     "route": "DIGITAL",
     "distance": "n/a"
   },
-  "convictionSearchResult": {
-    "matchResult": "NO",
+  "conviction_search_result": {
+    "match_result": "NO",
     "confirmed": "no"
   }
 }
