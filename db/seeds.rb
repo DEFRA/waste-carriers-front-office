@@ -39,7 +39,7 @@ def seed_users
   users = seeds["users"]
 
   users.each do |user|
-    WasteCarriersEngine::User.find_or_create_by(
+    User.find_or_create_by(
       email: user["email"],
       password: ENV["WCRS_DEFAULT_PASSWORD"] || "Secret123",
       confirmed_at: Time.new(2015, 1, 1)
