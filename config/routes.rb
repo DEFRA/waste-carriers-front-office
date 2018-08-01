@@ -1,10 +1,7 @@
 Rails.application.routes.draw do
-  mount WasteCarriersEngine::Engine => "/"
+  mount WasteCarriersEngine::Engine => "/fo"
 
   root "waste_carriers_engine/registrations#index"
 
-  devise_for :users
-  devise_scope :user do
-    get "/users/sign_out" => "devise/sessions#destroy"
-  end
+  devise_for :users, path: "/fo/users", path_names: { sign_in: "sign_in", sign_out: "sign_out" }
 end
