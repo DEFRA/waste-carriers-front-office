@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/waste-carriers-renewals
-  revision: c32299c7687d3665d35a54a93e4b670507aac4c5
+  revision: 337f3d12296d6322fd32fa8d0f7fba39a1efe28f
   branch: master
   specs:
     waste_carriers_engine (0.0.1)
