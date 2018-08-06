@@ -96,6 +96,9 @@ module WasteCarriersFrontOffice
     config.worldpay_password = ENV["WCRS_WORLDPAY_ECOM_PASSWORD"]
     config.worldpay_macsecret =  ENV["WCRS_WORLDPAY_ECOM_MACSECRET"]
 
+    # Digital or assisted digital metaData.route value
+    config.metadata_route = "DIGITAL"
+
     # Version info
     config.application_version = "0.0.1".freeze
     config.application_name = "waste-carriers-front-office"
