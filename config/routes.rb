@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   devise_for :users, path: "/fo/users", path_names: { sign_in: "sign_in", sign_out: "sign_out" }
 
-  get "/fo" =>  "waste_carriers_engine/registrations#index"
+  get "/fo" => redirect(Rails.configuration.wcrs_frontend_url)
 
   mount WasteCarriersEngine::Engine => "/fo"
 end
