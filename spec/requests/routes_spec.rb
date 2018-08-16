@@ -4,12 +4,12 @@ require "rails_helper"
 
 RSpec.describe "Root", type: :request do
   describe "GET /" do
-    it "renders the dashboards index template" do
+    it "redirects to /fo" do
       get "/"
       expect(response).to redirect_to(fo_path)
     end
 
-    it "returns a 200 response" do
+    it "returns a 302 (redirect) response" do
       get "/"
       expect(response).to have_http_status(302)
     end
@@ -34,7 +34,7 @@ RSpec.describe "Root", type: :request do
         renew_path = "/fo/renew/#{reg_identifier}"
 
         get renew_path
-        post "/fo/users/sign_in", user: { "email": user.email, "password": "Secret123" }
+        post user_session_path, user: { email: user.email, password: user.password }
         expect(response).to redirect_to(renew_path)
       end
     end
