@@ -2,7 +2,7 @@
 
 FactoryBot.define do
   factory :registration, class: WasteCarriersEngine::Registration do
-    tier "UPPER"
+    tier { "UPPER" }
 
     addresses { [build(:address), build(:address)] }
 
@@ -10,7 +10,7 @@ FactoryBot.define do
 
     trait :expires_soon do
       metaData { build(:metaData, status: :ACTIVE) }
-      expires_on 2.months.from_now
+      expires_on { 2.months.from_now }
     end
   end
 end
