@@ -55,6 +55,7 @@ def seed_registrations
 
   seeds.each do |seed|
     next unless seed["date_flag"].present?
+
     parse_dates(seed, registered_date(seed["date_flag"]))
     seed.delete("date_flag")
   end
