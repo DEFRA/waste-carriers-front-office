@@ -54,7 +54,7 @@
   "regIdentifier": "CBDU207",
   "metaData": {
     "anotherString": "userDetailAddedAtRegistration",
-    "status": "EXPIRED",
+    "status": "ACTIVE",
     "route": "DIGITAL",
     "distance": "n/a"
   },
