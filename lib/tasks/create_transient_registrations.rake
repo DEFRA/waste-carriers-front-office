@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-# require "waste_carriers_engine"
-
 desc "Attempt to create transient_registrations in the database from all active, upper-tier registrations"
 task create_transient_registrations: :environment do
   log_path = "log/create_transient_registrations_#{Time.current.to_i}.log"
