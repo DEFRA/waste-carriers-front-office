@@ -3,7 +3,7 @@
 require "rails_helper"
 
 RSpec.describe "Sessions", type: :request do
-  describe "GET /users/sign_in" do
+  describe "GET /fo/users/sign_in" do
     context "when a user is not signed in" do
       it "returns a success response" do
         get new_user_session_path
@@ -12,7 +12,7 @@ RSpec.describe "Sessions", type: :request do
     end
   end
 
-  describe "POST /users/sign_in" do
+  describe "POST /fo/users/sign_in" do
     context "when a user is not signed in" do
       context "when valid user details are submitted" do
         let(:user) { create(:user) }
@@ -35,10 +35,11 @@ RSpec.describe "Sessions", type: :request do
     end
   end
 
-  describe "DELETE /users/sign_out" do
+  describe "DELETE /fo/users/sign_out" do
     context "when the user is signed in" do
+      let(:user) { create(:user) }
+
       before(:each) do
-        user = create(:user)
         sign_in(user)
       end
 
@@ -55,6 +56,12 @@ RSpec.describe "Sessions", type: :request do
       it "redirects to the user sign in page" do
         get destroy_user_session_path
         expect(response).to redirect_to(new_user_session_path)
+      end
+
+      it "updates the session_token" do
+        old_session_token = user.session_token
+        get destroy_user_session_path
+        expect(user.session_token).to_not eq(old_session_token)
       end
     end
   end
