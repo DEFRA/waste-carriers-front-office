@@ -33,6 +33,7 @@ gem "cancancan", "~> 1.10"
 
 # Use Devise for user authentication
 gem "devise", ">= 4.4.3"
+gem "devise_invitable", "~> 1.7.0"
 
 # GOV.UK styling
 gem "govuk_elements_rails", "~> 3.1"
