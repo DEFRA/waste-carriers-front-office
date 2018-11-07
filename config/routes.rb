@@ -9,9 +9,9 @@ Rails.application.routes.draw do
              skip: [:invitations]
 
   as :user do
-    get   "/fo/users/invitation/accept" => "devise/invitations#edit", as: :accept_user_invitation
-    patch "/fo/users/invitation/accept" => "devise/invitations#update", as: :user_invitation
-    put   "/fo/users/invitation/accept" => "devise/invitations#update"
+    get   "/fo/users/invitation/accept" => "invitations#edit", as: :accept_user_invitation
+    patch "/fo/users/invitation/accept" => "invitations#update", as: :user_invitation
+    put   "/fo/users/invitation/accept" => "invitations#update"
   end
 
   get "/fo" => "dashboards#index"

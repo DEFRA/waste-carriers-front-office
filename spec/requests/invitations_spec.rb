@@ -41,9 +41,9 @@ RSpec.describe "Invitations", type: :request do
     end
 
     context "when params are valid" do
-      it "redirects to the sign in page" do
+      it "redirects to the fo_path" do
         put user_invitation_path, user: params
-        expect(response).to redirect_to(new_user_session_path)
+        expect(response).to redirect_to(fo_path)
       end
     end
 
