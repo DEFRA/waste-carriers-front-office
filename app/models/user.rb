@@ -70,6 +70,6 @@ class User
 
     return true if has_lowercase && has_uppercase && has_numeric
 
-    errors.add(:password, I18n.t("errors.messages.weakPassword"))
+    errors.add(:password, :invalid_format)
   end
 end
