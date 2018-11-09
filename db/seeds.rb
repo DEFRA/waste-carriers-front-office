@@ -10,10 +10,13 @@ def registered_date(flag)
   # Resetting variables here so it's easier to read calculations below
   expires_after = Rails.configuration.expires_after
   renewal_window = Rails.configuration.renewal_window
+  grace_window = Rails.configuration.grace_window
 
   dates = {
     # Registration should have expired 1 month ago
     expired: expires_after.years.ago - 1.month,
+    # Registration is within expired renewal grace period window
+    within_grace_period_window: expires_after.years.ago - (grace_window - 1).day,
     # Registration should be halfway through the renewal window
     in_renewal_window: expires_after.years.ago + (renewal_window / 2).months,
     # Registration is not yet in the renewal window
