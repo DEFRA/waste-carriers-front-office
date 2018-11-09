@@ -7,6 +7,7 @@ class User
   store_in client: "users", collection: "users"
 
   devise :database_authenticatable,
+         :invitable,
          :lockable,
          :recoverable,
          :trackable,
@@ -19,6 +20,13 @@ class User
   ## Database authenticatable
   field :email,              type: String, default: ""
   field :encrypted_password, type: String, default: ""
+
+  # Invitable
+  field :invitation_token,       type: String
+  field :invitation_created_at,  type: Time
+  field :invitation_sent_at,     type: Time
+  field :invitation_accepted_at, type: Time
+  field :invitation_limit,       type: Integer
 
   ## Recoverable
   field :reset_password_token,   type: String
@@ -62,6 +70,6 @@ class User
 
     return true if has_lowercase && has_uppercase && has_numeric
 
-    errors.add(:password, I18n.t("errors.messages.weakPassword"))
+    errors.add(:password, :invalid_format)
   end
 end
