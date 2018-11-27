@@ -4,6 +4,9 @@
       "email": "user@example.com"
     },
     {
+      "email": "user@mailinator.com"
+    },
+    {
       "email": "another-user@example.com"
     }
   ]
