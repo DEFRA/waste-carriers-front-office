@@ -33,8 +33,9 @@ RSpec.describe DashboardsHelper, type: :helper do
   end
 
   describe "#url_to_order_cards_for" do
-    it "returns a temp value" do
-      expect(helper.url_to_order_cards_for(registration)).to eq("#")
+    it "returns the correct URL" do
+      cards_url = "http://www.example.com/your-registration/#{id}/order/order-copy_cards"
+      expect(helper.url_to_order_cards_for(registration)).to eq(cards_url)
     end
   end
 
