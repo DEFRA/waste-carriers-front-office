@@ -1,8 +1,9 @@
 # frozen_string_literal: true
 
 module DashboardsHelper
-  def url_to_view_certificate_for(_registration)
-    "#"
+  def url_to_view_certificate_for(registration)
+    id = registration["_id"]
+    "#{Rails.configuration.wcrs_frontend_url}/registrations/#{id}/view"
   end
 
   def url_to_edit(_registration)

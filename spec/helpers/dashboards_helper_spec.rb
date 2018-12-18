@@ -5,10 +5,16 @@ require "rails_helper"
 RSpec.describe DashboardsHelper, type: :helper do
   let(:registration) { create(:registration) }
   let(:reg_identifier) { registration.reg_identifier }
+  let(:id) { registration["_id"] }
+
+  before do
+    allow(Rails.configuration).to receive(:wcrs_frontend_url).and_return("http://www.example.com")
+  end
 
   describe "#url_to_view_certificate_for" do
-    it "returns a temp value" do
-      expect(helper.url_to_view_certificate_for(registration)).to eq("#")
+    it "returns the correct URL" do
+      certificate_url = "http://www.example.com/registrations/#{id}/view"
+      expect(helper.url_to_view_certificate_for(registration)).to eq(certificate_url)
     end
   end
 
