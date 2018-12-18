@@ -25,6 +25,8 @@ en:
           status: "Status"
           expires_on: "Expiry date"
           actions: "Actions"
+        registered_address_postcode:
+          not_applicable: "N/A"
         expires_on:
           not_applicable: "N/A"
         actions:

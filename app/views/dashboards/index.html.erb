@@ -52,7 +52,11 @@
                 <%= registration.company_name %>
               </td>
               <td>
-                <%= registration.registered_address.postcode %>
+                <% if registration.registered_address.present? %>
+                  <%= registration.registered_address.postcode %>
+                <% else %>
+                  <%= t(".results.registered_address_postcode.not_applicable") %>
+                <% end %>
               </td>
               <td>
                 <%= registration.reg_identifier %>
