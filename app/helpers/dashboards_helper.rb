@@ -13,8 +13,10 @@ module DashboardsHelper
     true
   end
 
-  def display_order_cards_link_for?(_registration)
-    true
+  def display_order_cards_link_for?(registration)
+    return false unless registration.tier == "UPPER"
+
+    registration.metaData.ACTIVE? || registration.metaData.PENDING?
   end
 
   def display_delete_link_for?(_registration)

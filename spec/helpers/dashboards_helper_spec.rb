@@ -62,8 +62,40 @@ RSpec.describe DashboardsHelper, type: :helper do
   end
 
   describe "#display_order_cards_link_for?" do
-    it "returns the correct value" do
-      expect(helper.display_order_cards_link_for?(registration)).to eq(true)
+    context "when the registration is upper tier" do
+      before { registration.tier = "UPPER" }
+
+      context "when the registration is active" do
+        before { registration.metaData.status = "ACTIVE" }
+
+        it "returns true" do
+          expect(helper.display_order_cards_link_for?(registration)).to eq(true)
+        end
+      end
+
+      context "when the registration is pending" do
+        before { registration.metaData.status = "PENDING" }
+
+        it "returns true" do
+          expect(helper.display_order_cards_link_for?(registration)).to eq(true)
+        end
+      end
+
+      context "when the registration is not active or pending" do
+        before { registration.metaData.status = "REVOKED" }
+
+        it "returns false" do
+          expect(helper.display_order_cards_link_for?(registration)).to eq(false)
+        end
+      end
+    end
+
+    context "when the registration is lower tier" do
+      before { registration.tier = "LOWER" }
+
+      it "returns false" do
+        expect(helper.display_order_cards_link_for?(registration)).to eq(false)
+      end
     end
   end
 
