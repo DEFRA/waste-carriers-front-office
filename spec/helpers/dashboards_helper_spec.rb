@@ -11,6 +11,36 @@ RSpec.describe DashboardsHelper, type: :helper do
     allow(Rails.configuration).to receive(:wcrs_frontend_url).and_return("http://www.example.com")
   end
 
+  describe "#display_view_certificate_link_for?" do
+    it "returns the correct value" do
+      expect(helper.display_view_certificate_link_for?(registration)).to eq(true)
+    end
+  end
+
+  describe "#display_edit_link_for?" do
+    it "returns the correct value" do
+      expect(helper.display_edit_link_for?(registration)).to eq(true)
+    end
+  end
+
+  describe "#display_renew_link_for?" do
+    it "returns the correct value" do
+      expect(helper.display_renew_link_for?(registration)).to eq(true)
+    end
+  end
+
+  describe "#display_order_cards_link_for?" do
+    it "returns the correct value" do
+      expect(helper.display_order_cards_link_for?(registration)).to eq(true)
+    end
+  end
+
+  describe "#display_delete_link_for?" do
+    it "returns the correct value" do
+      expect(helper.display_delete_link_for?(registration)).to eq(true)
+    end
+  end
+
   describe "#url_to_view_certificate_for" do
     it "returns the correct URL" do
       certificate_url = "http://www.example.com/registrations/#{id}/view"

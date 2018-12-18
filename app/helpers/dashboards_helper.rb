@@ -1,6 +1,26 @@
 # frozen_string_literal: true
 
 module DashboardsHelper
+  def display_view_certificate_link_for?(_registration)
+    true
+  end
+
+  def display_edit_link_for?(_registration)
+    true
+  end
+
+  def display_renew_link_for?(_registration)
+    true
+  end
+
+  def display_order_cards_link_for?(_registration)
+    true
+  end
+
+  def display_delete_link_for?(_registration)
+    true
+  end
+
   def url_to_view_certificate_for(registration)
     "#{base_frontend_registration_url(registration)}/view"
   end

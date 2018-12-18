@@ -73,26 +73,36 @@
               </td>
               <td>
                 <ul>
-                  <li>
-                    <%= link_to t(".results.actions.view_certificate"),
-                                url_to_view_certificate_for(registration) %>
-                  </li>
-                  <li>
-                    <%= link_to t(".results.actions.edit"),
-                                url_to_edit(registration) %>
-                  </li>
-                  <li>
-                    <%= link_to t(".results.actions.renew"),
-                                url_to_renew(registration) %>
-                  </li>
-                  <li>
-                    <%= link_to t(".results.actions.order_cards"),
-                                url_to_order_cards_for(registration) %>
-                  </li>
-                  <li>
-                    <%= link_to t(".results.actions.delete"),
-                                url_to_delete(registration) %>
-                  </li>
+                  <% if display_view_certificate_link_for?(registration) %>
+                    <li>
+                      <%= link_to t(".results.actions.view_certificate"),
+                                  url_to_view_certificate_for(registration) %>
+                    </li>
+                  <% end %>
+                  <% if display_edit_link_for?(registration) %>
+                    <li>
+                      <%= link_to t(".results.actions.edit"),
+                                  url_to_edit(registration) %>
+                    </li>
+                  <% end %>
+                  <% if display_renew_link_for?(registration) %>
+                    <li>
+                      <%= link_to t(".results.actions.renew"),
+                                  url_to_renew(registration) %>
+                    </li>
+                  <% end %>
+                  <% if display_order_cards_link_for?(registration) %>
+                    <li>
+                      <%= link_to t(".results.actions.order_cards"),
+                                  url_to_order_cards_for(registration) %>
+                    </li>
+                  <% end %>
+                  <% if display_delete_link_for?(registration) %>
+                    <li>
+                      <%= link_to t(".results.actions.delete"),
+                                  url_to_delete(registration) %>
+                    </li>
+                  <% end %>
                 </ul>
               </td>
             </tr>
