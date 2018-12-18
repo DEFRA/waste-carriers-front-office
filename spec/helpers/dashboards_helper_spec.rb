@@ -39,8 +39,9 @@ RSpec.describe DashboardsHelper, type: :helper do
   end
 
   describe "#url_to_delete" do
-    it "returns a temp value" do
-      expect(helper.url_to_delete(registration)).to eq("#")
+    it "returns the correct URL" do
+      delete_url = "http://www.example.com/registrations/#{id}/confirm_delete"
+      expect(helper.url_to_delete(registration)).to eq(delete_url)
     end
   end
 end

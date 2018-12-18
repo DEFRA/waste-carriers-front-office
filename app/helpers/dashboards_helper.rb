@@ -19,7 +19,8 @@ module DashboardsHelper
     "#"
   end
 
-  def url_to_delete(_registration)
-    "#"
+  def url_to_delete(registration)
+    id = registration["_id"]
+    "#{Rails.configuration.wcrs_frontend_url}/registrations/#{id}/confirm_delete"
   end
 end
