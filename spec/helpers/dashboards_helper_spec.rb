@@ -19,8 +19,9 @@ RSpec.describe DashboardsHelper, type: :helper do
   end
 
   describe "#url_to_edit" do
-    it "returns a temp value" do
-      expect(helper.url_to_edit(registration)).to eq("#")
+    it "returns the correct URL" do
+      edit_url = "http://www.example.com/registrations/#{id}/edit"
+      expect(helper.url_to_edit(registration)).to eq(edit_url)
     end
   end
 

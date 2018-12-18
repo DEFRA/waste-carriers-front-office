@@ -6,8 +6,9 @@ module DashboardsHelper
     "#{Rails.configuration.wcrs_frontend_url}/registrations/#{id}/view"
   end
 
-  def url_to_edit(_registration)
-    "#"
+  def url_to_edit(registration)
+    id = registration["_id"]
+    "#{Rails.configuration.wcrs_frontend_url}/registrations/#{id}/edit"
   end
 
   def url_to_renew(registration)
