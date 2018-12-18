@@ -42,6 +42,10 @@ gem "govuk_template", "~> 0.23"
 # Use High Voltage for static pages
 gem "high_voltage", "~> 3.0"
 
+# Use Kaminari for pagination
+gem "kaminari", "~> 1.1"
+gem "kaminari-mongoid", "~> 1.0"
+
 gem "secure_headers", "~> 5.0"
 
 # Use the waste carriers engine for the user journey

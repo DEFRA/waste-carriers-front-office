@@ -5,5 +5,6 @@ class DashboardsController < ApplicationController
 
   def index
     @registrations = WasteCarriersEngine::Registration.where(account_email: current_user.email)
+                                                      .page(params[:page])
   end
 end
