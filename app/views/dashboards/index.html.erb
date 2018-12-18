@@ -42,6 +42,7 @@
             <th><%= t(".results.th.reg_identifier") %></th>
             <th><%= t(".results.th.status") %></th>
             <th><%= t(".results.th.expires_on") %></th>
+            <th><%= t(".results.th.actions") %></th>
           </tr>
         </thead>
         <tbody>
@@ -63,8 +64,32 @@
                 <% if registration.expires_on.present? %>
                   <%= registration.expires_on.to_date %>
                 <% else %>
-                  <% t(".results.expires_on.not_applicable") %>
+                  <%= t(".results.expires_on.not_applicable") %>
                 <% end %>
+              </td>
+              <td>
+                <ul>
+                  <li>
+                    <%= link_to t(".results.actions.view_certificate"),
+                                url_to_view_certificate_for(registration) %>
+                  </li>
+                  <li>
+                    <%= link_to t(".results.actions.edit"),
+                                url_to_edit(registration) %>
+                  </li>
+                  <li>
+                    <%= link_to t(".results.actions.renew"),
+                                url_to_renew(registration) %>
+                  </li>
+                  <li>
+                    <%= link_to t(".results.actions.order_cards"),
+                                url_to_order_cards_for(registration) %>
+                  </li>
+                  <li>
+                    <%= link_to t(".results.actions.delete"),
+                                url_to_delete(registration) %>
+                  </li>
+                </ul>
               </td>
             </tr>
           <% end %>

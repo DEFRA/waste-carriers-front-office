@@ -24,6 +24,13 @@ en:
           reg_identifier: "Registration"
           status: "Status"
           expires_on: "Expiry date"
+          actions: "Actions"
         expires_on:
           not_applicable: "N/A"
+        actions:
+          view_certificate: "View certificate"
+          edit: "Edit"
+          renew: "Renew"
+          order_cards: "Order copy cards"
+          delete: "Delete"
         no_results: "No results found."
