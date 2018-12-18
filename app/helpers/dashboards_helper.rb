@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
 module DashboardsHelper
-  def display_view_certificate_link_for?(_registration)
-    true
+  def display_view_certificate_link_for?(registration)
+    registration.metaData.ACTIVE?
   end
 
   def display_edit_link_for?(_registration)
