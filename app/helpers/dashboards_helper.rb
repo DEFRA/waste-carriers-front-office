@@ -2,13 +2,11 @@
 
 module DashboardsHelper
   def url_to_view_certificate_for(registration)
-    id = registration["_id"]
-    "#{Rails.configuration.wcrs_frontend_url}/registrations/#{id}/view"
+    "#{base_frontend_registration_url(registration)}/view"
   end
 
   def url_to_edit(registration)
-    id = registration["_id"]
-    "#{Rails.configuration.wcrs_frontend_url}/registrations/#{id}/edit"
+    "#{base_frontend_registration_url(registration)}/edit"
   end
 
   def url_to_renew(registration)
@@ -21,7 +19,13 @@ module DashboardsHelper
   end
 
   def url_to_delete(registration)
+    "#{base_frontend_registration_url(registration)}/confirm_delete"
+  end
+
+  private
+
+  def base_frontend_registration_url(registration)
     id = registration["_id"]
-    "#{Rails.configuration.wcrs_frontend_url}/registrations/#{id}/confirm_delete"
+    "#{Rails.configuration.wcrs_frontend_url}/registrations/#{id}"
   end
 end
