@@ -5,6 +5,10 @@ module DashboardsHelper
     "#{Rails.configuration.wcrs_frontend_url}/users/edit"
   end
 
+  def url_for_new_registration
+    "#{Rails.configuration.wcrs_frontend_url}/registrations/find"
+  end
+
   def display_view_certificate_link_for?(registration)
     registration.metaData.ACTIVE?
   end

@@ -126,3 +126,11 @@
 <% else %>
   <p><%= t(".results.no_results") %></p>
 <% end %>
+
+<div class="grid-row">
+  <div class="column-full">
+    <%= link_to t(".new_registration_button"),
+                url_for_new_registration,
+                class: "button" %>
+  </div>
+</div>

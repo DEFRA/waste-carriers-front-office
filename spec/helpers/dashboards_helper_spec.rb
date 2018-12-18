@@ -18,6 +18,13 @@ RSpec.describe DashboardsHelper, type: :helper do
     end
   end
 
+  describe "#url_for_new_registration" do
+    it "returns the correct URL" do
+      registration_url = "http://www.example.com/registrations/find"
+      expect(helper.url_for_new_registration).to eq(registration_url)
+    end
+  end
+
   describe "#display_view_certificate_link_for?" do
     context "when the registration is active" do
       before { registration.metaData.status = "ACTIVE" }
