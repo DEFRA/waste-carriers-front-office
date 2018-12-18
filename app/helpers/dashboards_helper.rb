@@ -19,8 +19,8 @@ module DashboardsHelper
     registration.metaData.ACTIVE? || registration.metaData.PENDING?
   end
 
-  def display_delete_link_for?(_registration)
-    true
+  def display_delete_link_for?(registration)
+    registration.metaData.ACTIVE?
   end
 
   def url_to_view_certificate_for(registration)
