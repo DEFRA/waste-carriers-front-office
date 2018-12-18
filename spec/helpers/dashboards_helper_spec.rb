@@ -3,7 +3,8 @@
 require "rails_helper"
 
 RSpec.describe DashboardsHelper, type: :helper do
-  let(:registration) { build(:registration) }
+  let(:registration) { create(:registration) }
+  let(:reg_identifier) { registration.reg_identifier }
 
   describe "#url_to_view_certificate_for" do
     it "returns a temp value" do
@@ -18,8 +19,9 @@ RSpec.describe DashboardsHelper, type: :helper do
   end
 
   describe "#url_to_renew" do
-    it "returns a temp value" do
-      expect(helper.url_to_renew(registration)).to eq("#")
+    it "returns the correct URL" do
+      renew_url = "/fo/renew/#{reg_identifier}"
+      expect(helper.url_to_renew(registration)).to eq(renew_url)
     end
   end
 

@@ -9,8 +9,8 @@ module DashboardsHelper
     "#"
   end
 
-  def url_to_renew(_registration)
-    "#"
+  def url_to_renew(registration)
+    WasteCarriersEngine::Engine.routes.url_helpers.new_renewal_start_form_path(registration.reg_identifier)
   end
 
   def url_to_order_cards_for(_registration)
