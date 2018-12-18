@@ -1,0 +1,77 @@
+<div class="grid-row">
+  <div class="column-full">
+    <div id="user-status">
+      <p>
+        <%= t(".user_info.signed_in_user", email: current_user.email) %>
+        <%= link_to t(".user_info.sign_out_link"), destroy_user_session_path %>
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="grid-row">
+  <div class="column-full">
+    <h1 class="heading-large">
+      <%= t(".heading") %>
+    </h1>
+  </div>
+</div>
+
+<div class="grid-row">
+  <div class="column-full">
+    <p><%= t(".summary.paragraph_1") %></p>
+    <p><%= t(".summary.paragraph_2") %></p>
+    <ul class="list list-bullet">
+      <% t(".summary.list").each do |list_item| %>
+        <li><%= list_item %></li>
+      <% end %>
+    </ul>
+    <p><%= t(".summary.paragraph_3") %></p>
+    <p><%= t(".summary.paragraph_4", count: @registrations.count) %></p>
+  </div>
+</div>
+
+<% if @registrations.present? %>
+  <div class="grid-row">
+    <div class="column-full">
+      <table>
+        <thead>
+          <tr>
+            <th><%= t(".results.th.company_name") %></th>
+            <th><%= t(".results.th.registered_address_postcode") %></th>
+            <th><%= t(".results.th.reg_identifier") %></th>
+            <th><%= t(".results.th.status") %></th>
+            <th><%= t(".results.th.expires_on") %></th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @registrations.each do |registration| %>
+            <tr>
+              <td>
+                <%= registration.company_name %>
+              </td>
+              <td>
+                <%= registration.registered_address.postcode %>
+              </td>
+              <td>
+                <%= registration.reg_identifier %>
+              </td>
+              <td>
+                <%= registration.metaData.status %>
+              </td>
+              <td>
+                <% if registration.expires_on.present? %>
+                  <%= registration.expires_on.to_date %>
+                <% else %>
+                  <% t(".results.expires_on.not_applicable") %>
+                <% end %>
+              </td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+<% else %>
+  <p><%= t(".results.no_results") %></p>
+<% end %>

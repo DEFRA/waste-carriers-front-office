@@ -1,0 +1,29 @@
+en:
+  dashboards:
+    index:
+      title: "Your waste carrier registrations"
+      user_info:
+        signed_in_user: "Signed in as %{email}."
+        sign_out_link: "Sign out"
+      heading: "Your waste carrier registrations"
+      summary:
+        paragraph_1: "These are the registrations linked to your account."
+        paragraph_2: "You can:"
+        list:
+          - "create new registrations for your business or organisation"
+          - "change the details of your existing registrations"
+          - "view your registration certificates"
+        paragraph_3: "If any of your details do change in the future you must update the registration within 28 days."
+        paragraph_4:
+          one: "You have 1 registration."
+          other: "You have %{count} registrations."
+      results:
+        th:
+          company_name: "Company name"
+          registered_address_postcode: "Postcode"
+          reg_identifier: "Registration"
+          status: "Status"
+          expires_on: "Expiry date"
+        expires_on:
+          not_applicable: "N/A"
+        no_results: "No results found."
