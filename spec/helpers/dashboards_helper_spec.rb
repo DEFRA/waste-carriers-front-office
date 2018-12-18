@@ -11,6 +11,13 @@ RSpec.describe DashboardsHelper, type: :helper do
     allow(Rails.configuration).to receive(:wcrs_frontend_url).and_return("http://www.example.com")
   end
 
+  describe "#url_to_change_password" do
+    it "returns the correct URL" do
+      password_url = "http://www.example.com/users/edit"
+      expect(helper.url_to_change_password).to eq(password_url)
+    end
+  end
+
   describe "#display_view_certificate_link_for?" do
     context "when the registration is active" do
       before { registration.metaData.status = "ACTIVE" }

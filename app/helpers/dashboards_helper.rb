@@ -1,6 +1,10 @@
 # frozen_string_literal: true
 
 module DashboardsHelper
+  def url_to_change_password
+    "#{Rails.configuration.wcrs_frontend_url}/users/edit"
+  end
+
   def display_view_certificate_link_for?(registration)
     registration.metaData.ACTIVE?
   end

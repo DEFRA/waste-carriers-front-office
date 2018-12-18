@@ -4,6 +4,7 @@ en:
       title: "Your waste carrier registrations"
       user_info:
         signed_in_user: "Signed in as %{email}."
+        change_password_link: "Change password"
         sign_out_link: "Sign out"
       heading: "Your waste carrier registrations"
       summary:
