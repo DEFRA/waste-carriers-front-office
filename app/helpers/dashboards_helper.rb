@@ -5,8 +5,8 @@ module DashboardsHelper
     registration.metaData.ACTIVE?
   end
 
-  def display_edit_link_for?(_registration)
-    true
+  def display_edit_link_for?(registration)
+    registration.metaData.ACTIVE? || registration.metaData.PENDING?
   end
 
   def display_renew_link_for?(_registration)
