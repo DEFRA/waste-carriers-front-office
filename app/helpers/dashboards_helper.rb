@@ -38,6 +38,16 @@ module DashboardsHelper
     registration.metaData.ACTIVE?
   end
 
+  def display_no_action_links?(registration)
+    return false if display_view_certificate_link_for?(registration) ||
+                    display_edit_link_for?(registration) ||
+                    display_renew_link_for?(registration) ||
+                    display_order_cards_link_for?(registration) ||
+                    display_delete_link_for?(registration)
+
+    true
+  end
+
   def view_certificate_url(registration)
     "#{base_frontend_registration_url(registration)}/view"
   end

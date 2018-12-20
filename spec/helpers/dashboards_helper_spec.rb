@@ -155,6 +155,30 @@ RSpec.describe DashboardsHelper, type: :helper do
     end
   end
 
+  describe "#display_no_action_links?" do
+    context "when at least one action link should be displayed" do
+      before { allow(helper).to receive(:display_renew_link_for?).and_return(true) }
+
+      it "returns false" do
+        expect(helper.display_no_action_links?(registration)).to eq(false)
+      end
+    end
+
+    context "when no action links should be displayed" do
+      before do
+        allow(helper).to receive(:display_view_certificate_link_for?).and_return(false)
+        allow(helper).to receive(:display_edit_link_for?).and_return(false)
+        allow(helper).to receive(:display_renew_link_for?).and_return(false)
+        allow(helper).to receive(:display_order_cards_link_for?).and_return(false)
+        allow(helper).to receive(:display_delete_link_for?).and_return(false)
+      end
+
+      it "returns true" do
+        expect(helper.display_no_action_links?(registration)).to eq(true)
+      end
+    end
+  end
+
   describe "#view_certificate_url" do
     it "returns the correct URL" do
       certificate_url = "http://www.example.com/registrations/#{id}/view"
