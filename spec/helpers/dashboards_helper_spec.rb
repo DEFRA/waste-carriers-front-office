@@ -155,38 +155,38 @@ RSpec.describe DashboardsHelper, type: :helper do
     end
   end
 
-  describe "#url_to_view_certificate_for" do
+  describe "#view_certificate_url" do
     it "returns the correct URL" do
       certificate_url = "http://www.example.com/registrations/#{id}/view"
-      expect(helper.url_to_view_certificate_for(registration)).to eq(certificate_url)
+      expect(helper.view_certificate_url(registration)).to eq(certificate_url)
     end
   end
 
-  describe "#url_to_edit" do
+  describe "#edit_url" do
     it "returns the correct URL" do
       edit_url = "http://www.example.com/registrations/#{id}/edit"
-      expect(helper.url_to_edit(registration)).to eq(edit_url)
+      expect(helper.edit_url(registration)).to eq(edit_url)
     end
   end
 
-  describe "#url_to_renew" do
+  describe "#renew_url" do
     it "returns the correct URL" do
       renew_url = "/fo/renew/#{reg_identifier}"
-      expect(helper.url_to_renew(registration)).to eq(renew_url)
+      expect(helper.renew_url(registration)).to eq(renew_url)
     end
   end
 
-  describe "#url_to_order_cards_for" do
+  describe "#order_cards_url" do
     it "returns the correct URL" do
       cards_url = "http://www.example.com/your-registration/#{id}/order/order-copy_cards"
-      expect(helper.url_to_order_cards_for(registration)).to eq(cards_url)
+      expect(helper.order_cards_url(registration)).to eq(cards_url)
     end
   end
 
-  describe "#url_to_delete" do
+  describe "#delete_url" do
     it "returns the correct URL" do
       delete_url = "http://www.example.com/registrations/#{id}/confirm_delete"
-      expect(helper.url_to_delete(registration)).to eq(delete_url)
+      expect(helper.delete_url(registration)).to eq(delete_url)
     end
   end
 end
