@@ -1,0 +1,19 @@
+.registration-list {
+  border-top: 10px solid $border-colour;
+  padding: 1.5em 0;
+}
+
+.registration-list .registration-details li {
+  padding-bottom: 1em;
+}
+
+@media (min-width: 642px) {
+  .registration-list .registration-details li:last-child {
+    padding-bottom: 0;
+  }
+}
+
+.registration-list span {
+  font-weight: bold;
+  display: block;
+}

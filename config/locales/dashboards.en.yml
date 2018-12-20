@@ -19,17 +19,14 @@ en:
           one: "You have 1 registration."
           other: "You have %{count} registrations."
       results:
-        th:
-          company_name: "Company name"
+        labels:
+          company_name: "Name"
           registered_address_postcode: "Postcode"
           reg_identifier: "Registration"
           status: "Status"
+          date_registered: "Date registered"
           expires_on: "Expiry date"
           actions: "Actions"
-        registered_address_postcode:
-          not_applicable: "N/A"
-        expires_on:
-          not_applicable: "N/A"
         actions:
           view_certificate: "View certificate"
           edit: "Edit"
