@@ -9,16 +9,15 @@ en:
         sign_out_link: "Sign out"
       heading: "Your waste carrier registrations"
       summary:
-        paragraph_1: "These are the registrations linked to your account."
+        paragraph_1:
+          one: "You have 1 registration linked to your account."
+          other: "You have %{count} registrations linked to your account."
         paragraph_2: "You can:"
         list:
           - "create new registrations for your business or organisation"
           - "change the details of your existing registrations"
           - "view your registration certificates"
-        paragraph_3: "If any of your details do change in the future you must update the registration within 28 days."
-        paragraph_4:
-          one: "You have 1 registration."
-          other: "You have %{count} registrations."
+        paragraph_3: "If any of your details do change in the future, you must update the registration within 28 days."
       results:
         labels:
           company_name: "Name"

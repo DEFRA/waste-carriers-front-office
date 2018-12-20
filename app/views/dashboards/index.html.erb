@@ -8,7 +8,7 @@
 
 <div class="grid-row">
   <div class="column-two-thirds">
-    <p><%= t(".summary.paragraph_1") %></p>
+    <p><%= t(".summary.paragraph_1", count: @registrations.count) %></p>
     <p><%= t(".summary.paragraph_2") %></p>
     <ul class="list list-bullet">
       <% t(".summary.list").each do |list_item| %>
@@ -16,7 +16,6 @@
       <% end %>
     </ul>
     <p><%= t(".summary.paragraph_3") %></p>
-    <p><%= t(".summary.paragraph_4", count: @registrations.count) %></p>
   </div>
 
   <div class="column-one-third">
