@@ -17,8 +17,15 @@ module DashboardsHelper
     registration.metaData.ACTIVE? || registration.metaData.PENDING?
   end
 
-  def display_renew_link_for?(_registration)
-    true
+  def display_renew_link_for?(registration)
+    return false unless registration.tier == "UPPER"
+
+    reg_id = registration.reg_identifier
+    # Use existing transient_registration or create a temporary new one
+    transient_registration = WasteCarriersEngine::TransientRegistration.where(reg_identifier: reg_id).first ||
+                             WasteCarriersEngine::TransientRegistration.new(reg_identifier: reg_id)
+
+    transient_registration.can_be_renewed?
   end
 
   def display_order_cards_link_for?(registration)

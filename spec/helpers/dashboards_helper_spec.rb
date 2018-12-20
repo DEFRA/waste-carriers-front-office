@@ -70,8 +70,32 @@ RSpec.describe DashboardsHelper, type: :helper do
   end
 
   describe "#display_renew_link_for?" do
-    it "returns the correct value" do
-      expect(helper.display_renew_link_for?(registration)).to eq(true)
+    context "when the registration is lower tier" do
+      before { registration.tier = "LOWER" }
+
+      it "returns false" do
+        expect(helper.display_renew_link_for?(registration)).to eq(false)
+      end
+    end
+
+    context "when the registration is upper tier" do
+      before { registration.tier = "UPPER" }
+
+      context "when a renewal is possible" do
+        before { allow_any_instance_of(WasteCarriersEngine::TransientRegistration).to receive(:can_be_renewed?).and_return(true) }
+
+        it "returns true" do
+          expect(helper.display_renew_link_for?(registration)).to eq(true)
+        end
+      end
+
+      context "when a renewal is not possible" do
+        before { allow_any_instance_of(WasteCarriersEngine::TransientRegistration).to receive(:can_be_renewed?).and_return(false) }
+
+        it "returns false" do
+          expect(helper.display_renew_link_for?(registration)).to eq(false)
+        end
+      end
     end
   end
 
