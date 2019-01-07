@@ -86,32 +86,37 @@
           <ul>
             <% if display_view_certificate_link_for?(registration) %>
               <li>
-                <%= link_to t(".results.actions.view_certificate"),
-                            view_certificate_url(registration) %>
+                <%= link_to view_certificate_url(registration) do %>
+                 <%= t(".results.actions.view_certificate") %>
+                <% end %>
               </li>
             <% end %>
             <% if display_edit_link_for?(registration) %>
               <li>
-                <%= link_to t(".results.actions.edit"),
-                            edit_url(registration) %>
+                <%= link_to edit_url(registration) do %>
+                  <%= t(".results.actions.edit") %>
+                <% end %>
               </li>
             <% end %>
             <% if display_renew_link_for?(registration) %>
               <li>
-                <%= link_to t(".results.actions.renew"),
-                            renew_url(registration) %>
+                <%= link_to renew_url(registration) do %>
+                  <%= t(".results.actions.renew") %>
+                <% end %>
               </li>
             <% end %>
             <% if display_order_cards_link_for?(registration) %>
               <li>
-                <%= link_to t(".results.actions.order_cards"),
-                            order_cards_url(registration) %>
+                <%= link_to order_cards_url(registration) do %>
+                  <%= t(".results.actions.order_cards") %>
+                <% end %>
               </li>
             <% end %>
             <% if display_delete_link_for?(registration) %>
               <li>
-                <%= link_to t(".results.actions.delete"),
-                            delete_url(registration) %>
+                <%= link_to delete_url(registration) do %>
+                  <%= t(".results.actions.delete") %>
+                <% end %>
               </li>
             <% end %>
           </ul>
