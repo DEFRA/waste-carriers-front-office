@@ -28,11 +28,21 @@ en:
           expires_on: "Expiry date"
           actions: "Actions"
         actions:
-          view_certificate: "View certificate"
-          edit: "Edit"
-          renew: "Renew"
-          order_cards: "Order copy cards"
-          delete: "Delete"
+          view_certificate:
+            link_text: "View certificate"
+            visually_hidden_text: "for registration for %{name}"
+          edit:
+            link_text: "Edit"
+            visually_hidden_text: "registration for %{name}"
+          renew:
+            link_text: "Renew"
+            visually_hidden_text: "registration for %{name}"
+          order_cards:
+            link_text: "Order copy cards"
+            visually_hidden_text: "for registration for %{name}"
+          delete:
+            link_text: "Delete"
+            visually_hidden_text: "registration for %{name}"
           no_actions: "None"
         no_results: "No results found."
       new_registration_button: "New registration"

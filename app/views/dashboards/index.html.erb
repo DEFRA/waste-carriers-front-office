@@ -87,40 +87,55 @@
             <% if display_view_certificate_link_for?(registration) %>
               <li>
                 <%= link_to view_certificate_url(registration) do %>
-                 <%= t(".results.actions.view_certificate") %>
-                 <span class="visually-hidden"><%= registration.company_name %></span>
+                 <%= t(".results.actions.view_certificate.link_text") %>
+                 <span class="visually-hidden">
+                   <%= t(".results.actions.view_certificate.visually_hidden_text",
+                         name: registration.company_name) %>
+                 </span>
                 <% end %>
               </li>
             <% end %>
             <% if display_edit_link_for?(registration) %>
               <li>
                 <%= link_to edit_url(registration) do %>
-                  <%= t(".results.actions.edit") %>
-                  <span class="visually-hidden"><%= registration.company_name %></span>
+                  <%= t(".results.actions.edit.link_text") %>
+                  <span class="visually-hidden">
+                    <%= t(".results.actions.edit.visually_hidden_text",
+                          name: registration.company_name) %>
+                  </span>
                 <% end %>
               </li>
             <% end %>
             <% if display_renew_link_for?(registration) %>
               <li>
                 <%= link_to renew_url(registration) do %>
-                  <%= t(".results.actions.renew") %>
-                  <span class="visually-hidden"><%= registration.company_name %></span>
+                  <%= t(".results.actions.renew.link_text") %>
+                  <span class="visually-hidden">
+                    <%= t(".results.actions.renew.visually_hidden_text",
+                          name: registration.company_name) %>
+                  </span>
                 <% end %>
               </li>
             <% end %>
             <% if display_order_cards_link_for?(registration) %>
               <li>
                 <%= link_to order_cards_url(registration) do %>
-                  <%= t(".results.actions.order_cards") %>
-                  <span class="visually-hidden"><%= registration.company_name %></span>
+                  <%= t(".results.actions.order_cards.link_text") %>
+                  <span class="visually-hidden">
+                    <%= t(".results.actions.order_cards.visually_hidden_text",
+                          name: registration.company_name) %>
+                  </span>
                 <% end %>
               </li>
             <% end %>
             <% if display_delete_link_for?(registration) %>
               <li>
                 <%= link_to delete_url(registration) do %>
-                  <%= t(".results.actions.delete") %>
-                  <span class="visually-hidden"><%= registration.company_name %></span>
+                  <%= t(".results.actions.delete.link_text") %>
+                  <span class="visually-hidden">
+                    <%= t(".results.actions.delete.visually_hidden_text",
+                          name: registration.company_name) %>
+                  </span>
                 <% end %>
               </li>
             <% end %>
