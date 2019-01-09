@@ -35,7 +35,7 @@
 
 <% if @registrations.present? %>
   <% @registrations.each do |registration| %>
-    <div class="grid-row registration-list">
+    <div class="grid-row registration-list" id="<%= registration.reg_identifier %>">
       <div class="column-one-quarter">
         <ul class="registration-details">
           <li>
