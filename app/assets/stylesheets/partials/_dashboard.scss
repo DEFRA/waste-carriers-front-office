@@ -1,19 +1,17 @@
 .user-info {
   border-top: 10px solid $govuk-blue;
-}
+    h2 {
+      margin-top: 1em;
+    }
+    span {
+      font-weight: bold;
+    }
+  }
 
-.user-info h2 {
-  margin-top: 1em;
-}
-
-.user-info span {
-  font-weight: bold;
-}
-
-.registration-list {
+/*.registration-list {
   border-top: 10px solid $border-colour;
   padding: 1.5em 0;
-}
+}*/
 
 .registration-list .registration-details li {
   padding-bottom: 1em;
@@ -26,6 +24,6 @@
 }
 
 .registration-list span {
-  font-weight: bold;
   display: block;
+  font-weight: bold;
 }
