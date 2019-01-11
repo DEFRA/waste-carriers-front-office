@@ -34,6 +34,15 @@ RSpec.describe "Dashfoards", type: :request do
         expect(response.body).to_not include(reg_identifier)
       end
 
+      it "does not list registrations which are inactive" do
+        registration = create(:registration)
+        registration.metaData.status = "INACTIVE"
+        reg_identifier = registration.reg_identifier
+
+        get "/fo"
+        expect(response.body).to_not include(reg_identifier)
+      end
+
       context "when the user has no registrations" do
         it "says there are no results" do
           get "/fo"

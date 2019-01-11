@@ -4,7 +4,8 @@ class DashboardsController < ApplicationController
   before_action :authenticate_user!
 
   def index
-    @registrations = WasteCarriersEngine::Registration.where(account_email: current_user.email)
+    @registrations = WasteCarriersEngine::Registration.where(account_email: current_user.email,
+                                                             :'metaData.status'.ne => "INACTIVE")
                                                       .order_by("metaData.dateRegistered": :asc)
                                                       .page(params[:page])
   end
