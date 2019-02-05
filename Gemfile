@@ -71,7 +71,7 @@ gem "github_changelog_generator", require: false
 # Test with `curl -I http://localhost:3002/healthcheck`
 gem "aws-healthcheck"
 
-group :development, :production do
+group :production do
   # Web application server that replaces webrick. It handles HTTP requests,
   # manages processes and resources, and enables administration, monitoring
   # and problem diagnosis. It is used in production because it gives us an ability
