@@ -9,7 +9,7 @@ The 'Register or renew as a waste carrier' service allows businesses, who deal w
 
 The service also allows authorised agency users and NCCC staff to create and manage registrations on other users' behalf, e.g. to support 'Assisted Digital' registrations. The service provides an internal user account management facility which allows authorised administrators to create and manage other agency user accounts.
 
-This project is the front office application which members of the public use to renew a registration. It uses the [waste-carriers-renewals engine](https://github.com/DEFRA/waste-carriers-renewals).
+This project is the front office application which members of the public to renew a registration. It uses the [waste carriers engine](https://github.com/DEFRA/waste-carriers-engine).
 
 ## Prequisites
 
@@ -33,12 +33,12 @@ bundle install
 
 A [Vagrant](https://www.vagrantup.com/) instance has been created allowing easy setup of the waste carriers service. It includes installing all applications, databases and dependencies. This is located within GitLab (speak to the Ruby team).
 
-Download the Vagrant project and create the VM using the instructions in its README. It includes installing and running a version of the renewals app.
+Download the Vagrant project and create the VM using the instructions in its README. It includes installing and running a version of the waste-carriers-front-office app.
 
-However, if you intend to work with the renewals app locally (as opposed to on the Vagrant instance) and just use the box for dependencies, you'll need to:
+However, if you intend to work with the app locally (as opposed to on the Vagrant instance) and just use the box for dependencies, you'll need to:
 
 - Log in into the Vagrant instance
-- Using `ps ax`, identify the pid of the running renewals app
+- Using `ps ax`, identify the pid of the running waste-carriers-front-office app
 - Kill it using `kill [pid id]`
 - Exit the vagrant instance
 
