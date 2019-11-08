@@ -82,7 +82,7 @@ RSpec.describe DashboardsHelper, type: :helper do
       before { registration.tier = "UPPER" }
 
       context "when a renewal is possible" do
-        before { allow_any_instance_of(WasteCarriersEngine::TransientRegistration).to receive(:can_be_renewed?).and_return(true) }
+        before { allow_any_instance_of(WasteCarriersEngine::RenewingRegistration).to receive(:can_be_renewed?).and_return(true) }
 
         it "returns true" do
           expect(helper.display_renew_link_for?(registration)).to eq(true)
@@ -90,7 +90,7 @@ RSpec.describe DashboardsHelper, type: :helper do
       end
 
       context "when a renewal is not possible" do
-        before { allow_any_instance_of(WasteCarriersEngine::TransientRegistration).to receive(:can_be_renewed?).and_return(false) }
+        before { allow_any_instance_of(WasteCarriersEngine::RenewingRegistration).to receive(:can_be_renewed?).and_return(false) }
 
         it "returns false" do
           expect(helper.display_renew_link_for?(registration)).to eq(false)

@@ -22,8 +22,8 @@ module DashboardsHelper
 
     reg_id = registration.reg_identifier
     # Use existing transient_registration or create a temporary new one
-    transient_registration = WasteCarriersEngine::TransientRegistration.where(reg_identifier: reg_id).first ||
-                             WasteCarriersEngine::TransientRegistration.new(reg_identifier: reg_id)
+    transient_registration = WasteCarriersEngine::RenewingRegistration.where(reg_identifier: reg_id).first ||
+                             WasteCarriersEngine::RenewingRegistration.new(reg_identifier: reg_id)
 
     transient_registration.can_be_renewed?
   end
