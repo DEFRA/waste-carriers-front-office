@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/waste-carriers-engine
-  revision: de3e0caff5b913e36374402bc74c8e647a023dbe
+  revision: 8f2c207ad3f3e09d2a6482e943a67768f6684d5e
   branch: master
   specs:
     waste_carriers_engine (0.0.1)
@@ -195,7 +195,7 @@ GEM
     multi_json (1.14.1)
     multipart-post (2.1.1)
     netrc (0.11.0)
-    nokogiri (1.10.6)
+    nokogiri (1.10.7)
       mini_portile2 (~> 2.4.0)
     octokit (4.14.0)
       sawyer (~> 0.8.0, >= 0.5.3)
