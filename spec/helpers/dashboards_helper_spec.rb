@@ -195,7 +195,7 @@ RSpec.describe DashboardsHelper, type: :helper do
 
   describe "#renew_url" do
     it "returns the correct URL" do
-      renew_url = "/fo/renew/#{reg_identifier}"
+      renew_url = "/fo/#{reg_identifier}/renew"
       expect(helper.renew_url(registration)).to eq(renew_url)
     end
   end

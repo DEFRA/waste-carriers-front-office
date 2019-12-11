@@ -19,19 +19,19 @@ RSpec.describe "Root", type: :request do
     context "when the user is not signed in" do
       let(:registration) { create(:registration, reg_identifier: "CBDU12345") }
       it "returns a 200 response" do
-        get "/fo/renew/CBDU12345"
+        get "/fo/CBDU12345/renew"
         expect(response).to have_http_status(302)
       end
 
       it "redirects the user to the sign in page" do
-        get "/fo/renew/CBDU12345"
+        get "/fo/CBDU12345/renew"
         expect(response).to redirect_to(new_user_session_path)
       end
 
       it "redirects the user to the renewal start page after sign in" do
         user = create(:user)
         reg_identifier = create(:registration, :expires_soon, account_email: user.email).reg_identifier
-        renew_path = "/fo/renew/#{reg_identifier}"
+        renew_path = "/fo/#{reg_identifier}/renew"
 
         get renew_path
         post user_session_path, user: { email: user.email, password: user.password }
@@ -51,12 +51,12 @@ RSpec.describe "Root", type: :request do
       end
 
       it "returns a 200 response" do
-        get "/fo/renew/#{registration.reg_identifier}"
+        get "/fo/#{registration.reg_identifier}/renew"
         expect(response).to have_http_status(200)
       end
 
       it "redirects the user to the renewal start page" do
-        get "/fo/renew/#{registration.reg_identifier}"
+        get "/fo/#{registration.reg_identifier}/renew"
         expect(response.body).to include("You are about to renew your registration")
       end
     end
