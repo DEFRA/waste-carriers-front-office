@@ -53,6 +53,10 @@ gem "waste_carriers_engine",
     git: "https://github.com/DEFRA/waste-carriers-engine",
     branch: "master"
 
+gem "defra_ruby_mocks",
+    git: "https://github.com/DEFRA/defra-ruby-mocks",
+    branch: "master"
+
 # Allows us to automatically generate the change log from the tags, issues,
 # labels and pull requests on GitHub. Added as a dependency so all dev's have
 # access to it to generate a log, and so they are using the same version.

@@ -19,4 +19,6 @@ Rails.application.routes.draw do
   get "/fo" => "dashboards#index"
 
   mount WasteCarriersEngine::Engine => "/fo"
+
+  mount DefraRubyMocks::Engine => "/mocks"
 end
