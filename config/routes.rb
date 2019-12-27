@@ -20,5 +20,5 @@ Rails.application.routes.draw do
 
   mount WasteCarriersEngine::Engine => "/fo"
 
-  mount DefraRubyMocks::Engine => "/mocks"
+  mount DefraRubyMocks::Engine => "/fo/mocks"
 end
