@@ -73,5 +73,54 @@
   "conviction_search_result": {
     "match_result": "NO",
     "confirmed": "no"
+  },
+  "financeDetails" : {
+    "orders" : [
+      {
+        "orderId" : "1577969411",
+        "orderItems" : [
+          {
+            "amount" : 15400,
+            "currency" : "GBP",
+            "description" : "Initial Registration",
+            "reference" : "",
+            "type" : "NEW"
+          },
+          {
+              "amount" : 3000,
+              "currency" : "GBP",
+              "description" : "6x Copy cards",
+              "reference" : "",
+              "type" : "COPY_CARDS"
+          }
+        ],
+        "orderCode" : "1577969411",
+        "paymentMethod" : "ONLINE",
+        "merchantId" : "EASERRSIMECOM",
+        "totalAmount" : 18400,
+        "currency" : "GBP",
+        "dateCreated" : "2020-01-02T12:50:20.000Z",
+        "worldPayStatus" : "AUTHORISED",
+        "dateLastUpdated" : "2020-01-02T12:50:35.818Z",
+        "updatedByUser" : "user@example.com",
+        "description" : "New Waste Carrier Registration: CBDU2 for higoigui, Plus 6 copy cards"
+      }
+    ],
+    "payments" : [
+      {
+        "orderKey" : "1577969411",
+        "amount" : 18400,
+        "currency" : "GBP",
+        "mac_code" : "ca9c7461804761065489d0a32fe9ae87",
+        "dateReceived" : "2020-01-02T12:50:35.651Z",
+        "dateEntered" : "2020-01-02T12:50:35.659Z",
+        "registrationReference" : "Worldpay",
+        "worldPayPaymentStatus" : "AUTHORISED",
+        "updatedByUser" : "user@example.com",
+        "comment" : "Paid via Worldpay",
+        "paymentType" : "WORLDPAY"
+      }
+    ],
+    "balance" : 0
   }
 }
