@@ -1,7 +1,7 @@
 GIT
   remote: https://github.com/DEFRA/waste-carriers-engine
-  revision: 2a532b79fdf294a0392f2e0d4246458b3d65ae5f
-  branch: add-defra-ruby-email
+  revision: edf5a11f018115bcb0c2859ce33840930594363e
+  branch: master
   specs:
     waste_carriers_engine (0.0.1)
       aasm (~> 4.12)
