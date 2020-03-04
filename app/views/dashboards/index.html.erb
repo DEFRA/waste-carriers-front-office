@@ -129,17 +129,6 @@
                 <% end %>
               </li>
             <% end %>
-            <% if display_delete_link_for?(registration) %>
-              <li>
-                <%= link_to delete_url(registration) do %>
-                  <%= t(".results.actions.delete.link_text") %>
-                  <span class="visually-hidden">
-                    <%= t(".results.actions.delete.visually_hidden_text",
-                          name: registration.company_name) %>
-                  </span>
-                <% end %>
-              </li>
-            <% end %>
           </ul>
         <% end %>
       </div>

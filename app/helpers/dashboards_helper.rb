@@ -34,16 +34,11 @@ module DashboardsHelper
     registration.metaData.ACTIVE? || registration.metaData.PENDING?
   end
 
-  def display_delete_link_for?(registration)
-    registration.metaData.ACTIVE?
-  end
-
   def display_no_action_links?(registration)
     return false if display_view_certificate_link_for?(registration) ||
                     display_edit_link_for?(registration) ||
                     display_renew_link_for?(registration) ||
-                    display_order_cards_link_for?(registration) ||
-                    display_delete_link_for?(registration)
+                    display_order_cards_link_for?(registration)
 
     true
   end
@@ -63,10 +58,6 @@ module DashboardsHelper
   def order_cards_url(registration)
     id = registration["_id"]
     "#{Rails.configuration.wcrs_frontend_url}/your-registration/#{id}/order/order-copy_cards"
-  end
-
-  def delete_url(registration)
-    "#{base_frontend_registration_url(registration)}/confirm_delete"
   end
 
   private

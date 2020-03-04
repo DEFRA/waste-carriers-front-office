@@ -137,24 +137,6 @@ RSpec.describe DashboardsHelper, type: :helper do
     end
   end
 
-  describe "#display_delete_link_for?" do
-    context "when the registration is active" do
-      before { registration.metaData.status = "ACTIVE" }
-
-      it "returns true" do
-        expect(helper.display_delete_link_for?(registration)).to eq(true)
-      end
-    end
-
-    context "when the registration is not active" do
-      before { registration.metaData.status = "PENDING" }
-
-      it "returns false" do
-        expect(helper.display_delete_link_for?(registration)).to eq(false)
-      end
-    end
-  end
-
   describe "#display_no_action_links?" do
     context "when at least one action link should be displayed" do
       before { allow(helper).to receive(:display_renew_link_for?).and_return(true) }
@@ -170,7 +152,6 @@ RSpec.describe DashboardsHelper, type: :helper do
         allow(helper).to receive(:display_edit_link_for?).and_return(false)
         allow(helper).to receive(:display_renew_link_for?).and_return(false)
         allow(helper).to receive(:display_order_cards_link_for?).and_return(false)
-        allow(helper).to receive(:display_delete_link_for?).and_return(false)
       end
 
       it "returns true" do
@@ -204,13 +185,6 @@ RSpec.describe DashboardsHelper, type: :helper do
     it "returns the correct URL" do
       cards_url = "http://www.example.com/your-registration/#{id}/order/order-copy_cards"
       expect(helper.order_cards_url(registration)).to eq(cards_url)
-    end
-  end
-
-  describe "#delete_url" do
-    it "returns the correct URL" do
-      delete_url = "http://www.example.com/registrations/#{id}/confirm_delete"
-      expect(helper.delete_url(registration)).to eq(delete_url)
     end
   end
 end
