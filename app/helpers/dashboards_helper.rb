@@ -28,17 +28,10 @@ module DashboardsHelper
     transient_registration.can_be_renewed?
   end
 
-  def display_order_cards_link_for?(registration)
-    return false unless registration.tier == "UPPER"
-
-    registration.metaData.ACTIVE? || registration.metaData.PENDING?
-  end
-
   def display_no_action_links?(registration)
     return false if display_view_certificate_link_for?(registration) ||
                     display_edit_link_for?(registration) ||
-                    display_renew_link_for?(registration) ||
-                    display_order_cards_link_for?(registration)
+                    display_renew_link_for?(registration)
 
     true
   end
@@ -53,11 +46,6 @@ module DashboardsHelper
 
   def renew_url(registration)
     WasteCarriersEngine::Engine.routes.url_helpers.new_renewal_start_form_path(registration.reg_identifier)
-  end
-
-  def order_cards_url(registration)
-    id = registration["_id"]
-    "#{Rails.configuration.wcrs_frontend_url}/your-registration/#{id}/order/order-copy_cards"
   end
 
   private

@@ -99,44 +99,6 @@ RSpec.describe DashboardsHelper, type: :helper do
     end
   end
 
-  describe "#display_order_cards_link_for?" do
-    context "when the registration is upper tier" do
-      before { registration.tier = "UPPER" }
-
-      context "when the registration is active" do
-        before { registration.metaData.status = "ACTIVE" }
-
-        it "returns true" do
-          expect(helper.display_order_cards_link_for?(registration)).to eq(true)
-        end
-      end
-
-      context "when the registration is pending" do
-        before { registration.metaData.status = "PENDING" }
-
-        it "returns true" do
-          expect(helper.display_order_cards_link_for?(registration)).to eq(true)
-        end
-      end
-
-      context "when the registration is not active or pending" do
-        before { registration.metaData.status = "REVOKED" }
-
-        it "returns false" do
-          expect(helper.display_order_cards_link_for?(registration)).to eq(false)
-        end
-      end
-    end
-
-    context "when the registration is lower tier" do
-      before { registration.tier = "LOWER" }
-
-      it "returns false" do
-        expect(helper.display_order_cards_link_for?(registration)).to eq(false)
-      end
-    end
-  end
-
   describe "#display_no_action_links?" do
     context "when at least one action link should be displayed" do
       before { allow(helper).to receive(:display_renew_link_for?).and_return(true) }
@@ -151,7 +113,6 @@ RSpec.describe DashboardsHelper, type: :helper do
         allow(helper).to receive(:display_view_certificate_link_for?).and_return(false)
         allow(helper).to receive(:display_edit_link_for?).and_return(false)
         allow(helper).to receive(:display_renew_link_for?).and_return(false)
-        allow(helper).to receive(:display_order_cards_link_for?).and_return(false)
       end
 
       it "returns true" do
@@ -178,13 +139,6 @@ RSpec.describe DashboardsHelper, type: :helper do
     it "returns the correct URL" do
       renew_url = "/fo/#{reg_identifier}/renew"
       expect(helper.renew_url(registration)).to eq(renew_url)
-    end
-  end
-
-  describe "#order_cards_url" do
-    it "returns the correct URL" do
-      cards_url = "http://www.example.com/your-registration/#{id}/order/order-copy_cards"
-      expect(helper.order_cards_url(registration)).to eq(cards_url)
     end
   end
 end

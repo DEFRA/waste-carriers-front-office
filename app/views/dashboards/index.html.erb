@@ -118,17 +118,6 @@
                 <% end %>
               </li>
             <% end %>
-            <% if display_order_cards_link_for?(registration) %>
-              <li>
-                <%= link_to order_cards_url(registration) do %>
-                  <%= t(".results.actions.order_cards.link_text") %>
-                  <span class="visually-hidden">
-                    <%= t(".results.actions.order_cards.visually_hidden_text",
-                          name: registration.company_name) %>
-                  </span>
-                <% end %>
-              </li>
-            <% end %>
           </ul>
         <% end %>
       </div>
