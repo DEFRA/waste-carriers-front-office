@@ -34,4 +34,4 @@ before_script:
 script:
   - bundle exec rubocop --format=json --out=rubocop-result.json
   - bundle exec rspec
-  - sonar-scanner
+  - sonar-scanner -X
