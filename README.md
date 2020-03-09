@@ -1,8 +1,8 @@
 # Waste Carriers Front Office
 
 [![Build Status](https://travis-ci.org/DEFRA/waste-carriers-front-office.svg?branch=master)](https://travis-ci.org/DEFRA/waste-carriers-front-office)
-[![Maintainability](https://api.codeclimate.com/v1/badges/00c5905e3693b06dda9a/maintainability)](https://codeclimate.com/github/DEFRA/waste-carriers-front-office/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/00c5905e3693b06dda9a/test_coverage)](https://codeclimate.com/github/DEFRA/waste-carriers-front-office/test_coverage)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=DEFRA_waste-carriers-front-office&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=DEFRA_waste-carriers-front-office)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=DEFRA_waste-carriers-front-office&metric=coverage)](https://sonarcloud.io/dashboard?id=DEFRA_waste-carriers-front-office)
 [![security](https://hakiri.io/github/DEFRA/waste-carriers-front-office/master.svg)](https://hakiri.io/github/DEFRA/waste-carriers-front-office/master)
 
 The 'Register or renew as a waste carrier' service allows businesses, who deal with waste and have to register according to the regulations, to register online. Once registered, businesses can sign in again to edit their registrations if needed.
