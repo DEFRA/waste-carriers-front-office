@@ -1,7 +1,7 @@
 GIT
   remote: https://github.com/DEFRA/waste-carriers-engine
-  revision: 2cc9e9c8860ffc6d45f364fee120fe72d9c32980
-  branch: hide-start-new-reg-behind-feature-toggle
+  revision: 015c31e9a57db1b1796ddfc2bd7f9a29ead6cd87
+  branch: master
   specs:
     waste_carriers_engine (0.0.1)
       aasm (~> 4.12)
