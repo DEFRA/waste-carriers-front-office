@@ -2,7 +2,10 @@
 
 FactoryBot.define do
   factory :registration, class: WasteCarriersEngine::Registration do
-    reg_identifier { "CBDU#{rand(10_000)}" }
+    sequence :reg_identifier do |n|
+      "CBDU#{n}"
+    end
+
     tier { "UPPER" }
 
     addresses { [build(:address), build(:address)] }
