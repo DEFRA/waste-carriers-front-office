@@ -89,7 +89,7 @@ GEM
       sixarm_ruby_unaccent (~> 1.1)
       unicode_utils (~> 1.4)
     crass (1.0.6)
-    database_cleaner (1.8.3)
+    database_cleaner (1.8.4)
     debug_inspector (0.0.3)
     defra_ruby_alert (1.0.0)
       airbrake (~> 5.8.1)
