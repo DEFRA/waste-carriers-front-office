@@ -43,32 +43,6 @@ RSpec.describe DashboardsHelper, type: :helper do
     end
   end
 
-  describe "#display_edit_link_for?" do
-    context "when the registration is active" do
-      before { registration.metaData.status = "ACTIVE" }
-
-      it "returns true" do
-        expect(helper.display_edit_link_for?(registration)).to eq(true)
-      end
-    end
-
-    context "when the registration is pending" do
-      before { registration.metaData.status = "PENDING" }
-
-      it "returns true" do
-        expect(helper.display_edit_link_for?(registration)).to eq(true)
-      end
-    end
-
-    context "when the registration is not active or pending" do
-      before { registration.metaData.status = "REVOKED" }
-
-      it "returns false" do
-        expect(helper.display_edit_link_for?(registration)).to eq(false)
-      end
-    end
-  end
-
   describe "#display_renew_link_for?" do
     context "when the registration is lower tier" do
       before { registration.tier = "LOWER" }
@@ -111,7 +85,6 @@ RSpec.describe DashboardsHelper, type: :helper do
     context "when no action links should be displayed" do
       before do
         allow(helper).to receive(:display_view_certificate_link_for?).and_return(false)
-        allow(helper).to receive(:display_edit_link_for?).and_return(false)
         allow(helper).to receive(:display_renew_link_for?).and_return(false)
       end
 
