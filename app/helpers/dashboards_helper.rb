@@ -13,10 +13,6 @@ module DashboardsHelper
     registration.metaData.ACTIVE?
   end
 
-  def display_edit_link_for?(registration)
-    registration.metaData.ACTIVE? || registration.metaData.PENDING?
-  end
-
   def display_renew_link_for?(registration)
     return false unless registration.tier == "UPPER"
 
@@ -30,7 +26,6 @@ module DashboardsHelper
 
   def display_no_action_links?(registration)
     return false if display_view_certificate_link_for?(registration) ||
-                    display_edit_link_for?(registration) ||
                     display_renew_link_for?(registration)
 
     true
