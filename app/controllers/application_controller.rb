@@ -8,6 +8,7 @@ class ApplicationController < ActionController::Base
   before_action :back_button_cache_buster
 
   helper WasteCarriersEngine::ApplicationHelper
+  helper WasteCarriersEngine::DataLayerHelper
 
   # Within our production 'like' environments access to the app can only be
   # obtained through `/fo`. Therefore to make this clear and ensure there is
