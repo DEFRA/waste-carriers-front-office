@@ -1,3 +1,5 @@
 ---
 new_registration:
   active: <%= ENV["FEATURE_TOGGLE_NEW_REGISTRATION"] %>
+renew_via_magic_link:
+  active: <%= ENV["RENEW_VIA_MAGIC_LINK"] %>
