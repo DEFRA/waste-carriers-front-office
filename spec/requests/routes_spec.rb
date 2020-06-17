@@ -34,7 +34,7 @@ RSpec.describe "Root", type: :request do
         renew_path = "/fo/#{reg_identifier}/renew"
 
         get renew_path
-        post user_session_path, user: { email: user.email, password: user.password }
+        post user_session_path, params: { user: { email: user.email, password: user.password } }
         expect(response).to redirect_to(renew_path)
       end
     end

@@ -11,14 +11,14 @@ RSpec.describe "Invitations", type: :request do
   describe "GET /fo/users/invitation/accept" do
     context "when there is a valid invitation token" do
       it "returns a success response" do
-        get accept_user_invitation_path, invitation_token: token
+        get accept_user_invitation_path, params: { invitation_token: token }
         expect(response).to have_http_status(200)
       end
     end
 
     context "when there is an invalid invitation token" do
       it "redirects to the sign in page" do
-        get accept_user_invitation_path, invitation_token: "foo"
+        get accept_user_invitation_path, params: { invitation_token: "foo" }
         expect(response).to redirect_to(new_user_session_path)
       end
     end
@@ -42,14 +42,14 @@ RSpec.describe "Invitations", type: :request do
 
     context "when params are valid" do
       it "redirects to the fo_path" do
-        put user_invitation_path, user: params
+        put user_invitation_path, params: { user: params }
         expect(response).to redirect_to(fo_path)
       end
     end
 
     context "when params are invalid" do
       it "renders the invitation accept page again" do
-        put user_invitation_path, user: "foo"
+        put user_invitation_path, params: { user: "foo" }
         expect(response).to render_template(:edit)
       end
     end
