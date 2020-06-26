@@ -7,6 +7,9 @@ class CertificatesController < ApplicationController
 
   def show
     registration = WasteCarriersEngine::Registration.find_by(reg_identifier: params[:reg_identifier])
+
+    authorize! :read, registration
+
     @presenter = WasteCarriersEngine::CertificatePresenter.new(registration, view_context)
 
     render pdf: registration.reg_identifier,

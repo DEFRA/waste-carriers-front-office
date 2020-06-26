@@ -44,6 +44,17 @@ RSpec.describe "Certificates", type: :request do
       end
     end
 
+    context "when a different user is logged in" do
+      before(:each) do
+        sign_in(create(:user))
+      end
+
+      it "redirects to the permissions error" do
+        get "/fo/registrations/#{registration.reg_identifier}/certificate"
+        expect(response).to redirect_to("/fo/pages/permission")
+      end
+    end
+
     context "when no user is logged in" do
       it "redirects to the sign-in page" do
         get "/fo/registrations/#{registration.reg_identifier}/certificate"
