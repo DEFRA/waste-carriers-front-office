@@ -3,6 +3,8 @@
 class CertificatesController < ApplicationController
   include CanRenderPdf
 
+  before_action :authenticate_user!
+
   def show
     registration = WasteCarriersEngine::Registration.find_by(reg_identifier: params[:reg_identifier])
     @presenter = WasteCarriersEngine::CertificatePresenter.new(registration, view_context)
