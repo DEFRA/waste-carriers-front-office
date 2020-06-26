@@ -16,7 +16,7 @@ RSpec.describe "Certificates", type: :request do
         get "/fo/registrations/#{registration.reg_identifier}/certificate"
 
         expect(response.content_type).to eq("application/pdf")
-        expected_content_disposition = "inline; filename=\"#{registration.reg_identifier}.pdf\""
+        expected_content_disposition = "inline; filename=\"#{registration.reg_identifier}.pdf\"; filename*=UTF-8''#{registration.reg_identifier}.pdf"
         expect(response.headers["Content-Disposition"]).to eq(expected_content_disposition)
       end
 
@@ -29,7 +29,7 @@ RSpec.describe "Certificates", type: :request do
         context "and the value is 'true'" do
           it "responds with HTML" do
             get "/fo/registrations/#{registration.reg_identifier}/certificate?show_as_html=true"
-            expect(response.content_type).to eq("text/html")
+            expect(response.content_type).to eq("text/html; charset=utf-8")
           end
         end
 
