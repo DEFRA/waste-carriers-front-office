@@ -101,13 +101,6 @@ RSpec.describe DashboardsHelper, type: :helper do
     end
   end
 
-  describe "#edit_url" do
-    it "returns the correct URL" do
-      edit_url = "http://www.example.com/registrations/#{id}/edit"
-      expect(helper.edit_url(registration)).to eq(edit_url)
-    end
-  end
-
   describe "#renew_url" do
     it "returns the correct URL" do
       renew_url = "/fo/#{reg_identifier}/renew"

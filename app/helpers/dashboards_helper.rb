@@ -35,10 +35,6 @@ module DashboardsHelper
     certificate_path(registration.reg_identifier)
   end
 
-  def edit_url(registration)
-    "#{base_frontend_registration_url(registration)}/edit"
-  end
-
   def renew_url(registration)
     WasteCarriersEngine::Engine.routes.url_helpers.new_renewal_start_form_path(registration.reg_identifier)
   end
