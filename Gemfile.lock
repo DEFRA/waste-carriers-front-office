@@ -1,7 +1,7 @@
 GIT
   remote: https://github.com/DEFRA/waste-carriers-engine
-  revision: 749348206e905469b803386fd31cc6737dc3177b
-  branch: rails-upgrade
+  revision: d1a9a53e0db8d9b4c7caa324efb3770a2998ee4b
+  branch: master
   specs:
     waste_carriers_engine (0.0.1)
       aasm (~> 4.12)
