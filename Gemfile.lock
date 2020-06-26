@@ -429,6 +429,7 @@ DEPENDENCIES
   uglifier (>= 1.3.0)
   waste_carriers_engine!
   web-console
+  wicked_pdf
 
 RUBY VERSION
    ruby 2.7.1p83

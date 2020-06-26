@@ -42,6 +42,8 @@ gem "kaminari-mongoid", "~> 1.0"
 
 gem "secure_headers", "~> 5.0"
 
+gem "wicked_pdf"
+
 # Use the waste carriers engine for the user journey
 gem "waste_carriers_engine",
     git: "https://github.com/DEFRA/waste-carriers-engine",

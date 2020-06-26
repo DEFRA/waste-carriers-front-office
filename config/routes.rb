@@ -16,6 +16,8 @@ Rails.application.routes.draw do
     put   "/fo/users/invitation/accept" => "invitations#update"
   end
 
+  get "/fo/registrations/:reg_identifier/certificate", to: "certificates#show", as: :certificate
+
   get "/fo" => "dashboards#index"
 
   mount WasteCarriersEngine::Engine => "/fo"
