@@ -18,6 +18,7 @@ env:
   global:
     - WCRS_REGISTRATION_EXPIRES_AFTER=3
     - WCRS_REGISTRATION_RENEWAL_WINDOW=3
+    - WCRS_USE_XVFB_FOR_WICKEDPDF=true
 
 services:
   - mongodb
@@ -25,6 +26,9 @@ services:
 before_install:
   - export TZ=UTC
   - gem install -v 1.17.3 bundler
+  - sudo apt-get install xvfb -y
+  - sudo apt-get install ttf-liberation -y
+  - sudo apt-get install wkhtmltopdf -y
 
 before_script:
   # Set up Mongo databases
