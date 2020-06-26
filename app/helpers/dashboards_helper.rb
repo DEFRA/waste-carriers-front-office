@@ -32,7 +32,7 @@ module DashboardsHelper
   end
 
   def view_certificate_url(registration)
-    "#{base_frontend_registration_url(registration)}/view"
+    certificate_path(registration.reg_identifier)
   end
 
   def edit_url(registration)

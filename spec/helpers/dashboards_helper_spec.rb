@@ -96,7 +96,7 @@ RSpec.describe DashboardsHelper, type: :helper do
 
   describe "#view_certificate_url" do
     it "returns the correct URL" do
-      certificate_url = "http://www.example.com/registrations/#{id}/view"
+      certificate_url = "/fo/registrations/#{reg_identifier}/certificate"
       expect(helper.view_certificate_url(registration)).to eq(certificate_url)
     end
   end
