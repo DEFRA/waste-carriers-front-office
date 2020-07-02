@@ -14,6 +14,12 @@ Rails.application.routes.draw do
     get   "/fo/users/invitation/accept" => "invitations#edit", as: :accept_user_invitation
     patch "/fo/users/invitation/accept" => "invitations#update", as: :user_invitation
     put   "/fo/users/invitation/accept" => "invitations#update"
+
+    # Used for editing user passwords when they are already logged in
+    resource :passwords,
+             only: %i[edit update],
+             path: "/fo/users/edit-password",
+             path_names: { edit: "" }
   end
 
   get "/fo/registrations/:reg_identifier/certificate", to: "certificates#show", as: :certificate

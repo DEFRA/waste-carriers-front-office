@@ -2,7 +2,7 @@
 
 module DashboardsHelper
   def url_to_change_password
-    "#{Rails.configuration.wcrs_frontend_url}/users/edit"
+    edit_passwords_path
   end
 
   def url_for_new_registration

@@ -13,7 +13,7 @@ RSpec.describe DashboardsHelper, type: :helper do
 
   describe "#url_to_change_password" do
     it "returns the correct URL" do
-      password_url = "http://www.example.com/users/edit"
+      password_url = "/fo/users/edit-password"
       expect(helper.url_to_change_password).to eq(password_url)
     end
   end

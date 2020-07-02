@@ -15,7 +15,13 @@ en:
       models:
         user:
           attributes:
+            current_password:
+              blank: "You must enter your current password"
+              invalid: "You must enter a valid current password"
             password:
               blank: "You must enter a password"
               too_short: "The password must be at least 8 characters long"
               invalid_format: "The password must contain uppercase letters, lowercase letters and numbers"
+            password_confirmation:
+              blank: "You must confirm your password"
+              confirmation: "The password confirmation must match the new password"
