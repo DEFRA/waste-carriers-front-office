@@ -10,7 +10,7 @@ class PasswordsController < ApplicationController
   def update
     if @user.update_with_password(user_params)
       bypass_sign_in(@user)
-      redirect_to root_path
+      redirect_to fo_path
     else
       render "edit"
     end
