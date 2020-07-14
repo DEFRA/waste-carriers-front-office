@@ -55,14 +55,14 @@ RSpec.describe "Passwords", type: :request do
           }
         end
 
-        it "updates the password and redirects to the root" do
+        it "updates the password and redirects to the /fo" do
           old_password = user.password
 
           patch "/fo/users/edit-password", params: params
 
           expect(user.reload.password).to_not eq(old_password)
           expect(response).to have_http_status(302)
-          expect(response).to redirect_to(root_path)
+          expect(response).to redirect_to(fo_path)
         end
       end
 
