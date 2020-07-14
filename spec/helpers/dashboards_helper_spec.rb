@@ -19,9 +19,26 @@ RSpec.describe DashboardsHelper, type: :helper do
   end
 
   describe "#url_for_new_registration" do
-    it "returns the correct URL" do
-      registration_url = "http://www.example.com/registrations/find"
-      expect(helper.url_for_new_registration).to eq(registration_url)
+    before(:each) do
+      allow(WasteCarriersEngine::FeatureToggle).to receive(:active?).with(:new_registration) { feature_enabled }
+    end
+
+    context "when the 'new_registration' feature is enabled" do
+      let(:feature_enabled) { true }
+
+      it "returns the correct URL" do
+        registration_url = "/fo/start"
+        expect(helper.url_for_new_registration).to eq(registration_url)
+      end
+    end
+
+    context "when the 'new_registration' feature is not enabled" do
+      let(:feature_enabled) { false }
+
+      it "returns the correct URL" do
+        registration_url = "http://www.example.com/registrations/start"
+        expect(helper.url_for_new_registration).to eq(registration_url)
+      end
     end
   end
 

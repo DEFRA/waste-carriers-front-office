@@ -6,7 +6,11 @@ module DashboardsHelper
   end
 
   def url_for_new_registration
-    "#{Rails.configuration.wcrs_frontend_url}/registrations/find"
+    if WasteCarriersEngine::FeatureToggle.active?(:new_registration)
+      WasteCarriersEngine::Engine.routes.url_helpers.new_start_form_path
+    else
+      File.join(Rails.configuration.wcrs_frontend_url, "registrations/start")
+    end
   end
 
   def display_view_certificate_link_for?(registration)
