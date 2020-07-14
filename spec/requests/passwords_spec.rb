@@ -55,7 +55,7 @@ RSpec.describe "Passwords", type: :request do
           }
         end
 
-        it "updates the password and redirects to the /fo" do
+        it "updates the password and redirects to /fo" do
           old_password = user.password
 
           patch "/fo/users/edit-password", params: params
