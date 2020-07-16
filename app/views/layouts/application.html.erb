@@ -19,6 +19,7 @@
   <% end %>
 
   <%= stylesheet_link_tag "application", media: "all" %>
+  <%= yield :page_scripts %>
   <%= csrf_meta_tags %>
 <% end %>
 
