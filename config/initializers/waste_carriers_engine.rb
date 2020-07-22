@@ -23,5 +23,13 @@ WasteCarriersEngine.configure do |configuration|
   configuration.airbrake_blocklist = [/password/i, /authorization/i]
 
   configuration.address_host = ENV["ADDRESSBASE_URL"] || "http://localhost:8005"
+
+  # By telling the engine which app it is hosted in it can then make decisions
+  # about any changes in behaviour needed. For example, the payment confirmation
+  # email from Worldpay is only applicable to users in the front-office. This is
+  # because Worldpay does not send one if the merchant code is MOTO. So the
+  # engine can use this flag to determine whether to show payment confirmation
+  # related content
+  configuration.host_is_back_office = false
 end
 WasteCarriersEngine.start_airbrake
