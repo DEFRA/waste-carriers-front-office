@@ -2,7 +2,7 @@
 
 Rails.application.routes.draw do
 
-  root to: "application#redirect_root_to_dashboard"
+  root to: "waste_carriers_engine/start_forms#new"
 
   devise_for :users,
              controllers: { sessions: "sessions" },
@@ -25,6 +25,9 @@ Rails.application.routes.draw do
   get "/fo/registrations/:reg_identifier/certificate", to: "certificates#show", as: :certificate
 
   get "/fo" => "dashboards#index"
+
+  # Redirect old Devise routes
+  get "/users(*all)" => redirect("/fo/users%{all}")
 
   mount WasteCarriersEngine::Engine => "/fo"
 
