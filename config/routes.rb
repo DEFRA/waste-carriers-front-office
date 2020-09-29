@@ -27,7 +27,9 @@ Rails.application.routes.draw do
   get "/fo" => "dashboards#index"
 
   # Redirect old Devise routes
+  # rubocop:disable Style/FormatStringToken
   get "/users(*all)" => redirect("/fo/users%{all}")
+  # rubocop:enable Style/FormatStringToken
 
   mount WasteCarriersEngine::Engine => "/fo"
 
