@@ -1,6 +1,6 @@
 # Waste Carriers Front Office
 
-[![Build Status](https://travis-ci.com/DEFRA/waste-carriers-front-office.svg?branch=main)](https://travis-ci.com/DEFRA/waste-carriers-front-office)
+![Build Status](https://github.com/DEFRA/waste-carriers-front-office/workflows/CI/badge.svg?branch=main)
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=DEFRA_waste-carriers-front-office&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=DEFRA_waste-carriers-front-office)
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=DEFRA_waste-carriers-front-office&metric=coverage)](https://sonarcloud.io/dashboard?id=DEFRA_waste-carriers-front-office)
 [![security](https://hakiri.io/github/DEFRA/waste-carriers-front-office/main.svg)](https://hakiri.io/github/DEFRA/waste-carriers-front-office/main)
