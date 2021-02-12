@@ -103,7 +103,10 @@ GEM
       sixarm_ruby_unaccent (~> 1.1)
       unicode_utils (~> 1.4)
     crass (1.0.6)
-    database_cleaner (1.8.5)
+    database_cleaner-core (2.0.1)
+    database_cleaner-mongoid (2.0.1)
+      database_cleaner-core (~> 2.0.0)
+      mongoid
     defra_ruby_address (0.1.0)
       rest-client (~> 2.0)
     defra_ruby_alert (2.1.1)
@@ -401,7 +404,7 @@ DEPENDENCIES
   aws-healthcheck
   byebug
   cancancan (~> 1.10)
-  database_cleaner
+  database_cleaner-mongoid
   defra_ruby_mocks
   defra_ruby_style
   devise (>= 4.4.3)
