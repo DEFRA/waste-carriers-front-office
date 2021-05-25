@@ -1,5 +1,24 @@
 # Changelog
 
+## [v1.8.2](https://github.com/defra/waste-carriers-front-office/tree/v1.8.2) (2021-05-24)
+
+[Full Changelog](https://github.com/defra/waste-carriers-front-office/compare/v1.8.1...v1.8.2)
+
+**Merged pull requests:**
+
+- Bump nokogiri from 1.11.3 to 1.11.4 [\#684](https://github.com/DEFRA/waste-carriers-front-office/pull/684) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump github\_changelog\_generator from 1.16.2 to 1.16.3 [\#681](https://github.com/DEFRA/waste-carriers-front-office/pull/681) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump waste\_carriers\_engine from `b407cd4` to `322e175` [\#680](https://github.com/DEFRA/waste-carriers-front-office/pull/680) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Remove duplicate Privacy Policy HTML template [\#679](https://github.com/DEFRA/waste-carriers-front-office/pull/679) ([tobyprivett](https://github.com/tobyprivett))
+- Bump mongoid gem to 7.3 [\#678](https://github.com/DEFRA/waste-carriers-front-office/pull/678) ([tobyprivett](https://github.com/tobyprivett))
+- Bump waste\_carriers\_engine from `c4435c9` to `b407cd4` [\#677](https://github.com/DEFRA/waste-carriers-front-office/pull/677) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump waste\_carriers\_engine from `5e1031b` to `c4435c9` [\#676](https://github.com/DEFRA/waste-carriers-front-office/pull/676) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump mongoid from 7.1.7 to 7.1.8 [\#675](https://github.com/DEFRA/waste-carriers-front-office/pull/675) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump factory\_bot\_rails from 6.1.0 to 6.2.0 [\#674](https://github.com/DEFRA/waste-carriers-front-office/pull/674) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump waste\_carriers\_engine from `bc5a0a5` to `5e1031b` [\#673](https://github.com/DEFRA/waste-carriers-front-office/pull/673) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump waste\_carriers\_engine from `7b84563` to `bc5a0a5` [\#672](https://github.com/DEFRA/waste-carriers-front-office/pull/672) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump rails and rdoc: CVE-2021-31799 / 22902 / 22904 [\#670](https://github.com/DEFRA/waste-carriers-front-office/pull/670) ([tobyprivett](https://github.com/tobyprivett))
+
 ## [v1.8.1](https://github.com/defra/waste-carriers-front-office/tree/v1.8.1) (2021-05-04)
 
 [Full Changelog](https://github.com/defra/waste-carriers-front-office/compare/v1.8.0...v1.8.1)
