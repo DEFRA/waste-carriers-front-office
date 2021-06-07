@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/waste-carriers-engine
-  revision: 322e175ad430274e1c7f71537dd045b6a6c1aa40
+  revision: 570a7560248372ce422b4d2c139074460658050e
   branch: main
   specs:
     waste_carriers_engine (0.0.1)
@@ -85,7 +85,7 @@ GEM
       zeitwerk (~> 2.2, >= 2.2.2)
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
-    airbrake (11.0.2)
+    airbrake (11.0.3)
       airbrake-ruby (~> 5.1)
     airbrake-ruby (5.2.0)
       rbtree3 (~> 0.5)
@@ -112,11 +112,11 @@ GEM
       railties (>= 3.0)
     bcrypt (3.1.16)
     bindex (0.8.1)
-    bson (4.12.0)
+    bson (4.12.1)
     builder (3.2.4)
     byebug (11.1.3)
     cancancan (1.17.0)
-    concurrent-ruby (1.1.8)
+    concurrent-ruby (1.1.9)
     console (1.12.0)
       fiber-local
     countries (3.1.0)
@@ -211,7 +211,7 @@ GEM
       rails (>= 3.1)
     high_voltage (3.1.2)
     http-accept (1.7.0)
-    http-cookie (1.0.3)
+    http-cookie (1.0.4)
       domain_name (~> 0.5)
     i18n (1.8.10)
       concurrent-ruby (~> 1.0)
@@ -239,7 +239,7 @@ GEM
     kaminari-mongoid (1.0.1)
       kaminari-core (~> 1.0)
       mongoid
-    loofah (2.9.1)
+    loofah (2.10.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     mail (2.7.1)
@@ -250,7 +250,7 @@ GEM
       mime-types-data (~> 3.2015)
     mime-types-data (3.2021.0225)
     mini_mime (1.1.0)
-    mini_portile2 (2.5.1)
+    mini_portile2 (2.5.3)
     minitest (5.14.4)
     mongo (2.14.0)
       bson (>= 4.8.2, < 5.0.0)
@@ -263,7 +263,7 @@ GEM
     multipart-post (2.1.1)
     netrc (0.11.0)
     nio4r (2.5.7)
-    nokogiri (1.11.4)
+    nokogiri (1.11.7)
       mini_portile2 (~> 2.5.0)
       racc (~> 1.4)
     notifications-ruby-client (5.3.0)
@@ -430,7 +430,7 @@ GEM
       activemodel (>= 6.0.0)
       bindex (>= 0.4.0)
       railties (>= 6.0.0)
-    websocket-driver (0.7.3)
+    websocket-driver (0.7.4)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
     wicked_pdf (2.1.0)
