@@ -102,5 +102,10 @@ module WasteCarriersFrontOffice
     config.application_version = "0.0.1"
     config.application_name = "waste-carriers-front-office"
     config.git_repository_url = "https://github.com/DEFRA/#{config.application_name}"
+
+    # Fix sass compilation error in govuk_frontend:
+    # SassC::SyntaxError: Error: "calc(0px)" is not a number for `max'
+    # https://github.com/alphagov/govuk-frontend/issues/1350
+    config.assets.css_compressor = nil
   end
 end
