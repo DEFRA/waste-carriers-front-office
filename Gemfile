@@ -25,13 +25,15 @@ gem "sdoc", "~> 1.1.0", group: :doc
 # Version 2.0 doesn't support Mongoid, so we're locked to an earlier one
 gem "cancancan", "~> 1.10"
 
+# GOV.UK design system styling
+gem "defra_ruby_template"
+
 # Use Devise for user authentication
 gem "devise", ">= 4.4.3"
 gem "devise_invitable", "~> 1.7.0"
 
-# GOV.UK styling
-gem "govuk_elements_rails", "~> 3.1"
-gem "govuk_template", "~> 0.23"
+# GOV.UK design system forms
+gem "govuk_design_system_formbuilder"
 
 # Use High Voltage for static pages
 gem "high_voltage", "~> 3.0"
