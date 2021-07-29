@@ -1,41 +1,24 @@
-<div class="text">
-  <h1 class="heading-large"><%= t(".header") %></h1>
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-l"><%= t(".header") %></h1>
 
-  <%= form_for(@user, url: passwords_path) do |f| %>
-    <%= render("waste_carriers_engine/shared/errors", object: @user) %>
+    <%= form_for(@user, url: passwords_path, builder: GOVUKDesignSystemFormBuilder::FormBuilder) do |f| %>
+      <%= render partial: "waste_carriers_engine/shared/error_summary", locals: { f: f } %>
 
-    <p>
-      <%= t(".password_guidance") %>
-    </p>
+      <p class="govuk-body">
+        <%= t(".password_guidance") %>
+      </p>
 
-    <div class="form-group <%= "form-group-error" if @user.errors[:current_password].any? %>">
-      <fieldset id="current_password">
-        <%= f.label :current_password, class: "form-label" do %>
-          <%= t(".labels.current_password") %>
-          <span class="form-hint">
-          <%= t(".labels.current_password_hint") %>
-          </span>
-        <% end %>
-        <%= f.password_field :current_password, class: "form-control" %>
-      </fieldset>
-    </div>
+      <%= f.govuk_password_field :current_password,
+          label: { text: t(".labels.current_password") },
+          hint: { text: t(".labels.current_password_hint") } %>
 
-    <div class="form-group <%= "form-group-error" if @user.errors[:password].any? %>">
-      <fieldset id="password">
-        <%= f.label :password, t(".labels.password"), class: "form-label" %>
-        <%= f.password_field :password, class: "form-control" %>
-      </fieldset>
-    </div>
+      <%= f.govuk_password_field :password,
+          label: { text: t(".labels.password") } %>
 
-    <div class="form-group <%= "form-group-error" if @user.errors[:password_confirmation].any? %>">
-      <fieldset id="password_confirmation">
-        <%= f.label :password_confirmation, t(".labels.password_confirmation"), class: "form-label" %>
-        <%= f.password_field :password_confirmation, class: "form-control" %>
-      </fieldset>
-    </div>
+      <%= f.govuk_password_field :password_confirmation,
+          label: { text: t(".labels.password_confirmation") } %>
 
-    <div class="actions">
-      <%= f.submit t(".submit_button"), class: "button" %>
-    </div>
-  <% end %>
-</div>
+      <%= f.govuk_submit t(".submit_button"), class: "button" %>
+    <% end %>
+  </div>
