@@ -1,4 +1,5 @@
 @import "defra_ruby_template";
+@import 'partials/pagination';
 
 input.button-link {
   border: none;
@@ -10,4 +11,8 @@ input.button-link {
 
 img.card-image {
   max-width: 100%;
+}
+
+.user-info {
+  border-top: 10px solid  $govuk-brand-colour;
 }

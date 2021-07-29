@@ -1,90 +1,92 @@
-<div class="grid-row">
-  <div class="column-full">
-    <h1 class="heading-large">
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <h1 class="govuk-heading-l">
       <%= t(".heading") %>
     </h1>
   </div>
 </div>
 
-<div class="grid-row">
-  <div class="column-two-thirds">
-    <p><%= t(".summary.paragraph_1", count: @registrations.count) %></p>
-    <p><%= t(".summary.paragraph_2") %></p>
-    <ul class="list list-bullet">
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <p class="govuk-body"><%= t(".summary.paragraph_1", count: @registrations.count) %></p>
+    <p class="govuk-body"><%= t(".summary.paragraph_2") %></p>
+    <ul class="govuk-list govuk-list--bullet">
       <% t(".summary.list").each do |list_item| %>
         <li><%= list_item %></li>
       <% end %>
     </ul>
-    <p><%= t(".summary.paragraph_3") %></p>
+    <p class="govuk-body"><%= t(".summary.paragraph_3") %></p>
   </div>
 
-  <div class="column-one-third">
-    <div class="user-info">
-      <h2 class="heading-medium">
+  <div class="govuk-grid-column-one-third">
+    <div class="user-info govuk-!-padding-top-4">
+      <h2 class="govuk-heading-m">
         <%= t(".user_info.heading") %>
       </h2>
-      <p>
+      <p class="govuk-body">
         <%= t(".user_info.signed_in_user") %>
-        <span><%= current_user.email %></span>
+        <span class="govuk-!-font-weight-bold"><%= current_user.email %></span>
       </p>
-      <p><%= link_to t(".user_info.change_password_link"), url_to_change_password %></p>
-      <p><%= link_to t(".user_info.sign_out_link"), destroy_user_session_path, class: "button" %></p>
+      <p class="govuk-body"><%= link_to t(".user_info.change_password_link"), url_to_change_password %></p>
+      <p><%= link_to t(".user_info.sign_out_link"), destroy_user_session_path, class: "govuk-button" %></p>
     </div>
   </div>
 </div>
 
 <% if @registrations.present? %>
   <% @registrations.each do |registration| %>
-    <div class="grid-row registration-list" id="<%= registration.reg_identifier %>">
+    <div class="govuk-grid-row registration-list" id="<%= registration.reg_identifier %>">
       <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
-      <div class="column-one-quarter">
-        <ul class="registration-details">
+      <div class="govuk-grid-column-one-quarter">
+        <ul class="govuk-list govuk-list--spaced">
           <li>
-            <span><%= t(".results.labels.company_name") %></span>
+            <span class="govuk-!-font-weight-bold"><%= t(".results.labels.company_name") %></span><br>
             <%= registration.company_name %>
           </li>
           <% if registration.registered_address.present? %>
           <li>
-            <span><%= t(".results.labels.registered_address_postcode") %></span>
+            <span class="govuk-!-font-weight-bold"><%= t(".results.labels.registered_address_postcode") %></span><br>
             <%= registration.registered_address.postcode %>
           </li>
           <% end %>
         </ul>
       </div>
-      <div class="column-one-quarter">
-        <ul class="registration-details">
+      <div class="govuk-grid-column-one-quarter">
+        <ul class="govuk-list govuk-list--spaced">
           <li>
-            <span><%= t(".results.labels.reg_identifier") %></span>
+            <span class="govuk-!-font-weight-bold"><%= t(".results.labels.reg_identifier") %></span><br>
             <%= registration.reg_identifier %>
           </li>
           <li>
-            <span><%= t(".results.labels.status") %></span>
+            <span class="govuk-!-font-weight-bold"><%= t(".results.labels.status") %></span><br>
             <%= registration.metaData.status.titleize %>
           </li>
         </ul>
       </div>
-      <div class="column-one-quarter">
-        <ul class="registration-details">
+      <div class="govuk-grid-column-one-quarter">
+        <ul class="govuk-list govuk-list--spaced">
           <% if registration.metaData.date_registered.present? %>
           <li>
-            <span><%= t(".results.labels.date_registered") %></span>
+            <span class="govuk-!-font-weight-bold"><%= t(".results.labels.date_registered") %></span><br>
             <%= registration.metaData.date_registered.to_date %>
           </li>
           <% end %>
           <% if registration.expires_on.present? %>
           <li>
-            <span><%= t(".results.labels.expires_on") %></span>
+            <span class="govuk-!-font-weight-bold"><%= t(".results.labels.expires_on") %></span><br>
             <%= registration.expires_on.to_date %>
           </li>
           <% end %>
         </ul>
       </div>
-      <div class="column-one-quarter">
-        <span><%= t(".results.labels.actions") %></span>
-        <% if display_no_action_links?(registration) %>
-          <%= t(".results.actions.no_actions") %>
-        <% else %>
-          <ul>
+      <div class="govuk-grid-column-one-quarter">
+        <ul class="govuk-list">
+          <li>
+            <span class="govuk-!-font-weight-bold"><%= t(".results.labels.actions") %></span><br>
+          </li>
+          <% if display_no_action_links?(registration) %>
+            <li><%= t(".results.actions.no_actions") %></li>
+          <% else %>
             <% if display_view_certificate_link_for?(registration) %>
               <li>
                 <%= link_to view_certificate_url(registration) do %>
@@ -100,21 +102,21 @@
               <li>
                 <%= link_to renew_url(registration) do %>
                   <%= t(".results.actions.renew.link_text") %>
-                  <span class="visually-hidden">
+                  <span class="govuk-visually-hidden">
                     <%= t(".results.actions.renew.visually_hidden_text",
                           name: registration.company_name) %>
                   </span>
                 <% end %>
               </li>
             <% end %>
-          </ul>
-        <% end %>
+          <% end %>
+        </ul>
       </div>
     </div>
   <% end %>
 
-  <div class="grid-row">
-    <div class="column-full">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full govuk-body">
       <nav role="navigation" class="pagination" aria-label="Pagination">
         <div class="pagination__summary">
           <%= page_entries_info @registrations, entry_name: "item" %>
@@ -124,13 +126,13 @@
     </div>
   </div>
 <% else %>
-  <p><%= t(".results.no_results") %></p>
+  <p class="govuk-body"><%= t(".results.no_results") %></p>
 <% end %>
 
-<div class="grid-row">
-  <div class="column-full">
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
     <%= link_to t(".new_registration_button"),
                 url_for_new_registration,
-                class: "button" %>
+                class: "govuk-button" %>
   </div>
 </div>
