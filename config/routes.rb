@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-Rails.application.routes.draw do
+Rails.application.routes.draw do # rubocop:disable Metrics/BlockLength
 
   root to: "waste_carriers_engine/start_forms#new"
 
@@ -34,4 +34,12 @@ Rails.application.routes.draw do
   mount WasteCarriersEngine::Engine => "/fo"
 
   mount DefraRubyMocks::Engine => "/fo/mocks"
+
+  resource :cookies, only: [] do
+    member do
+      post :accept_analytics
+      post :reject_analytics
+      post :hide_this_message
+    end
+  end
 end

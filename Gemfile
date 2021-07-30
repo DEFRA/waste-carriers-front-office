@@ -108,6 +108,7 @@ group :development do
 end
 
 group :test do
+  gem "capybara"
   gem "database_cleaner-mongoid"
   gem "factory_bot_rails"
   gem "rails-controller-testing"
