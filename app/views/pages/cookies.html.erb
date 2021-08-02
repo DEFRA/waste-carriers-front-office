@@ -1,88 +1,99 @@
-<% content_for :title, "Cookies" %>
+<% content_for :title, t(".heading") %>
 
-<div class="govuk-grid-row">
-  <div class="govuk-grid-column-two-thirds">
-    <h1 class="govuk-heading-l">Cookies</h1>
-    <p class="govuk-body">The 'Register as a Waste Carrier' service puts small files (known as ‘cookies’) on to your computer.</p>
-    <p class="govuk-body">These cookies are used to:</p>
-
-    <ul class="govuk-list govuk-list--bullet">
-      <li>help us understand how you use the service, so we can make improvements </li>
-      <li>remember what notifications you’ve seen so that you’re not shown them more than once</li>
-      <li>temporarily store the information you enter</li>
-    </ul>
-
-    <p class="govuk-body">Find out more about <a rel="external" href="http://www.aboutcookies.org/">how to manage cookies</a></p>
-
-    <h2 class="govuk-heading-m">Google Analytics cookie</h2>
-
-    <p class="govuk-body">We use Google Analytics to collect information about how you use the service. This information helps us to improve the service.</p>
-    <p class="govuk-body">The Google analytics cookie collects and stores information about:</p>
-
-    <ul class="govuk-list govuk-list--bullet">
-      <li>the pages you visit - how long you spend on each page</li>
-      <li>how you got to the service</li>
-      <li>what you click on while you’re using the service</li>
-    </ul>
-
-    <table class="govuk-table" role="presentation">
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Purpose</th>
-          <th>Expires</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>_ga</td>
-          <td>Used to identify unique users and inform referring sites, visitor and session counts</td>
-          <td>2 years</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <p class="govuk-body">Google isn't allowed to use or share our analytics data with anyone.</p>
-
-    <h2 class="govuk-heading-m">Session cookie</h2>
-
-    <p class="govuk-body">We store session cookies on your computer to help keep your information secure while you use the service.</p>
-
-    <table class="govuk-table" role="presentation">
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Purpose</th>
-          <th>Expires</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>_registrations_session</td>
-          <td>Used for session management and authentication</td>
-          <td>After 20 minutes of inactivity, or when you close your browser</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <h2 class="govuk-heading-m">Introductory message cookie</h2>
-    <p class="govuk-body">When you first use the service, you may see a cookie message appear at the top of the screen. Once you’ve seen the message, we store a cookie on your computer so it knows not to show it again. </p>
-
-    <table class="govuk-table" role="presentation">
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Purpose</th>
-          <th>Expires</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>seen_cookie_message</td>
-          <td>Stores a message to let us know that you have seen our cookie message</td>
-          <td>1 month</td>
-        </tr>
-      </tbody>
-    </table>
+<% if params[:cookies_updated] %>
+  <div class="govuk-notification-banner govuk-notification-banner--success" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+    <div class="govuk-notification-banner__header">
+      <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+        <%= t('.updated.success') %>
+      </h2>
+    </div>
+    <div class="govuk-notification-banner__content">
+      <p class="govuk-notification-banner__heading">
+        <%= t('.updated.you_set_your_cookie_preferences') %>
+        <%= link_to t('.updated.go_back_to_the_page_you_were_looking_at'), root_path %>
+      </p>
+    </div>
   </div>
-</div>
+<% end %>
+
+
+<%= form_tag "/fo/cookies", method: :patch do %>
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-l"><%= t('.heading') %></h1>
+      <p class="govuk-body"><%= t('.text_1') %></p>
+      <p class="govuk-body"><%= t('.text_2') %></p>
+      <h2 class="govuk-heading-m"><%= t('.cookie_settings.subheading') %></h2>
+      <p class="govuk-body"><%= t('.cookie_settings.text_1') %></p>
+      <div class="govuk-form-group">
+      <fieldset class="govuk-fieldset">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+          <h2 class="govuk-body govuk-!-font-weight-bold"><%= t('.analytics_cookies.subheading') %></h2>
+          <p class="govuk-body"><%= t('.analytics_cookies.text_1') %></p>
+          <p class="govuk-body"><%= t('.analytics_cookies.text_2') %></p>
+          <ul class="govuk-list govuk-list--bullet">
+            <li><%= t('.analytics_cookies.list_item_1') %></li>
+            <li><%= t('.analytics_cookies.list_item_2') %></li>
+            <li><%= t('.analytics_cookies.list_item_3') %></li>
+          </ul>
+        </legend>
+        <div class="govuk-radios">
+          <div class="govuk-radios__item">
+            <%= radio_button_tag :analytics, :accept,
+                (cookies[:cookies_policy] && cookies[:cookies_policy] == "analytics_accepted"),
+                class: "govuk-radios__input" %>
+            <%= label_tag :analytics_accept,
+                t('.analytics_cookies.radio_button_label.accept'),
+                class: "govuk-label govuk-radios__label" %>
+          </div>
+          <div class="govuk-radios__item">
+            <%= radio_button_tag :analytics, :reject,
+                !(cookies[:cookies_policy] && cookies[:cookies_policy] == "analytics_accepted"),
+                class: "govuk-radios__input" %>
+            <%= label_tag :analytics_reject,
+                t('.analytics_cookies.radio_button_label.reject'),
+                class: "govuk-label govuk-radios__label" %>
+          </div>
+        </div>
+      </fieldset>
+    </div>
+    <h2 class="govuk-heading-m"><%= t('.essential_cookies.subheading') %></h2>
+    <p class="govuk-body"><%= t('.essential_cookies.text_1') %></p>
+    <p class="govuk-body"><%= t('.essential_cookies.text_2') %></p>
+    <table class="govuk-table">
+      <caption class="govuk-table__caption govuk-table__caption--m">
+        <%= t('.cookies_we_use.subheading') %>
+      </caption>
+      <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th scope="col" class="govuk-table__header">
+            <%= t('.cookies_we_use.name') %>
+          </th>
+          <th scope="col" class="govuk-table__header">
+            <%= t('.cookies_we_use.purpose') %>
+          </th>
+          <th scope="col" class="govuk-table__header">
+            <%= t('.cookies_we_use.expires') %>
+          </th>
+        </tr>
+      </thead>
+      <tbody class="govuk-table__body">
+        <% %i{ registrations_session cookies_policy cookies_preferences_set }.each do |cookie| %>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">
+              <%= t(".cookies_we_use.#{cookie}.name") %>
+            </td>
+            <td class="govuk-table__cell">
+              <%= t(".cookies_we_use.#{cookie}.purpose") %>
+            </td>
+            <td class="govuk-table__cell">
+              <%= t(".cookies_we_use.#{cookie}.expires") %>
+            </td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+    <p class="govuk-body"><%= link_to t('.find_out_more.text'), t('.find_out_more.url') %></p>
+    <%= submit_tag t('.submit_button'), class: "govuk-button" %>
+  </div>
+<% end %>
