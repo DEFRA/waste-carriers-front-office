@@ -3,13 +3,13 @@
 require "rails_helper"
 
 RSpec.describe "Cookies", type: :feature do
-  before { ENV["GOOGLE_TAGMANAGER_ID"] = "GA_ID" }
-
   let(:cookie_banner_div) { ".govuk-cookie-banner" }
   let(:google_analytics_render_tag) { "function(w,d,s,l,i)" }
 
+  before { ENV["GOOGLE_TAGMANAGER_ID"] = "GA_ID" }
+
   scenario "User accepts analytics cookies" do
-    visit fo_path
+    visit "/"
     expect(page).to have_link("View cookies", href: "/pages/cookies")
 
     click_on "Accept analytics cookies"
@@ -24,12 +24,22 @@ RSpec.describe "Cookies", type: :feature do
     expect(page.source).to have_text(google_analytics_render_tag)
   end
 
-  scenario "User rejects analytics cookies" do
-    visit fo_path
+  scenario "User rejects analytics cookies and toggles their selection" do
+    visit "/"
     click_on "Reject analytics cookies"
     expect(page).to have_text("You’ve rejected analytics cookies")
+    expect(page.source).not_to have_text(google_analytics_render_tag)
 
-    click_on "Hide this message"
+    click_on "change your cookie settings"
+    expect(page).to have_css("h1", text: "Cookie settings")
+
+    choose "Use cookies that measure my website use"
+    click_on "Save and continue"
+    expect(page.source).to have_text(google_analytics_render_tag)
+    expect(page).to have_text("You’ve set your cookie preferences.")
+
+    choose "Do not use cookies that measure my website use"
+    click_on "Save and continue"
     expect(page.source).not_to have_text(google_analytics_render_tag)
   end
 end

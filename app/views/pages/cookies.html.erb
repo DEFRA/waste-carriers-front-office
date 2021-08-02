@@ -1,25 +1,23 @@
 <% content_for :title, t(".heading") %>
 
-<% if params[:cookies_updated] %>
-  <div class="govuk-notification-banner govuk-notification-banner--success" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
-    <div class="govuk-notification-banner__header">
-      <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
-        <%= t('.updated.success') %>
-      </h2>
-    </div>
-    <div class="govuk-notification-banner__content">
-      <p class="govuk-notification-banner__heading">
-        <%= t('.updated.you_set_your_cookie_preferences') %>
-        <%= link_to t('.updated.go_back_to_the_page_you_were_looking_at'), root_path %>
-      </p>
-    </div>
-  </div>
-<% end %>
-
-
-<%= form_tag "/fo/cookies", method: :patch do %>
+<%= form_tag "/cookies", method: :patch do %>
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
+      <% if params[:cookies_updated] %>
+        <div class="govuk-notification-banner govuk-notification-banner--success" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+          <div class="govuk-notification-banner__header">
+            <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+              <%= t('.updated.success') %>
+            </h2>
+          </div>
+          <div class="govuk-notification-banner__content">
+            <p class="govuk-notification-banner__heading">
+              <%= t('.updated.you_set_your_cookie_preferences') %>
+            </p>
+          </div>
+        </div>
+      <% end %>
+
       <h1 class="govuk-heading-l"><%= t('.heading') %></h1>
       <p class="govuk-body"><%= t('.text_1') %></p>
       <p class="govuk-body"><%= t('.text_2') %></p>

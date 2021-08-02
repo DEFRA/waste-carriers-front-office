@@ -35,7 +35,7 @@ Rails.application.routes.draw do # rubocop:disable Metrics/BlockLength
 
   mount DefraRubyMocks::Engine => "/fo/mocks"
 
-  resource :cookies, only: [:post] do
+  resource :cookies, only: [:update] do
     member do
       post :accept_analytics
       post :reject_analytics
