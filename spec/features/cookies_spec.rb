@@ -10,7 +10,7 @@ RSpec.describe "Cookies", type: :feature do
 
   scenario "User accepts analytics cookies" do
     visit "/"
-    expect(page).to have_link("View cookies", href: "/pages/cookies")
+    expect(page).to have_link("View cookies", href: "/fo/pages/cookies")
 
     click_on "Accept analytics cookies"
     expect(page).to have_text("You’ve accepted analytics cookies")
