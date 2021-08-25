@@ -76,7 +76,7 @@
         </tr>
       </thead>
       <tbody class="govuk-table__body">
-        <% %i{ registrations_session cookies_policy cookies_preferences_set }.each do |cookie| %>
+        <% %i{ ga gid cookies_policy cookies_preferences_set registrations_session }.each do |cookie| %>
           <tr class="govuk-table__row">
             <td class="govuk-table__cell">
               <%= t(".cookies_we_use.#{cookie}.name") %>
