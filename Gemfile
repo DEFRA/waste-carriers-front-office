@@ -11,8 +11,8 @@ gem "jquery-rails"
 # Use MongoDB as the database, and mongoid as our ORM for it. This version of
 # mongoid supports MongoDb 3.6
 gem "mongoid", "~> 7.3"
-# Bundle edge Rails instead: gem "rails", github: "rails/rails"
-gem "rails", ">= 6.0.3.7"
+
+gem "rails", ">= 6.1.4"
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem "turbolinks"
 # Use Uglifier as compressor for JavaScript assets
