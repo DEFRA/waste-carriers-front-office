@@ -26,7 +26,7 @@
       <div class="govuk-form-group">
       <fieldset class="govuk-fieldset">
         <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
-          <h2 class="govuk-body govuk-!-font-weight-bold"><%= t('.analytics_cookies.subheading') %></h2>
+          <h2 class="govuk-heading-m"><%= t('.analytics_cookies.subheading') %></h2>
           <p class="govuk-body"><%= t('.analytics_cookies.text_1') %></p>
           <p class="govuk-body"><%= t('.analytics_cookies.text_2') %></p>
           <ul class="govuk-list govuk-list--bullet">
@@ -55,7 +55,37 @@
         </div>
       </fieldset>
     </div>
-    <h2 class="govuk-body govuk-!-font-weight-bold"><%= t('.essential_cookies.subheading') %></h2>
+    <table class="govuk-table" aria-label="<%= t('.analytics_cookies.subheading') %>">
+      <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th scope="col" class="govuk-table__header">
+            <%= t('.cookies_we_use.name') %>
+          </th>
+          <th scope="col" class="govuk-table__header">
+            <%= t('.cookies_we_use.purpose') %>
+          </th>
+          <th scope="col" class="govuk-table__header">
+            <%= t('.cookies_we_use.expires') %>
+          </th>
+        </tr>
+      </thead>
+      <tbody class="govuk-table__body">
+        <% %i{ ga gid }.each do |cookie| %>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">
+              <%= t(".cookies_we_use.#{cookie}.name") %>
+            </td>
+            <td class="govuk-table__cell">
+              <%= t(".cookies_we_use.#{cookie}.purpose") %>
+            </td>
+            <td class="govuk-table__cell">
+              <%= t(".cookies_we_use.#{cookie}.expires") %>
+            </td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+    <h2 class="govuk-heading-m"><%= t('.essential_cookies.subheading') %></h2>
     <p class="govuk-body"><%= t('.essential_cookies.text_1') %></p>
     <p class="govuk-body"><%= t('.essential_cookies.text_2') %></p>
     <table class="govuk-table">
@@ -76,7 +106,7 @@
         </tr>
       </thead>
       <tbody class="govuk-table__body">
-        <% %i{ ga gid cookies_policy cookies_preferences_set registrations_session }.each do |cookie| %>
+        <% %i{ cookies_policy cookies_preferences_set registrations_session }.each do |cookie| %>
           <tr class="govuk-table__row">
             <td class="govuk-table__cell">
               <%= t(".cookies_we_use.#{cookie}.name") %>
