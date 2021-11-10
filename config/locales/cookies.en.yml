@@ -38,7 +38,7 @@ en:
         registrations_session:
           name: _registrations_session
           purpose: Used for session management and authentication
-          expires: After 20 minutes of inactivity, or when you close your browser
+          expires: When you close your browser
         cookies_policy:
           name: cookies_policy
           purpose: Saves your cookie consent settings
