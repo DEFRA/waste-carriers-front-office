@@ -34,12 +34,12 @@ RSpec.describe "Cookies", type: :feature do
     expect(page).to have_css("h1", text: "Cookie settings")
 
     choose "Use cookies that measure my website use"
-    click_on "Save and continue"
+    click_on "Save changes"
     expect(page.source).to have_text(google_analytics_render_tag)
     expect(page).to have_text("You’ve set your cookie preferences.")
 
     choose "Do not use cookies that measure my website use"
-    click_on "Save and continue"
+    click_on "Save changes"
     expect(page.source).not_to have_text(google_analytics_render_tag)
   end
 end
