@@ -30,7 +30,7 @@ class CookiesController < ApplicationController
     end
     write_cookie(:cookies_preferences_set, true)
 
-    redirect_to "/fo/pages/cookies?cookies_updated=true"
+    redirect_to edit_cookies_path(cookies_updated: true)
   end
 
   protected

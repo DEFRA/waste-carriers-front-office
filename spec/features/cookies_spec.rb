@@ -16,7 +16,7 @@ RSpec.describe "Cookies", type: :feature do
     expect(page).to have_text("You’ve accepted analytics cookies")
 
     within cookie_banner_div do
-      expect(page).to have_link("change your cookie settings", href: "/fo/pages/cookies")
+      expect(page).to have_link("change your cookie settings", href: "/cookies/edit")
       click_on "Hide this message"
     end
 
@@ -31,7 +31,7 @@ RSpec.describe "Cookies", type: :feature do
     expect(page.source).not_to have_text(google_analytics_render_tag)
 
     click_on "change your cookie settings"
-    expect(page).to have_css("h1", text: "Cookie settings")
+    expect(page).to have_css("h1", text: "Cookie settings on Register as a waste carrier")
 
     choose "Use cookies that measure my website use"
     click_on "Save changes"
