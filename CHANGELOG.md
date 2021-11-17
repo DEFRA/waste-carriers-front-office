@@ -1,5 +1,27 @@
 # Changelog
 
+## [v1.9.1](https://github.com/defra/waste-carriers-front-office/tree/v1.9.1) (2021-11-16)
+
+[Full Changelog](https://github.com/defra/waste-carriers-front-office/compare/v1.9.0...v1.9.1)
+
+**Implemented enhancements:**
+
+- Update Cookies page [\#736](https://github.com/DEFRA/waste-carriers-front-office/pull/736) ([tobyprivett](https://github.com/tobyprivett))
+- Update sesssion cookie expiration text [\#735](https://github.com/DEFRA/waste-carriers-front-office/pull/735) ([tobyprivett](https://github.com/tobyprivett))
+- Update cookies page [\#734](https://github.com/DEFRA/waste-carriers-front-office/pull/734) ([tobyprivett](https://github.com/tobyprivett))
+- Open footer links in same window [\#733](https://github.com/DEFRA/waste-carriers-front-office/pull/733) ([tobyprivett](https://github.com/tobyprivett))
+
+**Merged pull requests:**
+
+- Bump waste\_carriers\_engine from `79a25e9` to `300b012` [\#732](https://github.com/DEFRA/waste-carriers-front-office/pull/732) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump waste\_carriers\_engine from `060715c` to `79a25e9` [\#731](https://github.com/DEFRA/waste-carriers-front-office/pull/731) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump capybara from 3.35.3 to 3.36.0 [\#730](https://github.com/DEFRA/waste-carriers-front-office/pull/730) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump waste\_carriers\_engine from `bb96b1f` to `060715c` [\#729](https://github.com/DEFRA/waste-carriers-front-office/pull/729) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump waste\_carriers\_engine from `8ff4e8a` to `bb96b1f` [\#728](https://github.com/DEFRA/waste-carriers-front-office/pull/728) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Update Ubuntu version in CI [\#727](https://github.com/DEFRA/waste-carriers-front-office/pull/727) ([irisfaraway](https://github.com/irisfaraway))
+- Bump govuk\_design\_system\_formbuilder from 2.7.4 to 2.7.5 [\#726](https://github.com/DEFRA/waste-carriers-front-office/pull/726) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump nokogiri from 1.12.4 to 1.12.5 [\#725](https://github.com/DEFRA/waste-carriers-front-office/pull/725) ([dependabot[bot]](https://github.com/apps/dependabot))
+
 ## [v1.9.0](https://github.com/defra/waste-carriers-front-office/tree/v1.9.0) (2021-09-13)
 
 [Full Changelog](https://github.com/defra/waste-carriers-front-office/compare/v1.8.2...v1.9.0)
