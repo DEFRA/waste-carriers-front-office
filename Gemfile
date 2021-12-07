@@ -98,6 +98,8 @@ group :development, :test do
   gem "dotenv-rails"
   # Project uses RSpec as its test framework
   gem "rspec-rails"
+  # Travel to a specific time. Used to set timestamps when we seed data
+  gem "timecop"
 end
 
 group :development do

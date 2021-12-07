@@ -6,7 +6,7 @@
 # This ensures a seed which is always intended to be in a time-sensitive state
 # remains in that state without having to manually update the dates.
 
-def registered_date(flag)
+def registered_date(flag) # rubocop:disable Metrics/AbcSize
   # Resetting variables here so it's easier to read calculations below
   expires_after = Rails.configuration.expires_after
   renewal_window = Rails.configuration.renewal_window
@@ -20,7 +20,11 @@ def registered_date(flag)
     # Registration should be halfway through the renewal window
     in_renewal_window: expires_after.years.ago + (renewal_window / 2).months,
     # Registration is not yet in the renewal window
-    outside_renewal_window: expires_after.years.ago + (renewal_window * 2).months
+    outside_renewal_window: expires_after.years.ago + (renewal_window * 2).months,
+    # Registration is seven years old
+    seven_years_old: 7.years.ago,
+    # Registration is eight years old
+    eight_years_old: 8.years.ago
   }
 
   dates[flag.to_sym] || Date.today
@@ -67,7 +71,9 @@ def seed_registrations
   sorted_seeds = seeds.select { |s| s.key?("regIdentifier") } + seeds.reject { |s| s.key?("regIdentifier") }
 
   sorted_seeds.each do |seed|
+    Timecop.freeze(seed["metaData"]["lastModified"])
     WasteCarriersEngine::Registration.find_or_create_by(seed.except("_id"))
+    Timecop.return
   end
 end
 
