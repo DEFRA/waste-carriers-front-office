@@ -79,6 +79,9 @@ gem "github_changelog_generator", require: false
 # Test with `curl -I http://localhost:3002/healthcheck`
 gem "aws-healthcheck"
 
+# Travel to a specific time. Used to set timestamps when we seed data
+gem "timecop"
+
 group :production do
   # Web application server that replaces webrick. It handles HTTP requests,
   # manages processes and resources, and enables administration, monitoring
@@ -98,8 +101,6 @@ group :development, :test do
   gem "dotenv-rails"
   # Project uses RSpec as its test framework
   gem "rspec-rails"
-  # Travel to a specific time. Used to set timestamps when we seed data
-  gem "timecop"
 end
 
 group :development do
