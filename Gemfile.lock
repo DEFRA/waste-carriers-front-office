@@ -473,7 +473,6 @@ DEPENDENCIES
   jquery-rails
   kaminari (~> 1.1)
   kaminari-mongoid (~> 1.0)
-  loofah (= 2.2.1)
   mongoid (~> 7.3)
   passenger (~> 5.0, >= 5.0.30)
   rails (>= 6.1.4)
