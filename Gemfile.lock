@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/waste-carriers-engine
-  revision: 61bb0a6b6355f6a58650db3c46d8cf15c3298246
+  revision: 95719d500941fb9ca3dc0737f892aa81f55d1fb7
   branch: main
   specs:
     waste_carriers_engine (0.0.1)
@@ -116,7 +116,7 @@ GEM
       railties (>= 3.0)
     bcrypt (3.1.16)
     bindex (0.8.1)
-    bson (4.12.1)
+    bson (4.13.0)
     builder (3.2.4)
     byebug (11.1.3)
     cancancan (1.17.0)
@@ -257,7 +257,7 @@ GEM
     kaminari-mongoid (1.0.1)
       kaminari-core (~> 1.0)
       mongoid
-    loofah (2.13.0)
+    loofah (2.3.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     mail (2.7.1)
@@ -449,7 +449,7 @@ GEM
       activesupport
     xpath (3.2.0)
       nokogiri (~> 1.8)
-    zeitwerk (2.5.1)
+    zeitwerk (2.5.2)
 
 PLATFORMS
   ruby
