@@ -82,6 +82,10 @@ gem "aws-healthcheck"
 # Travel to a specific time. Used to set timestamps when we seed data
 gem "timecop"
 
+# Dependabot keeps trying to bump loofah for a version 2.13, which has
+# a security vulnerability: CVE-2018-8048
+gem "loofah", "2.2.1"
+
 group :production do
   # Web application server that replaces webrick. It handles HTTP requests,
   # manages processes and resources, and enables administration, monitoring
