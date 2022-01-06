@@ -49,7 +49,7 @@ gem "wicked_pdf"
 # Use the waste carriers engine for the user journey
 gem "waste_carriers_engine",
     git: "https://github.com/DEFRA/waste-carriers-engine",
-    branch: "main"
+    branch: "feature/companies-house"
 
 # Use the defra ruby mocks engine to add support for mocking external services
 # in live environment. Essentially with this gem added and enabled the app
@@ -59,7 +59,13 @@ gem "waste_carriers_engine",
 # With the environment properly configured, when any app in an environment needs
 # to call Companies House, instead it will call this app which will mock the end
 # point and return the response expected.
-gem "defra_ruby_mocks"
+gem "defra_ruby_mocks",
+    git: "https://github.com/DEFRA/defra-ruby-mocks",
+    branch: "feature/companies-house"
+
+gem "defra_ruby_validators",
+    git: "https://github.com/DEFRA/defra-ruby-validators",
+    branch: "feature/company-type-validation"
 
 # Allows us to automatically generate the change log from the tags, issues,
 # labels and pull requests on GitHub. Added as a dependency so all dev's have
