@@ -48,7 +48,7 @@ RSpec.describe "Root", type: :request do
         get "/fo/#{registration.reg_identifier}/renew"
 
         expect(response).to have_http_status(200)
-        expect(response.body).to include("You are about to renew your registration")
+        expect(response.body).to match(/You are about to renew registration CBDU\d+/)
       end
     end
   end
