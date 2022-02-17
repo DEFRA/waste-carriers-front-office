@@ -1,5 +1,47 @@
 # Changelog
 
+## [v1.10.1](https://github.com/defra/waste-carriers-front-office/tree/v1.10.1) (2022-02-17)
+
+[Full Changelog](https://github.com/defra/waste-carriers-front-office/compare/v1.9.1...v1.10.1)
+
+**Implemented enhancements:**
+
+- Feature/accessibility page title [\#770](https://github.com/DEFRA/waste-carriers-front-office/pull/770) ([Beckyrose200](https://github.com/Beckyrose200))
+- Update seeds to include 'deletable' registrations [\#745](https://github.com/DEFRA/waste-carriers-front-office/pull/745) ([tobyprivett](https://github.com/tobyprivett))
+
+**Merged pull requests:**
+
+- Bump waste\_carriers\_engine from `13d4b80` to `7343d85` [\#787](https://github.com/DEFRA/waste-carriers-front-office/pull/787) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump waste\_carriers\_engine from `dab486b` to `13d4b80` [\#786](https://github.com/DEFRA/waste-carriers-front-office/pull/786) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump waste\_carriers\_engine from `b8581a5` to `dab486b` [\#785](https://github.com/DEFRA/waste-carriers-front-office/pull/785) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump govuk\_design\_system\_formbuilder from 3.0.1 to 3.0.2 [\#784](https://github.com/DEFRA/waste-carriers-front-office/pull/784) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump rails from 6.1.4.4 to 6.1.4.6 [\#783](https://github.com/DEFRA/waste-carriers-front-office/pull/783) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump waste\_carriers\_engine from `4dc8952` to `b8581a5` [\#782](https://github.com/DEFRA/waste-carriers-front-office/pull/782) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump waste\_carriers\_engine from `7b3ae1f` to `4dc8952` [\#781](https://github.com/DEFRA/waste-carriers-front-office/pull/781) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump waste\_carriers\_engine from `e3df518` to `7b3ae1f` [\#778](https://github.com/DEFRA/waste-carriers-front-office/pull/778) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump waste\_carriers\_engine from `1daec9d` to `e3df518` [\#777](https://github.com/DEFRA/waste-carriers-front-office/pull/777) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump waste\_carriers\_engine from `ebb95a9` to `1daec9d` [\#776](https://github.com/DEFRA/waste-carriers-front-office/pull/776) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump rspec-rails from 5.0.2 to 5.1.0 [\#775](https://github.com/DEFRA/waste-carriers-front-office/pull/775) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump waste\_carriers\_engine from `c2d1236` to `ebb95a9` [\#774](https://github.com/DEFRA/waste-carriers-front-office/pull/774) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump govuk\_design\_system\_formbuilder from 3.0.0 to 3.0.1 [\#772](https://github.com/DEFRA/waste-carriers-front-office/pull/772) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump waste\_carriers\_engine from `d50d2cc` to `c2d1236` [\#771](https://github.com/DEFRA/waste-carriers-front-office/pull/771) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump waste\_carriers\_engine from `2d8d994` to `27db2df` [\#768](https://github.com/DEFRA/waste-carriers-front-office/pull/768) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump waste\_carriers\_engine from `4ed6c05` to `2d8d994` [\#767](https://github.com/DEFRA/waste-carriers-front-office/pull/767) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump defra\_ruby\_mocks from 2.1.0 to 2.2.0 [\#764](https://github.com/DEFRA/waste-carriers-front-office/pull/764) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump govuk\_design\_system\_formbuilder from 2.8.0 to 3.0.0 [\#763](https://github.com/DEFRA/waste-carriers-front-office/pull/763) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump waste\_carriers\_engine from `95719d5` to `4ed6c05` [\#760](https://github.com/DEFRA/waste-carriers-front-office/pull/760) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump CI version of Brakeman to 5.2.0 [\#759](https://github.com/DEFRA/waste-carriers-front-office/pull/759) ([tobyprivett](https://github.com/tobyprivett))
+- Bump gem dependencies and pin Loofah [\#757](https://github.com/DEFRA/waste-carriers-front-office/pull/757) ([tobyprivett](https://github.com/tobyprivett))
+- Enable Brakeman for security scanning [\#752](https://github.com/DEFRA/waste-carriers-front-office/pull/752) ([tobyprivett](https://github.com/tobyprivett))
+- Bump rails and assorted gems [\#751](https://github.com/DEFRA/waste-carriers-front-office/pull/751) ([tobyprivett](https://github.com/tobyprivett))
+- Ensure Timecop can be run in production mode [\#746](https://github.com/DEFRA/waste-carriers-front-office/pull/746) ([tobyprivett](https://github.com/tobyprivett))
+- Bump govuk\_design\_system\_formbuilder from 2.7.6 to 2.8.0 [\#744](https://github.com/DEFRA/waste-carriers-front-office/pull/744) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump waste\_carriers\_engine from `96ac7ad` to `2b37dd2` [\#743](https://github.com/DEFRA/waste-carriers-front-office/pull/743) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump waste\_carriers\_engine from `300b012` to `96ac7ad` [\#742](https://github.com/DEFRA/waste-carriers-front-office/pull/742) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump spring from 2.1.1 to 3.1.1 [\#741](https://github.com/DEFRA/waste-carriers-front-office/pull/741) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump web-console from 4.1.0 to 4.2.0 [\#738](https://github.com/DEFRA/waste-carriers-front-office/pull/738) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump govuk\_design\_system\_formbuilder from 2.7.5 to 2.7.6 [\#737](https://github.com/DEFRA/waste-carriers-front-office/pull/737) ([dependabot[bot]](https://github.com/apps/dependabot))
+
 ## [v1.9.1](https://github.com/defra/waste-carriers-front-office/tree/v1.9.1) (2021-11-16)
 
 [Full Changelog](https://github.com/defra/waste-carriers-front-office/compare/v1.9.0...v1.9.1)
