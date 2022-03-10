@@ -1,5 +1,21 @@
 # Changelog
 
+## [v1.11.1](https://github.com/defra/waste-carriers-front-office/tree/v1.11.1) (2022-03-10)
+
+[Full Changelog](https://github.com/defra/waste-carriers-front-office/compare/v1.10.1...v1.11.1)
+
+**Merged pull requests:**
+
+- Bump waste\_carriers\_engine from `8a1801d` to `ce60e37` [\#800](https://github.com/DEFRA/waste-carriers-front-office/pull/800) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump rails from 6.1.4.6 to 6.1.4.7 [\#799](https://github.com/DEFRA/waste-carriers-front-office/pull/799) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump waste\_carriers\_engine from `85be431` to `8a1801d` [\#798](https://github.com/DEFRA/waste-carriers-front-office/pull/798) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump timecop from 0.9.4 to 0.9.5 [\#796](https://github.com/DEFRA/waste-carriers-front-office/pull/796) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump rspec-rails from 5.1.0 to 5.1.1 [\#795](https://github.com/DEFRA/waste-carriers-front-office/pull/795) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump waste\_carriers\_engine from `b7566f0` to `85be431` [\#794](https://github.com/DEFRA/waste-carriers-front-office/pull/794) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump waste\_carriers\_engine from `7343d85` to `b7566f0` [\#792](https://github.com/DEFRA/waste-carriers-front-office/pull/792) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump nokogiri from 1.13.1 to 1.13.3 [\#790](https://github.com/DEFRA/waste-carriers-front-office/pull/790) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump mongoid from 7.3.3 to 7.3.4 [\#788](https://github.com/DEFRA/waste-carriers-front-office/pull/788) ([dependabot[bot]](https://github.com/apps/dependabot))
+
 ## [v1.10.1](https://github.com/defra/waste-carriers-front-office/tree/v1.10.1) (2022-02-17)
 
 [Full Changelog](https://github.com/defra/waste-carriers-front-office/compare/v1.9.1...v1.10.1)
