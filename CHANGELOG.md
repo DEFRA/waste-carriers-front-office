@@ -1,5 +1,27 @@
 # Changelog
 
+## [v1.12.1](https://github.com/defra/waste-carriers-front-office/tree/v1.12.1) (2022-05-06)
+
+[Full Changelog](https://github.com/defra/waste-carriers-front-office/compare/v1.11.2...v1.12.1)
+
+**Merged pull requests:**
+
+- Bump waste\_carriers\_engine from `c49bb02` to `e466f9c` [\#852](https://github.com/DEFRA/waste-carriers-front-office/pull/852) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Upgrade rails and wicked\_pdf [\#851](https://github.com/DEFRA/waste-carriers-front-office/pull/851) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
+- Bump waste\_carriers\_engine from `67421f3` to `d16f649` [\#848](https://github.com/DEFRA/waste-carriers-front-office/pull/848) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump waste\_carriers\_engine from `b531662` to `67421f3` [\#847](https://github.com/DEFRA/waste-carriers-front-office/pull/847) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump waste\_carriers\_engine from `539477f` to `b531662` [\#846](https://github.com/DEFRA/waste-carriers-front-office/pull/846) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump rspec-rails from 5.1.1 to 5.1.2 [\#842](https://github.com/DEFRA/waste-carriers-front-office/pull/842) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Revert rails to v6.1.5 [\#841](https://github.com/DEFRA/waste-carriers-front-office/pull/841) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
+- Bump waste\_carriers\_engine from `057fd15` to `16bcfd2` [\#840](https://github.com/DEFRA/waste-carriers-front-office/pull/840) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump waste\_carriers\_engine from `2ed87ad` to `057fd15` [\#839](https://github.com/DEFRA/waste-carriers-front-office/pull/839) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump waste\_carriers\_engine from `6e7d336` to `2ed87ad` [\#838](https://github.com/DEFRA/waste-carriers-front-office/pull/838) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump rails from 6.1.5 to 6.1.5.1 [\#837](https://github.com/DEFRA/waste-carriers-front-office/pull/837) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Force GitHub to run apt-get update before installing dependencies [\#836](https://github.com/DEFRA/waste-carriers-front-office/pull/836) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
+- Bump waste\_carriers\_engine from `539477f` to `6e7d336` [\#835](https://github.com/DEFRA/waste-carriers-front-office/pull/835) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump wicked\_pdf from 2.1.0 to 2.6.0 [\#834](https://github.com/DEFRA/waste-carriers-front-office/pull/834) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump rspec-rails from 5.1.1 to 5.1.2 [\#833](https://github.com/DEFRA/waste-carriers-front-office/pull/833) ([dependabot[bot]](https://github.com/apps/dependabot))
+
 ## [v1.11.2](https://github.com/defra/waste-carriers-front-office/tree/v1.11.2) (2022-04-12)
 
 [Full Changelog](https://github.com/defra/waste-carriers-front-office/compare/v1.11.1...v1.11.2)
