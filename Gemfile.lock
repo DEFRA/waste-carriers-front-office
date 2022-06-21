@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/waste-carriers-engine
-  revision: aaea77db6a2be7b7770215d69bf6a15b582c2846
+  revision: d105246331c3c092ea7cd4644e55d9901acdb44d
   branch: govpay
   specs:
     waste_carriers_engine (0.0.1)
@@ -271,7 +271,7 @@ GEM
     mime-types-data (3.2022.0105)
     mini_mime (1.1.2)
     mini_portile2 (2.8.0)
-    minitest (5.16.0)
+    minitest (5.16.1)
     mongo (2.17.1)
       bson (>= 4.8.2, < 5.0.0)
     mongoid (7.4.0)
@@ -428,7 +428,7 @@ GEM
       concurrent-ruby (~> 1.0)
     uglifier (4.2.0)
       execjs (>= 0.3.0, < 3)
-    uk_postcode (2.1.7)
+    uk_postcode (2.1.8)
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.8.2)
