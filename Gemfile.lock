@@ -148,7 +148,7 @@ GEM
       notifications-ruby-client
       rails (~> 6.0)
       sprockets (~> 3.7.2)
-    defra_ruby_mocks (2.3.1)
+    defra_ruby_mocks (2.3.2)
       nokogiri
       rails (~> 6.0)
       sprockets (~> 3.7.2)
