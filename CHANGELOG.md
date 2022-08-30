@@ -1,5 +1,19 @@
 # Changelog
 
+## [Unreleased](https://github.com/defra/waste-carriers-front-office/tree/HEAD)
+
+[Full Changelog](https://github.com/defra/waste-carriers-front-office/compare/v1.13.1...HEAD)
+
+**Merged pull requests:**
+
+- Release v1.13.0 [\#919](https://github.com/DEFRA/waste-carriers-front-office/pull/919) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
+- Bump waste\_carriers\_engine from `62cb12e` to `55764a7` [\#918](https://github.com/DEFRA/waste-carriers-front-office/pull/918) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump govuk\_design\_system\_formbuilder from 3.1.1 to 3.1.2 [\#917](https://github.com/DEFRA/waste-carriers-front-office/pull/917) ([dependabot[bot]](https://github.com/apps/dependabot))
+
+## [v1.13.1](https://github.com/defra/waste-carriers-front-office/tree/v1.13.1) (2022-08-23)
+
+[Full Changelog](https://github.com/defra/waste-carriers-front-office/compare/v1.13.0...v1.13.1)
+
 ## [v1.13.0](https://github.com/defra/waste-carriers-front-office/tree/v1.13.0) (2022-08-09)
 
 [Full Changelog](https://github.com/defra/waste-carriers-front-office/compare/v1.12.2...v1.13.0)
