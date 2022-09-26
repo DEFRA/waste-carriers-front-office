@@ -18,4 +18,7 @@ DefraRubyMocks.configure do |configuration|
   # payment part of the process. But in the environments it runs in it is
   # impossible for it to determine what to use. So we simply just tell it!
   configuration.worldpay_domain = File.join(ENV["WCRS_RENEWALS_DOMAIN"] || "http://localhost:3002", "/fo/mocks")
+
+  # Govpay API mock details. Note FO application point to BO mocks and vice-versa by defafult.
+  configuration.govpay_domain = File.join(ENV["WCRS_GOVPAY_DOMAIN"] || "http://localhost:8001", "/bo/mocks/govpay/v1")
 end
