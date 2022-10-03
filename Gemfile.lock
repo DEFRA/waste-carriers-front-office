@@ -481,6 +481,7 @@ DEPENDENCIES
   jquery-rails
   kaminari (~> 1.2)
   kaminari-mongoid (~> 1.0)
+  matrix
   mongoid (~> 7.5)
   net-imap
   net-pop

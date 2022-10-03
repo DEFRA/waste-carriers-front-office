@@ -38,6 +38,8 @@ gem "high_voltage", "~> 3.1"
 gem "kaminari", "~> 1.2"
 gem "kaminari-mongoid", "~> 1.0"
 
+gem "matrix"
+
 gem "net-imap"
 gem "net-pop"
 gem "net-smtp"
