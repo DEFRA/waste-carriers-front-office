@@ -1,24 +1,23 @@
 GIT
   remote: https://github.com/DEFRA/waste-carriers-engine
-  revision: d814858d4dfda03a2fae7994d924af329a65cdba
+  revision: 2db75c3096b0124ffdfe7d0e7f32a5d40a22cb1e
   branch: main
   specs:
     waste_carriers_engine (0.0.1)
-      aasm (~> 4.12)
+      aasm (~> 5.3)
       countries
       defra_ruby_address
       defra_ruby_alert (~> 2.1)
       defra_ruby_email
       defra_ruby_validators (>= 2.5.0)
-      high_voltage (~> 3.0)
-      jbuilder (~> 2.0)
-      jquery-rails
+      high_voltage (~> 3.1)
+      jbuilder (~> 2.11)
       mongoid
       mongoid-locker (= 2.0.0)
       nokogiri
       notifications-ruby-client
       rails (>= 6.1.4)
-      rest-client (~> 2.0)
+      rest-client (~> 2.1)
       turbolinks
       uk_postcode
       wicked_pdf
@@ -26,7 +25,7 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
-    aasm (4.12.3)
+    aasm (5.3.1)
       concurrent-ruby (~> 1.0)
     actioncable (6.1.7)
       actionpack (= 6.1.7)
