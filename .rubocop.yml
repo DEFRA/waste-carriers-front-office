@@ -1,3 +1,10 @@
 inherit_gem:
   defra_ruby_style:
     - default.yml
+require:
+  - rubocop-rails
+  - rubocop-rspec
+RSpec/MultipleExpectations:
+  Enabled: false
+RSpec/NestedGroups:
+  Enabled: false

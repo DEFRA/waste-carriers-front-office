@@ -12,7 +12,7 @@ RSpec.describe "Invitations", type: :request do
     context "when there is a valid invitation token" do
       it "returns a success response" do
         get accept_user_invitation_path, params: { invitation_token: token }
-        expect(response).to have_http_status(200)
+        expect(response).to have_http_status(:ok)
       end
     end
 

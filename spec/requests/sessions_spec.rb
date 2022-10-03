@@ -7,7 +7,7 @@ RSpec.describe "Sessions", type: :request do
     context "when a user is not signed in" do
       it "returns a success response" do
         get new_user_session_path
-        expect(response).to have_http_status(200)
+        expect(response).to have_http_status(:ok)
       end
     end
   end
@@ -24,7 +24,7 @@ RSpec.describe "Sessions", type: :request do
 
         it "returns a 302 response" do
           post user_session_path, params: { user: { email: user.email, password: user.password } }
-          expect(response).to have_http_status(302)
+          expect(response).to have_http_status(:found)
         end
 
         it "redirects to /fo" do
@@ -39,7 +39,7 @@ RSpec.describe "Sessions", type: :request do
     context "when the user is signed in" do
       let(:user) { create(:user) }
 
-      before(:each) do
+      before do
         sign_in(user)
       end
 
@@ -50,7 +50,7 @@ RSpec.describe "Sessions", type: :request do
 
       it "returns a 302 response" do
         get destroy_user_session_path
-        expect(response).to have_http_status(302)
+        expect(response).to have_http_status(:found)
       end
 
       it "redirects to the user sign in page" do
@@ -61,7 +61,7 @@ RSpec.describe "Sessions", type: :request do
       it "updates the session_token" do
         old_session_token = user.session_token
         get destroy_user_session_path
-        expect(user.reload.session_token).to_not eq(old_session_token)
+        expect(user.reload.session_token).not_to eq(old_session_token)
       end
     end
   end

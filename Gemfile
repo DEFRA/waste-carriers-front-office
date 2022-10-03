@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 source "https://rubygems.org"
-ruby "2.7.1"
+ruby "3.1.2"
 
 # See: https://github.com/sass/sassc-rails/issues/114
 gem "sassc-rails"
@@ -10,39 +10,37 @@ gem "sassc-rails"
 gem "jquery-rails"
 # Use MongoDB as the database, and mongoid as our ORM for it. This version of
 # mongoid supports MongoDb 3.6
-gem "mongoid", "~> 7.3"
+gem "mongoid", "~> 7.5"
 
-gem "rails", ">= 6.1.4"
+gem "rails", ">= 6.1.7"
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem "turbolinks"
 # Use Uglifier as compressor for JavaScript assets
-gem "uglifier", ">= 1.3.0"
-
-# bundle exec rake doc:rails generates the API under doc/api.
-gem "sdoc", "~> 1.1.0", group: :doc
+gem "uglifier", ">= 4.2.0"
 
 # Use CanCanCan for user roles and permissions
-# Version 2.0 doesn't support Mongoid, so we're locked to an earlier one
-gem "cancancan", "~> 1.10"
+gem "cancancan", "~> 3.3"
 
 # GOV.UK design system styling
 gem "defra_ruby_template"
 
 # Use Devise for user authentication
 gem "devise", ">= 4.4.3"
-gem "devise_invitable", "~> 1.7.0"
+gem "devise_invitable", "~> 2.0"
 
 # GOV.UK design system forms
 gem "govuk_design_system_formbuilder"
 
 # Use High Voltage for static pages
-gem "high_voltage", "~> 3.0"
+gem "high_voltage", "~> 3.1"
 
 # Use Kaminari for pagination
-gem "kaminari", "~> 1.1"
+gem "kaminari", "~> 1.2"
 gem "kaminari-mongoid", "~> 1.0"
 
-gem "secure_headers", "~> 5.0"
+gem "net-smtp"
+
+gem "secure_headers", "~> 6.3"
 
 gem "wicked_pdf"
 
@@ -101,6 +99,8 @@ group :development, :test do
   gem "dotenv-rails"
   # Project uses RSpec as its test framework
   gem "rspec-rails"
+  gem "rubocop-rails", require: false
+  gem "rubocop-rspec", require: false
 end
 
 group :development do

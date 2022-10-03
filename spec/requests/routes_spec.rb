@@ -7,7 +7,7 @@ RSpec.describe "Root", type: :request do
     it "returns a 200 and loads /fo/start" do
       get "/"
 
-      expect(response).to have_http_status(200)
+      expect(response).to have_http_status(:ok)
       expect(response.body).to include("Is this a new registration?")
     end
   end
@@ -15,13 +15,15 @@ RSpec.describe "Root", type: :request do
   describe "GET /fo/renew/[registration number]" do
     context "when the user is not signed in" do
       let(:registration) { create(:registration, reg_identifier: "CBDU12345") }
+
       it "returns a 302 response and redirects the user to the sign in page" do
         get "/fo/CBDU12345/renew"
 
-        expect(response).to have_http_status(302)
+        expect(response).to have_http_status(:found)
         expect(response).to redirect_to(new_user_session_path)
       end
 
+      # rubocop:disable RSpec/ExampleLength
       it "redirects the user to the renewal start page after sign in" do
         user = create(:user)
         reg_identifier = create(:registration, :expires_soon, account_email: user.email).reg_identifier
@@ -31,23 +33,21 @@ RSpec.describe "Root", type: :request do
         post user_session_path, params: { user: { email: user.email, password: user.password } }
         expect(response).to redirect_to(renew_path)
       end
+      # rubocop:enable RSpec/ExampleLength
     end
 
     context "when the user is signed in" do
       let(:user) { create(:user) }
-      # We have to force invocation of creating the registration because we
-      # don't directly reference it in our test, which means it doesn't get
-      # created and the test fails.
-      let!(:registration) { create(:registration, :expires_soon, account_email: user.email) }
+      let(:registration) { create(:registration, :expires_soon, account_email: user.email) }
 
-      before(:each) do
+      before do
         sign_in(user)
       end
 
       it "returns a 200 response and loads the renewal start page" do
         get "/fo/#{registration.reg_identifier}/renew"
 
-        expect(response).to have_http_status(200)
+        expect(response).to have_http_status(:ok)
         expect(response.body).to match(/You are about to renew registration CBDU\d+/)
       end
     end
@@ -58,7 +58,7 @@ RSpec.describe "Root", type: :request do
       it "returns a 301 and loads the new Devise URL" do
         get "/users/sign_in"
 
-        expect(response).to have_http_status(301)
+        expect(response).to have_http_status(:moved_permanently)
         expect(response).to redirect_to("/fo/users/sign_in")
       end
     end
@@ -67,7 +67,7 @@ RSpec.describe "Root", type: :request do
       it "returns a 301 and loads the new Devise URL" do
         get "/users/password/edit"
 
-        expect(response).to have_http_status(301)
+        expect(response).to have_http_status(:moved_permanently)
         expect(response).to redirect_to("/fo/users/password/edit")
       end
     end

@@ -14,14 +14,14 @@ RSpec.describe "Passwords", type: :request do
     context "when the user is signed in" do
       let(:user) { create(:user) }
 
-      before(:each) do
+      before do
         sign_in(user)
       end
 
       it "loads the change password page" do
         get "/fo/users/edit-password"
 
-        expect(response).to have_http_status(200)
+        expect(response).to have_http_status(:ok)
         expect(response).to render_template("passwords/edit")
         expect(response.body).to include("Change your password")
       end
@@ -39,7 +39,7 @@ RSpec.describe "Passwords", type: :request do
     end
 
     context "when the user is signed in" do
-      before(:each) do
+      before do
         sign_in(user)
       end
 
@@ -60,8 +60,8 @@ RSpec.describe "Passwords", type: :request do
 
           patch "/fo/users/edit-password", params: params
 
-          expect(user.reload.password).to_not eq(old_password)
-          expect(response).to have_http_status(302)
+          expect(user.reload.password).not_to eq(old_password)
+          expect(response).to have_http_status(:found)
           expect(response).to redirect_to(fo_path)
         end
       end
@@ -84,7 +84,7 @@ RSpec.describe "Passwords", type: :request do
           patch "/fo/users/edit-password", params: params
 
           expect(user.reload.encrypted_password).to eq(old_password)
-          expect(response).to have_http_status(200)
+          expect(response).to have_http_status(:ok)
           expect(response).to render_template("passwords/edit")
         end
       end

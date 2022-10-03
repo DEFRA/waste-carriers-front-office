@@ -6,7 +6,8 @@ RSpec.describe "Dashfoards", type: :request do
   describe "/fo" do
     context "when a valid user is signed in" do
       let(:user) { create(:user) }
-      before(:each) do
+
+      before do
         sign_in(user)
       end
 
@@ -17,7 +18,7 @@ RSpec.describe "Dashfoards", type: :request do
 
       it "returns a 200 response" do
         get "/fo"
-        expect(response).to have_http_status(200)
+        expect(response).to have_http_status(:ok)
       end
 
       it "lists registrations which belong to the user" do
@@ -31,7 +32,7 @@ RSpec.describe "Dashfoards", type: :request do
         reg_identifier = create(:registration, account_email: "foo@example.com").reg_identifier
 
         get "/fo"
-        expect(response.body).to_not include(reg_identifier)
+        expect(response.body).not_to include(reg_identifier)
       end
 
       it "does not list registrations which are inactive" do
@@ -40,7 +41,7 @@ RSpec.describe "Dashfoards", type: :request do
         reg_identifier = registration.reg_identifier
 
         get "/fo"
-        expect(response.body).to_not include(reg_identifier)
+        expect(response.body).not_to include(reg_identifier)
       end
 
       context "when the user has no registrations" do

@@ -27,7 +27,7 @@ def registered_date(flag) # rubocop:disable Metrics/AbcSize
     eight_years_old: 8.years.ago
   }
 
-  dates[flag.to_sym] || Date.today
+  dates[flag.to_sym] || Time.zone.today
 end
 
 def parse_dates(seed, date)
@@ -42,26 +42,26 @@ def parse_dates(seed, date)
 end
 
 def seed_users
-  seeds = JSON.parse(File.read("#{Rails.root}/db/seeds/users.json"))
+  seeds = JSON.parse(Rails.root.join("db/seeds/users.json").read)
   users = seeds["users"]
 
   users.each do |user|
     User.find_or_create_by(
       email: user["email"],
       password: ENV["WCRS_DEFAULT_PASSWORD"] || "Secret123",
-      confirmed_at: Time.new(2015, 1, 1)
+      confirmed_at: Time.zone.local(2015, 1, 1)
     )
   end
 end
 
 def seed_registrations
   seeds = []
-  Dir.glob("#{Rails.root}/db/seeds/CBD*.json").each do |file|
+  Rails.root.join("db/seeds").glob("CBD*.json") do |file|
     seeds << JSON.parse(File.read(file))
   end
 
   seeds.each do |seed|
-    next unless seed["date_flag"].present?
+    next if seed["date_flag"].blank?
 
     parse_dates(seed, registered_date(seed["date_flag"]))
     seed.delete("date_flag")
