@@ -19,7 +19,7 @@ RSpec.describe DashboardsHelper, type: :helper do
   end
 
   describe "#url_for_new_registration" do
-    before(:each) do
+    before do
       allow(WasteCarriersEngine::FeatureToggle).to receive(:active?).with(:new_registration) { feature_enabled }
     end
 
@@ -47,7 +47,7 @@ RSpec.describe DashboardsHelper, type: :helper do
       before { registration.metaData.status = "ACTIVE" }
 
       it "returns true" do
-        expect(helper.display_view_certificate_link_for?(registration)).to eq(true)
+        expect(helper.display_view_certificate_link_for?(registration)).to be(true)
       end
     end
 
@@ -55,7 +55,7 @@ RSpec.describe DashboardsHelper, type: :helper do
       before { registration.metaData.status = "PENDING" }
 
       it "returns false" do
-        expect(helper.display_view_certificate_link_for?(registration)).to eq(false)
+        expect(helper.display_view_certificate_link_for?(registration)).to be(false)
       end
     end
   end
@@ -65,26 +65,31 @@ RSpec.describe DashboardsHelper, type: :helper do
       before { registration.tier = "LOWER" }
 
       it "returns false" do
-        expect(helper.display_renew_link_for?(registration)).to eq(false)
+        expect(helper.display_renew_link_for?(registration)).to be(false)
       end
     end
 
     context "when the registration is upper tier" do
-      before { registration.tier = "UPPER" }
+      let(:renewing_registration) { instance_double(WasteCarriersEngine::RenewingRegistration) }
+
+      before do
+        registration.tier = "UPPER"
+        allow(WasteCarriersEngine::RenewingRegistration).to receive(:new).and_return(renewing_registration)
+      end
 
       context "when a renewal is possible" do
-        before { allow_any_instance_of(WasteCarriersEngine::RenewingRegistration).to receive(:can_be_renewed?).and_return(true) }
+        before { allow(renewing_registration).to receive(:can_be_renewed?).and_return(true) }
 
         it "returns true" do
-          expect(helper.display_renew_link_for?(registration)).to eq(true)
+          expect(helper.display_renew_link_for?(registration)).to be(true)
         end
       end
 
       context "when a renewal is not possible" do
-        before { allow_any_instance_of(WasteCarriersEngine::RenewingRegistration).to receive(:can_be_renewed?).and_return(false) }
+        before { allow(renewing_registration).to receive(:can_be_renewed?).and_return(false) }
 
         it "returns false" do
-          expect(helper.display_renew_link_for?(registration)).to eq(false)
+          expect(helper.display_renew_link_for?(registration)).to be(false)
         end
       end
     end
@@ -95,7 +100,7 @@ RSpec.describe DashboardsHelper, type: :helper do
       before { allow(helper).to receive(:display_renew_link_for?).and_return(true) }
 
       it "returns false" do
-        expect(helper.display_no_action_links?(registration)).to eq(false)
+        expect(helper.display_no_action_links?(registration)).to be(false)
       end
     end
 
@@ -106,7 +111,7 @@ RSpec.describe DashboardsHelper, type: :helper do
       end
 
       it "returns true" do
-        expect(helper.display_no_action_links?(registration)).to eq(true)
+        expect(helper.display_no_action_links?(registration)).to be(true)
       end
     end
   end

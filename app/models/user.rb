@@ -55,7 +55,7 @@ class User
   # Further work required on this as soon as the frontend is decommissioned.
   # For details, see https://eaflood.atlassian.net/browse/RUBY-381
   def invalidate_all_sessions!
-    update_attributes(session_token: SecureRandom.hex)
+    update(session_token: SecureRandom.hex)
   end
 
   # Validations

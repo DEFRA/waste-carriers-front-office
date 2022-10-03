@@ -8,7 +8,7 @@ RSpec.describe "Certificates", type: :request do
 
   describe "GET /fo/registrations/:reg_identifier/certificate/" do
     context "when the user who owns the registration is logged in" do
-      before(:each) do
+      before do
         sign_in(user)
       end
 
@@ -26,7 +26,7 @@ RSpec.describe "Certificates", type: :request do
       end
 
       context "when the 'show_as_html' query string is present" do
-        context "and the value is 'true'" do
+        context "when the value is 'true'" do
           it "responds with HTML" do
             get "/fo/registrations/#{registration.reg_identifier}/certificate?show_as_html=true"
             expect(response.content_type).to eq("text/html; charset=utf-8")
@@ -34,7 +34,7 @@ RSpec.describe "Certificates", type: :request do
         end
 
         [false, 1, 0, :foo].each do |bad_value|
-          context "and the value is '#{bad_value}'" do
+          context "when the value is '#{bad_value}'" do
             it "responds with a PDF" do
               get "/fo/registrations/#{registration.reg_identifier}/certificate?show_as_html=#{bad_value}"
               expect(response.content_type).to eq("application/pdf")
@@ -45,7 +45,7 @@ RSpec.describe "Certificates", type: :request do
     end
 
     context "when a different user is logged in" do
-      before(:each) do
+      before do
         sign_in(create(:user))
       end
 

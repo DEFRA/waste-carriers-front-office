@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class TestMailer < ActionMailer::Base
+class TestMailer < ApplicationMailer::Base
   def test_email
     from_address = "#{Rails.configuration.email_service_name} <#{Rails.configuration.email_service_email}>"
     subject = "Waste Carriers Test email"

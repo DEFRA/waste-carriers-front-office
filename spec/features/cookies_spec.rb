@@ -8,7 +8,8 @@ RSpec.describe "Cookies", type: :feature do
 
   before { ENV["GOOGLE_TAGMANAGER_ID"] = "GA_ID" }
 
-  scenario "User accepts analytics cookies" do
+  # rubocop:disable RSpec/ExampleLength
+  it "User accepts analytics cookies" do
     visit "/"
     expect(page).to have_link("View cookies", href: "/fo/pages/cookies")
 
@@ -23,8 +24,10 @@ RSpec.describe "Cookies", type: :feature do
     expect(page).not_to have_css(cookie_banner_div)
     expect(page.source).to have_text(google_analytics_render_tag)
   end
+  # rubocop:enable RSpec/ExampleLength
 
-  scenario "User rejects analytics cookies and toggles their selection" do
+  # rubocop:disable RSpec/ExampleLength
+  it "User rejects analytics cookies and toggles their selection" do
     visit "/"
     click_on "Reject analytics cookies"
     expect(page).to have_text("You’ve rejected analytics cookies")
@@ -42,4 +45,5 @@ RSpec.describe "Cookies", type: :feature do
     click_on "Save changes"
     expect(page.source).not_to have_text(google_analytics_render_tag)
   end
+  # rubocop:enable RSpec/ExampleLength
 end
