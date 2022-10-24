@@ -2,7 +2,7 @@
 
 require "rails_helper"
 
-RSpec.describe User, type: :model do
+RSpec.describe User do
   describe "#password" do
     context "when the user's password meets the requirements" do
       let(:user) { build(:user, password: "Secret123") }
