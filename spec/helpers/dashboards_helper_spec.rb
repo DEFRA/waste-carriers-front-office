@@ -2,7 +2,7 @@
 
 require "rails_helper"
 
-RSpec.describe DashboardsHelper, type: :helper do
+RSpec.describe DashboardsHelper do
   let(:registration) { create(:registration) }
   let(:reg_identifier) { registration.reg_identifier }
   let(:id) { registration["_id"] }

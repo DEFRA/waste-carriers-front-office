@@ -2,7 +2,7 @@
 
 require "rails_helper"
 
-RSpec.describe "Cookies", type: :feature do
+RSpec.describe "Cookies" do
   let(:cookie_banner_div) { ".govuk-cookie-banner" }
   let(:google_analytics_render_tag) { "function(w,d,s,l,i)" }
 

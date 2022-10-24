@@ -2,7 +2,7 @@
 
 require "rails_helper"
 
-RSpec.describe "Invitations", type: :request do
+RSpec.describe "Invitations" do
   let(:token) do
     email = attributes_for(:user)[:email]
     User.invite!(email: email, skip_invitation: true).raw_invitation_token

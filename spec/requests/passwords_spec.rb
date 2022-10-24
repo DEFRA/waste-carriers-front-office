@@ -2,7 +2,7 @@
 
 require "rails_helper"
 
-RSpec.describe "Passwords", type: :request do
+RSpec.describe "Passwords" do
   describe "GET /fo/users/edit-password" do
     context "when the user is not signed in" do
       it "redirects the user to the sign in page" do

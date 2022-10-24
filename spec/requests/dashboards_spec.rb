@@ -2,7 +2,7 @@
 
 require "rails_helper"
 
-RSpec.describe "Dashfoards", type: :request do
+RSpec.describe "Dashfoards" do
   describe "/fo" do
     context "when a valid user is signed in" do
       let(:user) { create(:user) }
