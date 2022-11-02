@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/waste-carriers-engine
-  revision: c9afdaed1a5e11f2eb9d9a16fd0154cda4c553ab
+  revision: 36bd51ec486321ed31f16dc76054aadd9ad8641c
   branch: main
   specs:
     waste_carriers_engine (0.0.1)
@@ -131,8 +131,8 @@ GEM
     concurrent-ruby (1.1.10)
     console (1.13.1)
       fiber-local
-    countries (5.1.2)
-      sixarm_ruby_unaccent (~> 1.1)
+    countries (5.2.0)
+      unaccent (~> 0.3)
     crass (1.0.6)
     database_cleaner-core (2.0.1)
     database_cleaner-mongoid (2.0.1)
@@ -414,7 +414,6 @@ GEM
       json (>= 1.8, < 3)
       simplecov-html (~> 0.10.0)
     simplecov-html (0.10.2)
-    sixarm_ruby_unaccent (1.2.0)
     spring (4.1.0)
     sprockets (3.7.2)
       concurrent-ruby (~> 1.0)
@@ -436,6 +435,7 @@ GEM
     uglifier (4.2.0)
       execjs (>= 0.3.0, < 3)
     uk_postcode (2.1.8)
+    unaccent (0.4.0)
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.8.2)
@@ -457,7 +457,7 @@ GEM
       activesupport
     xpath (3.2.0)
       nokogiri (~> 1.8)
-    zeitwerk (2.6.1)
+    zeitwerk (2.6.4)
 
 PLATFORMS
   ruby
