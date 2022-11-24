@@ -97,11 +97,7 @@ module WasteCarriersFrontOffice
     config.worldpay_macsecret = ENV.fetch("WCRS_WORLDPAY_ECOM_MACSECRET", nil)
 
     # Govpay
-    config.govpay_url = if ENV["WCRS_MOCK_ENABLED"].to_s.downcase == "true"
-                          ENV.fetch("WCRS_MOCK_FO_GOVPAY_URL", nil)
-                        else
-                          ENV["WCRS_GOVPAY_FRONT_OFFICE_URL"] || "https://publicapi.payments.service.gov.uk/v1"
-                        end
+    config.govpay_url = ENV["WCRS_GOVPAY_FRONT_OFFICE_URL"] || "https://publicapi.payments.service.gov.uk/v1"
     config.govpay_api_token = ENV.fetch("WCRS_GOVPAY_FRONT_OFFICE_API_TOKEN", nil)
 
     # Emails
