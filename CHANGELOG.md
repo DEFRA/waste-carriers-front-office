@@ -2,7 +2,7 @@
 
 ## [Unreleased](https://github.com/defra/waste-carriers-front-office/tree/HEAD)
 
-[Full Changelog](https://github.com/defra/waste-carriers-front-office/compare/v1.13.2...HEAD)
+[Full Changelog](https://github.com/defra/waste-carriers-front-office/compare/v1.13.3...HEAD)
 
 **Implemented enhancements:**
 
@@ -20,6 +20,19 @@
 
 **Merged pull requests:**
 
+- Bump waste\_carriers\_engine from `186a2c7` to `976cfb2` [\#979](https://github.com/DEFRA/waste-carriers-front-office/pull/979) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump waste\_carriers\_engine from `36bd51e` to `186a2c7` [\#978](https://github.com/DEFRA/waste-carriers-front-office/pull/978) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump log\_level from debug to info [\#977](https://github.com/DEFRA/waste-carriers-front-office/pull/977) ([endofunky](https://github.com/endofunky))
+- Bump net-imap from 0.3.1 to 0.3.2 [\#976](https://github.com/DEFRA/waste-carriers-front-office/pull/976) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump nokogiri from 1.13.9 to 1.13.10 [\#975](https://github.com/DEFRA/waste-carriers-front-office/pull/975) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump timecop from 0.9.5 to 0.9.6 [\#974](https://github.com/DEFRA/waste-carriers-front-office/pull/974) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Release v1.13.3 [\#972](https://github.com/DEFRA/waste-carriers-front-office/pull/972) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
+- Bump rubocop-rails from 2.17.2 to 2.17.3 [\#970](https://github.com/DEFRA/waste-carriers-front-office/pull/970) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump govuk\_design\_system\_formbuilder from 3.1.2 to 3.3.0 [\#969](https://github.com/DEFRA/waste-carriers-front-office/pull/969) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump jquery-rails from 4.5.0 to 4.5.1 [\#967](https://github.com/DEFRA/waste-carriers-front-office/pull/967) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump mongoid from 7.5.1 to 7.5.2 [\#966](https://github.com/DEFRA/waste-carriers-front-office/pull/966) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump rubocop-rspec from 2.14.2 to 2.15.0 [\#965](https://github.com/DEFRA/waste-carriers-front-office/pull/965) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump capybara from 3.37.1 to 3.38.0 [\#964](https://github.com/DEFRA/waste-carriers-front-office/pull/964) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump net-smtp from 0.3.2 to 0.3.3 [\#963](https://github.com/DEFRA/waste-carriers-front-office/pull/963) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump waste\_carriers\_engine from `c9afdae` to `36bd51e` [\#962](https://github.com/DEFRA/waste-carriers-front-office/pull/962) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump rubocop-rails from 2.17.1 to 2.17.2 [\#961](https://github.com/DEFRA/waste-carriers-front-office/pull/961) ([dependabot[bot]](https://github.com/apps/dependabot))
@@ -38,6 +51,10 @@
 - Upgrade to Ruby3 [\#935](https://github.com/DEFRA/waste-carriers-front-office/pull/935) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
 - Merge govpay branch into main [\#932](https://github.com/DEFRA/waste-carriers-front-office/pull/932) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
 - Bump spring from 4.0.0 to 4.1.0 [\#931](https://github.com/DEFRA/waste-carriers-front-office/pull/931) ([dependabot[bot]](https://github.com/apps/dependabot))
+
+## [v1.13.3](https://github.com/defra/waste-carriers-front-office/tree/v1.13.3) (2022-11-23)
+
+[Full Changelog](https://github.com/defra/waste-carriers-front-office/compare/v1.13.2...v1.13.3)
 
 ## [v1.13.2](https://github.com/defra/waste-carriers-front-office/tree/v1.13.2) (2022-09-20)
 
