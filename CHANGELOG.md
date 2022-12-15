@@ -2,7 +2,19 @@
 
 ## [Unreleased](https://github.com/defra/waste-carriers-front-office/tree/HEAD)
 
-[Full Changelog](https://github.com/defra/waste-carriers-front-office/compare/v1.13.3...HEAD)
+[Full Changelog](https://github.com/defra/waste-carriers-front-office/compare/v1.13.4...HEAD)
+
+**Merged pull requests:**
+
+- Bump waste\_carriers\_engine from `8756efc` to `6494877` [\#987](https://github.com/DEFRA/waste-carriers-front-office/pull/987) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump waste\_carriers\_engine from `1bb3b5a` to `8756efc` [\#986](https://github.com/DEFRA/waste-carriers-front-office/pull/986) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump waste\_carriers\_engine from `976cfb2` to `1bb3b5a` [\#985](https://github.com/DEFRA/waste-carriers-front-office/pull/985) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump rails-html-sanitizer from 1.4.3 to 1.4.4 [\#984](https://github.com/DEFRA/waste-carriers-front-office/pull/984) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump loofah from 2.19.0 to 2.19.1 [\#981](https://github.com/DEFRA/waste-carriers-front-office/pull/981) ([dependabot[bot]](https://github.com/apps/dependabot))
+
+## [v1.13.4](https://github.com/defra/waste-carriers-front-office/tree/v1.13.4) (2022-12-13)
+
+[Full Changelog](https://github.com/defra/waste-carriers-front-office/compare/v1.13.3...v1.13.4)
 
 **Implemented enhancements:**
 
@@ -20,6 +32,7 @@
 
 **Merged pull requests:**
 
+- Release v1.13.4 [\#980](https://github.com/DEFRA/waste-carriers-front-office/pull/980) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
 - Bump waste\_carriers\_engine from `186a2c7` to `976cfb2` [\#979](https://github.com/DEFRA/waste-carriers-front-office/pull/979) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump waste\_carriers\_engine from `36bd51e` to `186a2c7` [\#978](https://github.com/DEFRA/waste-carriers-front-office/pull/978) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump log\_level from debug to info [\#977](https://github.com/DEFRA/waste-carriers-front-office/pull/977) ([endofunky](https://github.com/endofunky))
