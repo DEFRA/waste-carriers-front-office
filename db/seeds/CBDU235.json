@@ -54,8 +54,7 @@
   "metaData": {
     "anotherString": "userDetailAddedAtRegistration",
     "status": "INACTIVE",
-    "route": "DIGITAL",
-    "distance": "n/a"
+    "route": "DIGITAL"
   },
   "conviction_search_result": {
     "match_result": "NO",
