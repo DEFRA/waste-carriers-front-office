@@ -65,9 +65,7 @@
   "regIdentifier": "CBDU200",
   "metaData": {
     "anotherString": "userDetailAddedAtRegistration",
-    "status": "ACTIVE",
-    "route": "DIGITAL",
-    "distance": "n/a"
+    "status": "ACTIVE"
   },
   "conviction_search_result": {
     "match_result": "NO",
