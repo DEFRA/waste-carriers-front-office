@@ -100,7 +100,8 @@ module WasteCarriersFrontOffice
                         else
                           ENV["WCRS_GOVPAY_FRONT_OFFICE_URL"] || "https://publicapi.payments.service.gov.uk/v1"
                         end
-    config.govpay_api_token = ENV.fetch("WCRS_GOVPAY_FRONT_OFFICE_API_TOKEN", nil)
+    config.govpay_front_office_api_token = ENV.fetch("WCRS_GOVPAY_FRONT_OFFICE_API_TOKEN", nil)
+    config.govpay_back_office_api_token = ENV.fetch("WCRS_GOVPAY_BACK_OFFICE_API_TOKEN", nil)
 
     # Emails
     config.email_service_name = "Waste Carriers Registration Service"
