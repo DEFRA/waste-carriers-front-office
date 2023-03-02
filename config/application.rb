@@ -82,18 +82,6 @@ module WasteCarriersFrontOffice
     config.expires_after = ENV["WCRS_REGISTRATION_EXPIRES_AFTER"].to_i
     config.grace_window = ENV["WCRS_REGISTRATION_GRACE_WINDOW"].to_i
 
-    # Worldpay
-    config.worldpay_url = if ENV["WCRS_MOCK_ENABLED"].to_s.downcase == "true"
-                            ENV.fetch("WCRS_MOCK_BO_WORLDPAY_URL", nil)
-                          else
-                            ENV["WCRS_WORLDPAY_URL"] || "https://secure-test.worldpay.com/jsp/merchant/xml/paymentService.jsp"
-                          end
-    config.worldpay_admin_code = ENV.fetch("WCRS_WORLDPAY_ADMIN_CODE", nil)
-    config.worldpay_merchantcode = ENV.fetch("WCRS_WORLDPAY_ECOM_MERCHANTCODE", nil)
-    config.worldpay_username = ENV.fetch("WCRS_WORLDPAY_ECOM_USERNAME", nil)
-    config.worldpay_password = ENV.fetch("WCRS_WORLDPAY_ECOM_PASSWORD", nil)
-    config.worldpay_macsecret = ENV.fetch("WCRS_WORLDPAY_ECOM_MACSECRET", nil)
-
     # Govpay
     config.govpay_url = if ENV["WCRS_MOCK_ENABLED"].to_s.downcase == "true"
                           ENV.fetch("WCRS_MOCK_FO_GOVPAY_URL", nil)

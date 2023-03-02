@@ -25,11 +25,7 @@ WasteCarriersEngine.configure do |configuration|
   configuration.notify_api_key = ENV.fetch("NOTIFY_API_KEY", nil)
 
   # By telling the engine which app it is hosted in it can then make decisions
-  # about any changes in behaviour needed. For example, the payment confirmation
-  # email from Worldpay is only applicable to users in the front-office. This is
-  # because Worldpay does not send one if the merchant code is MOTO. So the
-  # engine can use this flag to determine whether to show payment confirmation
-  # related content
+  # about any changes in behaviour needed.
   configuration.host_is_back_office = false
 end
 WasteCarriersEngine.start_airbrake
