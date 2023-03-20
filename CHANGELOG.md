@@ -2,10 +2,29 @@
 
 ## [Unreleased](https://github.com/defra/waste-carriers-front-office/tree/HEAD)
 
-[Full Changelog](https://github.com/defra/waste-carriers-front-office/compare/v1.13.5...HEAD)
+[Full Changelog](https://github.com/defra/waste-carriers-front-office/compare/v1.13.6...HEAD)
 
 **Merged pull requests:**
 
+- Remove obsolete Worldpay code [\#1023](https://github.com/DEFRA/waste-carriers-front-office/pull/1023) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
+- Bump waste\_carriers\_engine from `72d05c1` to `fd9947f` [\#1022](https://github.com/DEFRA/waste-carriers-front-office/pull/1022) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Update Govpay API token settings [\#1020](https://github.com/DEFRA/waste-carriers-front-office/pull/1020) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
+- Bump waste\_carriers\_engine from `d2d430e` to `b3925fa` [\#1018](https://github.com/DEFRA/waste-carriers-front-office/pull/1018) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump waste\_carriers\_engine from `fed1e0b` to `d2d430e` [\#1017](https://github.com/DEFRA/waste-carriers-front-office/pull/1017) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump waste\_carriers\_engine from `9026e95` to `fed1e0b` [\#1016](https://github.com/DEFRA/waste-carriers-front-office/pull/1016) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Drop distance from seed data [\#1015](https://github.com/DEFRA/waste-carriers-front-office/pull/1015) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
+- Bump waste\_carriers\_engine from `249b874` to `9026e95` [\#1014](https://github.com/DEFRA/waste-carriers-front-office/pull/1014) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump waste\_carriers\_engine from `9d8cf39` to `249b874` [\#1013](https://github.com/DEFRA/waste-carriers-front-office/pull/1013) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump waste\_carriers\_engine from `a02edec` to `9d8cf39` [\#1011](https://github.com/DEFRA/waste-carriers-front-office/pull/1011) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Rename wcrs\_renewals\_url config variable to wcrs\_fo\_link\_domain [\#1010](https://github.com/DEFRA/waste-carriers-front-office/pull/1010) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
+
+## [v1.13.6](https://github.com/defra/waste-carriers-front-office/tree/v1.13.6) (2023-01-31)
+
+[Full Changelog](https://github.com/defra/waste-carriers-front-office/compare/v1.13.5...v1.13.6)
+
+**Merged pull requests:**
+
+- Release v1.13.6 [\#1008](https://github.com/DEFRA/waste-carriers-front-office/pull/1008) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
 - Bump waste\_carriers\_engine from `b619ca1` to `34fc943` [\#1007](https://github.com/DEFRA/waste-carriers-front-office/pull/1007) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump webrick from 1.7.0 to 1.8.1 [\#1006](https://github.com/DEFRA/waste-carriers-front-office/pull/1006) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump waste\_carriers\_engine from `ddc1b2f` to `b619ca1` [\#1005](https://github.com/DEFRA/waste-carriers-front-office/pull/1005) ([dependabot[bot]](https://github.com/apps/dependabot))
