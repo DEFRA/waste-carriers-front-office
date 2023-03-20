@@ -6,6 +6,8 @@
 
 **Merged pull requests:**
 
+- Bump waste\_carriers\_engine from `12a16a1` to `a9c8911` [\#1032](https://github.com/DEFRA/waste-carriers-front-office/pull/1032) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Version 1.14.0 [\#1031](https://github.com/DEFRA/waste-carriers-front-office/pull/1031) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
 - Remove obsolete Worldpay code [\#1023](https://github.com/DEFRA/waste-carriers-front-office/pull/1023) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
 - Bump waste\_carriers\_engine from `72d05c1` to `fd9947f` [\#1022](https://github.com/DEFRA/waste-carriers-front-office/pull/1022) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Update Govpay API token settings [\#1020](https://github.com/DEFRA/waste-carriers-front-office/pull/1020) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
