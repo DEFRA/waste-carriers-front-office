@@ -2,10 +2,26 @@
 
 ## [Unreleased](https://github.com/defra/waste-carriers-front-office/tree/HEAD)
 
-[Full Changelog](https://github.com/defra/waste-carriers-front-office/compare/v1.13.6...HEAD)
+[Full Changelog](https://github.com/defra/waste-carriers-front-office/compare/v1.14.0...HEAD)
 
 **Merged pull requests:**
 
+- Bump nokogiri from 1.14.2 to 1.14.3 [\#1042](https://github.com/DEFRA/waste-carriers-front-office/pull/1042) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump rubocop-rails from 2.18.0 to 2.19.0 [\#1041](https://github.com/DEFRA/waste-carriers-front-office/pull/1041) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump waste\_carriers\_engine from `a9c8911` to `f568a9c` [\#1038](https://github.com/DEFRA/waste-carriers-front-office/pull/1038) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump devise from 4.9.0 to 4.9.2 [\#1037](https://github.com/DEFRA/waste-carriers-front-office/pull/1037) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump capybara from 3.38.0 to 3.39.0 [\#1035](https://github.com/DEFRA/waste-carriers-front-office/pull/1035) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump rails from 6.1.7.2 to 6.1.7.3 [\#1028](https://github.com/DEFRA/waste-carriers-front-office/pull/1028) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump rubocop-rspec from 2.18.1 to 2.19.0 [\#1026](https://github.com/DEFRA/waste-carriers-front-office/pull/1026) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump cancancan from 3.4.0 to 3.5.0 [\#1024](https://github.com/DEFRA/waste-carriers-front-office/pull/1024) ([dependabot[bot]](https://github.com/apps/dependabot))
+
+## [v1.14.0](https://github.com/defra/waste-carriers-front-office/tree/v1.14.0) (2023-03-20)
+
+[Full Changelog](https://github.com/defra/waste-carriers-front-office/compare/v1.13.6...v1.14.0)
+
+**Merged pull requests:**
+
+- Update CHANGELOG [\#1033](https://github.com/DEFRA/waste-carriers-front-office/pull/1033) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
 - Bump waste\_carriers\_engine from `12a16a1` to `a9c8911` [\#1032](https://github.com/DEFRA/waste-carriers-front-office/pull/1032) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Version 1.14.0 [\#1031](https://github.com/DEFRA/waste-carriers-front-office/pull/1031) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
 - Remove obsolete Worldpay code [\#1023](https://github.com/DEFRA/waste-carriers-front-office/pull/1023) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
