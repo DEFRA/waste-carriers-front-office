@@ -11,13 +11,16 @@
 
       <%= f.govuk_password_field :current_password,
           label: { text: t(".labels.current_password") },
-          hint: { text: t(".labels.current_password_hint") } %>
+          hint: { text: t(".labels.current_password_hint") },
+          autocomplete: "off" %>
 
       <%= f.govuk_password_field :password,
-          label: { text: t(".labels.password") } %>
+          label: { text: t(".labels.password") },
+          autocomplete: "off" %>
 
       <%= f.govuk_password_field :password_confirmation,
-          label: { text: t(".labels.password_confirmation") } %>
+          label: { text: t(".labels.password_confirmation") },
+          autocomplete: "off" %>
 
       <%= f.govuk_submit t(".submit_button"), class: "button" %>
     <% end %>
