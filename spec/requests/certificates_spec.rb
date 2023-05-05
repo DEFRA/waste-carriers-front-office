@@ -22,7 +22,7 @@ RSpec.describe "Certificates" do
 
       it "returns a 200 status code" do
         get "/fo/registrations/#{registration.reg_identifier}/certificate"
-        expect(response.code).to eq("200")
+        expect(response).to have_http_status(:ok)
       end
 
       context "when the 'show_as_html' query string is present" do
