@@ -84,7 +84,7 @@ gem "aws-healthcheck"
 # Travel to a specific time. Used to set timestamps when we seed data
 gem "timecop"
 
-group :production do
+group :production, :development do
   # Web application server that replaces webrick. It handles HTTP requests,
   # manages processes and resources, and enables administration, monitoring
   # and problem diagnosis. It is used in production because it gives us an ability
