@@ -108,5 +108,8 @@ module WasteCarriersFrontOffice
     # SassC::SyntaxError: Error: "calc(0px)" is not a number for `max'
     # https://github.com/alphagov/govuk-frontend/issues/1350
     config.assets.css_compressor = nil
+
+    # prevent comments showing ruby version:
+    config.sass.line_comments = false
   end
 end
