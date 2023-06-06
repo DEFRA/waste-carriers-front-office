@@ -151,7 +151,7 @@ GEM
       notifications-ruby-client
       rails
       sprockets-rails
-    defra_ruby_mocks (2.4.1)
+    defra_ruby_mocks (2.4.2)
       rails (~> 6.0)
       sprockets (~> 3.7.2)
     defra_ruby_style (0.3.0)
@@ -232,7 +232,7 @@ GEM
     http-accept (1.7.0)
     http-cookie (1.0.5)
       domain_name (~> 0.5)
-    i18n (1.14.0)
+    i18n (1.14.1)
       concurrent-ruby (~> 1.0)
     jbuilder (2.11.5)
       actionview (>= 5.0.0)
@@ -321,6 +321,8 @@ GEM
       protocol-hpack (~> 1.4)
       protocol-http (~> 0.18)
     public_suffix (5.0.1)
+    puma (6.3.0)
+      nio4r (~> 2.0)
     racc (1.6.2)
     rack (2.2.7)
     rack-test (2.1.0)
@@ -502,6 +504,7 @@ DEPENDENCIES
   net-pop
   net-smtp
   passenger (~> 5.0, >= 5.0.30)
+  puma
   rails (>= 6.1.7)
   rails-controller-testing
   rspec-rails
