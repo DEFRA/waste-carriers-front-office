@@ -10,10 +10,10 @@ FactoryBot.define do
 
     addresses { [build(:address), build(:address)] }
 
-    metaData { build(:metaData) }
+    metaData { association(:metaData, strategy: :build) }
 
     trait :expires_soon do
-      metaData { build(:metaData, status: :ACTIVE) }
+      metaData { association(:metaData, status: :ACTIVE, strategy: :build) }
       expires_on { 2.months.from_now }
     end
   end
