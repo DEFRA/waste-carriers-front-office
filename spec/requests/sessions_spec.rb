@@ -3,11 +3,24 @@
 require "rails_helper"
 
 RSpec.describe "Sessions" do
+
+  before { allow(WasteCarriersEngine::FeatureToggle).to receive(:active?).with(:block_front_end_logins).and_return false }
+
   describe "GET /fo/users/sign_in" do
+
     context "when a user is not signed in" do
       it "returns a success response" do
         get new_user_session_path
         expect(response).to have_http_status(:ok)
+      end
+    end
+
+    context "when the :block_front_end_logins feature toggle is active" do
+      before { allow(WasteCarriersEngine::FeatureToggle).to receive(:active?).with(:block_front_end_logins).and_return true }
+
+      it "redirects to the application root" do
+        get new_user_session_path
+        expect(response).to redirect_to(root_path)
       end
     end
   end
@@ -32,6 +45,17 @@ RSpec.describe "Sessions" do
           expect(response).to redirect_to(fo_path)
         end
       end
+
+      context "when the :block_front_end_logins feature toggle is active" do
+        let(:user) { create(:user) }
+
+        before { allow(WasteCarriersEngine::FeatureToggle).to receive(:active?).with(:block_front_end_logins).and_return true }
+
+        it "redirects to the application root" do
+          post user_session_path, params: { user: { email: user.email, password: user.password } }
+          expect(response).to redirect_to(root_path)
+        end
+      end
     end
   end
 
@@ -39,9 +63,7 @@ RSpec.describe "Sessions" do
     context "when the user is signed in" do
       let(:user) { create(:user) }
 
-      before do
-        sign_in(user)
-      end
+      before { sign_in(user) }
 
       it "signs the user out" do
         get destroy_user_session_path

@@ -7,10 +7,11 @@ RSpec.describe "Certificates" do
   let(:registration) { create(:registration, :expires_soon, account_email: user.email) }
 
   describe "GET /fo/registrations/:reg_identifier/certificate/" do
+
+    before { allow(WasteCarriersEngine::FeatureToggle).to receive(:active?).with(:block_front_end_logins).and_return false }
+
     context "when the user who owns the registration is logged in" do
-      before do
-        sign_in(user)
-      end
+      before { sign_in(user) }
 
       it "responds with a PDF with a filename that includes the registration reference" do
         get "/fo/registrations/#{registration.reg_identifier}/certificate"
@@ -45,9 +46,7 @@ RSpec.describe "Certificates" do
     end
 
     context "when a different user is logged in" do
-      before do
-        sign_in(create(:user))
-      end
+      before { sign_in(create(:user)) }
 
       it "redirects to the permissions error" do
         get "/fo/registrations/#{registration.reg_identifier}/certificate"
@@ -60,6 +59,15 @@ RSpec.describe "Certificates" do
         get "/fo/registrations/#{registration.reg_identifier}/certificate"
         expect(response).to redirect_to(new_user_session_path)
       end
+    end
+  end
+
+  context "when the :block_front_end_logins feature toggle is active" do
+    before { allow(WasteCarriersEngine::FeatureToggle).to receive(:active?).with(:block_front_end_logins).and_return true }
+
+    it "redirects to the application root" do
+      get "/fo/registrations/#{registration.reg_identifier}/certificate"
+      expect(response).to redirect_to(root_path)
     end
   end
 end
