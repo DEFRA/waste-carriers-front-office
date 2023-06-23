@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/waste-carriers-engine
-  revision: ca60944b2c2713c32cb0e802697a10bbac1afc3e
+  revision: 5b64fc8283d877108e528c8006cff899a0ca1c1a
   branch: main
   specs:
     waste_carriers_engine (0.0.1)
@@ -133,7 +133,7 @@ GEM
     concurrent-ruby (1.2.2)
     console (1.13.1)
       fiber-local
-    countries (5.4.0)
+    countries (5.5.0)
       unaccent (~> 0.3)
     crass (1.0.6)
     database_cleaner-core (2.0.1)
@@ -277,8 +277,8 @@ GEM
     mime-types-data (3.2023.0218.1)
     mini_mime (1.1.2)
     mini_portile2 (2.8.2)
-    minitest (5.18.0)
-    mongo (2.18.2)
+    minitest (5.18.1)
+    mongo (2.19.0)
       bson (>= 4.14.1, < 5.0.0)
     mongo_session_store (3.2.1)
       actionpack (>= 4.0)
@@ -329,7 +329,7 @@ GEM
     public_suffix (5.0.1)
     puma (6.3.0)
       nio4r (~> 2.0)
-    racc (1.7.0)
+    racc (1.7.1)
     rack (2.2.7)
     rack-test (2.1.0)
       rack (>= 1.3)
