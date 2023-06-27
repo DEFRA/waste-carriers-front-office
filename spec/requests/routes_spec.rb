@@ -59,11 +59,14 @@ RSpec.describe "Root" do
       let(:user) { create(:user) }
       let(:registration) { create(:registration, :expires_soon, account_email: user.email) }
 
-      before { allow(WasteCarriersEngine::FeatureToggle).to receive(:active?).with(:block_front_end_logins).and_return true }
+      before do
+        allow(WasteCarriersEngine::FeatureToggle).to receive(:active?).and_call_original
+        allow(WasteCarriersEngine::FeatureToggle).to receive(:active?).with(:block_front_end_logins).and_return true
+      end
 
-      it "redirects to the 'don't call-us-we'll-call-you' page" do
+      it "redirects to the application root page" do
         get "/fo/#{registration.reg_identifier}/renew"
-        expect(response).to redirect_to(root_path)
+        expect(response).to redirect_to("/")
       end
     end
   end

@@ -11,7 +11,7 @@ class PasswordsController < ApplicationController
 
   def update
     if WasteCarriersEngine::FeatureToggle.active?(:block_front_end_logins)
-      redirect_to root_path 
+      redirect_to root_path
       return
     end
 
