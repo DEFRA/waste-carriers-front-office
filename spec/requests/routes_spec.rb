@@ -3,6 +3,9 @@
 require "rails_helper"
 
 RSpec.describe "Root" do
+
+  before { allow(WasteCarriersEngine::FeatureToggle).to receive(:active?).with(:block_front_end_logins).and_return false }
+
   describe "GET /" do
     it "returns a 200 and loads /fo/start" do
       get "/"
@@ -49,6 +52,21 @@ RSpec.describe "Root" do
 
         expect(response).to have_http_status(:ok)
         expect(response.body).to match(/You are about to renew registration CBDU\d+/)
+      end
+    end
+
+    context "when the :block_front_end_logins feature toggle is active" do
+      let(:user) { create(:user) }
+      let(:registration) { create(:registration, :expires_soon, account_email: user.email) }
+
+      before do
+        allow(WasteCarriersEngine::FeatureToggle).to receive(:active?).and_call_original
+        allow(WasteCarriersEngine::FeatureToggle).to receive(:active?).with(:block_front_end_logins).and_return true
+      end
+
+      it "redirects to the application root page" do
+        get "/fo/#{registration.reg_identifier}/renew"
+        expect(response).to redirect_to("/")
       end
     end
   end
