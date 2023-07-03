@@ -40,7 +40,4 @@ Rails.application.routes.draw do # rubocop:disable Metrics/BlockLength
       post :hide_this_message
     end
   end
-
-  # Some old bookmarks may no longer have active routes; route anything unmatched to the start page.
-  # match "*path", :to => "waste_carriers_engine/start_forms#new", :via => :all
 end
