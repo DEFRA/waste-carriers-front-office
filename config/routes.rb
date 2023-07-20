@@ -23,6 +23,7 @@ Rails.application.routes.draw do # rubocop:disable Metrics/BlockLength
   end
 
   get "/fo/registrations/:reg_identifier/certificate", to: "certificates#show", as: :certificate
+  get "/fo/registrations/:reg_identifier/certificate/pdf", to: "certificates#pdf", as: :certificate_pdf
 
   get "/fo" => "dashboards#index"
 

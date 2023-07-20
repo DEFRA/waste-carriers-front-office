@@ -1,0 +1,54 @@
+* {
+  font-family: Helvetica, Arial, Sans-Serif !important;
+  background: #FFF;
+}
+h1 {
+  margin-bottom: 20px;
+}
+body {
+  margin: 40px 60px;
+}
+table tr td:first-child {
+  width: 220px;
+}
+ul, li {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+li, td, p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+table th {
+  margin-top: 20px;
+  text-align: left;
+  font-size: 22px;
+}
+
+.document {
+  background: white;
+  box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+  padding: 2cm;
+}
+
+@page {
+  size: A4;
+  margin: 1cm;
+}
+.document p {
+  orphans: 4;
+  widows: 2;
+}
+
+.document h1,
+.document h2 {
+  page-break-after: avoid;
+}
+
+@media print {
+  .document {
+    box-shadow: none;
+    padding: 0;
+  }
+}

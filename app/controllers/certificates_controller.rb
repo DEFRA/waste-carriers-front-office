@@ -6,14 +6,13 @@ class CertificatesController < ApplicationController
   before_action :authenticate_if_logins_enabled
 
   def show
-    if WasteCarriersEngine::FeatureToggle.active?(:block_front_end_logins)
-      redirect_to root_path
-      return
-    end
-
     registration = WasteCarriersEngine::Registration.find_by(reg_identifier: params[:reg_identifier])
 
-    authorize! :read, registration
+    @presenter = WasteCarriersEngine::CertificatePresenter.new(registration, view_context)
+  end
+
+  def pdf
+    registration = WasteCarriersEngine::Registration.find_by(reg_identifier: params[:reg_identifier])
 
     @presenter = WasteCarriersEngine::CertificatePresenter.new(registration, view_context)
 
