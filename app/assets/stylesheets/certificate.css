@@ -20,10 +20,11 @@ li, td, p {
   font-size: 18px;
   line-height: 1.5;
 }
-table th {
+table td.header-style {
   margin-top: 20px;
   text-align: left;
   font-size: 22px;
+  font-weight: bold;
 }
 
 .document {
