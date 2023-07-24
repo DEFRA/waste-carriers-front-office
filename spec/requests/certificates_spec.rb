@@ -49,7 +49,7 @@ RSpec.describe "Certificates" do
 
       it "does not redirect to the sign-in page" do
         get "/fo/registrations/#{registration.reg_identifier}/certificate/pdf"
-        expect(response).to_not redirect_to(new_user_session_path)
+        expect(response).not_to redirect_to(new_user_session_path)
       end
     end
 
