@@ -1,7 +1,7 @@
 GIT
   remote: https://github.com/DEFRA/waste-carriers-engine
-  revision: f9ee636726c9269965add6790eba68a45198408d
-  branch: main
+  revision: 6994f523f09cd1b2d1e2859f57c8729882845103
+  branch: feature/user_journey_analytics
   specs:
     waste_carriers_engine (0.0.1)
       aasm (~> 5.3)
