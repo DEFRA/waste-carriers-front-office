@@ -125,5 +125,4 @@ group :test do
   # Generates a test coverage report on every `bundle exec rspec` call. We use
   # the output to feed SonarCloud's stats and analysis
   gem "simplecov", "~> 0.22.0", require: false
-  gem "simplecov-json", require: false
 end
