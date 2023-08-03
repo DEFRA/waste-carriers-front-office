@@ -3,6 +3,9 @@
 require "rails_helper"
 
 RSpec.describe "Invitations" do
+
+  before { allow(WasteCarriersEngine::FeatureToggle).to receive(:active?).with(:block_front_end_logins).and_return false }
+
   let(:token) do
     email = attributes_for(:user)[:email]
     User.invite!(email: email, skip_invitation: true).raw_invitation_token
@@ -29,6 +32,15 @@ RSpec.describe "Invitations" do
         expect(response).to redirect_to(new_user_session_path)
       end
     end
+
+    context "when the :block_front_end_logins feature toggle is active" do
+      before { allow(WasteCarriersEngine::FeatureToggle).to receive(:active?).with(:block_front_end_logins).and_return true }
+
+      it "redirects to the application root" do
+        get accept_user_invitation_path
+        expect(response).to redirect_to(root_path)
+      end
+    end
   end
 
   describe "PUT /fo/users/invitation/accept" do
@@ -51,6 +63,15 @@ RSpec.describe "Invitations" do
       it "renders the invitation accept page again" do
         put user_invitation_path, params: { user: "foo" }
         expect(response).to render_template(:edit)
+      end
+    end
+
+    context "when the :block_front_end_logins feature toggle is active" do
+      before { allow(WasteCarriersEngine::FeatureToggle).to receive(:active?).with(:block_front_end_logins).and_return true }
+
+      it "redirects to the application root" do
+        put user_invitation_path, params: { user: params }
+        expect(response).to redirect_to(root_path)
       end
     end
   end
