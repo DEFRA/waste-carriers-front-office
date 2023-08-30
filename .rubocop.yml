@@ -5,5 +5,6 @@ inherit_gem:
     - default.yml
 require:
   - rubocop-capybara
+  - rubocop-factory_bot
   - rubocop-rails
   - rubocop-rspec

@@ -2,14 +2,18 @@
 
 require "rails_helper"
 
-RSpec.describe "Dashfoards" do
+RSpec.describe "Dashboards" do
   describe "/fo" do
+
+    before do
+      allow(WasteCarriersEngine::FeatureToggle).to receive(:active?).and_call_original
+      allow(WasteCarriersEngine::FeatureToggle).to receive(:active?).with(:block_front_end_logins).and_return false
+    end
+
     context "when a valid user is signed in" do
       let(:user) { create(:user) }
 
-      before do
-        sign_in(user)
-      end
+      before { sign_in(user) }
 
       it "renders the index template" do
         get "/fo"
@@ -57,6 +61,15 @@ RSpec.describe "Dashfoards" do
         get "/fo"
         expect(response).to redirect_to(new_user_session_path)
       end
+    end
+  end
+
+  context "when the :block_front_end_logins feature toggle is active" do
+    before { allow(WasteCarriersEngine::FeatureToggle).to receive(:active?).with(:block_front_end_logins).and_return true }
+
+    it "redirects to the application root" do
+      get "/fo"
+      expect(response).to redirect_to(root_path)
     end
   end
 end

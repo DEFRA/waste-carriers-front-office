@@ -3,6 +3,9 @@
 require "rails_helper"
 
 RSpec.describe "Passwords" do
+
+  before { allow(WasteCarriersEngine::FeatureToggle).to receive(:active?).with(:block_front_end_logins).and_return false }
+
   describe "GET /fo/users/edit-password" do
     context "when the user is not signed in" do
       it "redirects the user to the sign in page" do
@@ -14,9 +17,7 @@ RSpec.describe "Passwords" do
     context "when the user is signed in" do
       let(:user) { create(:user) }
 
-      before do
-        sign_in(user)
-      end
+      before { sign_in(user) }
 
       it "loads the change password page" do
         get "/fo/users/edit-password"
@@ -24,6 +25,15 @@ RSpec.describe "Passwords" do
         expect(response).to have_http_status(:ok)
         expect(response).to render_template("passwords/edit")
         expect(response.body).to include("Change your password")
+      end
+    end
+
+    context "when the :block_front_end_logins feature toggle is active" do
+      before { allow(WasteCarriersEngine::FeatureToggle).to receive(:active?).with(:block_front_end_logins).and_return true }
+
+      it "redirects to the application root" do
+        get "/fo/users/edit-password"
+        expect(response).to redirect_to(root_path)
       end
     end
   end
@@ -39,9 +49,7 @@ RSpec.describe "Passwords" do
     end
 
     context "when the user is signed in" do
-      before do
-        sign_in(user)
-      end
+      before { sign_in(user) }
 
       context "when valid params are submitted" do
         let(:params) do
@@ -87,6 +95,15 @@ RSpec.describe "Passwords" do
           expect(response).to have_http_status(:ok)
           expect(response).to render_template("passwords/edit")
         end
+      end
+    end
+
+    context "when the :block_front_end_logins feature toggle is active" do
+      before { allow(WasteCarriersEngine::FeatureToggle).to receive(:active?).with(:block_front_end_logins).and_return true }
+
+      it "redirects to the application root" do
+        patch "/fo/users/edit-password"
+        expect(response).to redirect_to(root_path)
       end
     end
   end
