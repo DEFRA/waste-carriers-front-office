@@ -15,6 +15,7 @@ class CertificatesController < ApplicationController
 
     authorize! :read, registration
 
+    registration.increment_certificate_version(current_user)
     @presenter = WasteCarriersEngine::CertificatePresenter.new(registration, view_context)
 
     render pdf: registration.reg_identifier,
