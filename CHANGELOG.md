@@ -2,7 +2,20 @@
 
 ## [Unreleased](https://github.com/defra/waste-carriers-front-office/tree/HEAD)
 
-[Full Changelog](https://github.com/defra/waste-carriers-front-office/compare/v1.14.1...HEAD)
+[Full Changelog](https://github.com/defra/waste-carriers-front-office/compare/v1.15.0...HEAD)
+
+**Implemented enhancements:**
+
+- feature / block DO logins [\#1088](https://github.com/DEFRA/waste-carriers-front-office/pull/1088) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
+
+**Merged pull requests:**
+
+- Bump waste\_carriers\_engine from `c9245b3` to `f3a4375` [\#1097](https://github.com/DEFRA/waste-carriers-front-office/pull/1097) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump waste\_carriers\_engine from `8a11e67` to `c9245b3` [\#1096](https://github.com/DEFRA/waste-carriers-front-office/pull/1096) ([dependabot[bot]](https://github.com/apps/dependabot))
+
+## [v1.15.0](https://github.com/defra/waste-carriers-front-office/tree/v1.15.0) (2023-06-22)
+
+[Full Changelog](https://github.com/defra/waste-carriers-front-office/compare/v1.14.1...v1.15.0)
 
 **Implemented enhancements:**
 
@@ -14,6 +27,7 @@
 
 **Merged pull requests:**
 
+- Update CHANGELOG [\#1089](https://github.com/DEFRA/waste-carriers-front-office/pull/1089) ([jjromeo](https://github.com/jjromeo))
 - Bump waste\_carriers\_engine from `b26156c` to `ca60944` [\#1082](https://github.com/DEFRA/waste-carriers-front-office/pull/1082) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump waste\_carriers\_engine from `e2f2233` to `b26156c` [\#1079](https://github.com/DEFRA/waste-carriers-front-office/pull/1079) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump waste\_carriers\_engine from `3520981` to `e2f2233` [\#1078](https://github.com/DEFRA/waste-carriers-front-office/pull/1078) ([dependabot[bot]](https://github.com/apps/dependabot))
