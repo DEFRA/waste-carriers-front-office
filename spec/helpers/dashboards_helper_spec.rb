@@ -106,7 +106,7 @@ RSpec.describe DashboardsHelper do
 
     context "when no action links should be displayed" do
       before do
-        allow(helper).to receive_messages(display_view_certificate_link_for?: display_view_certificate_link_for?, display_renew_link_for?: display_renew_link_for?).and_return(false)
+        allow(helper).to receive_messages(display_view_certificate_link_for?: display_view_certificate_link_for?(registration), display_renew_link_for?: display_renew_link_for?(registration))
       end
 
       it "returns true" do

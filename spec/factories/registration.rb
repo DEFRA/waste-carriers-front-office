@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# rubocop:disable FactoryBot/FactoryAssociationWithStrategy - refactoring code as suggested by rubocop makes entire test suita to fail for no particular reason
 FactoryBot.define do
   factory :registration, class: "WasteCarriersEngine::Registration" do
     sequence :reg_identifier do |n|
@@ -10,11 +11,12 @@ FactoryBot.define do
 
     addresses { [build(:address), build(:address)] }
 
-    metaData { association :metaData }
+    metaData { build(:metaData) }
 
     trait :expires_soon do
-      metaData { association :metaData, status: :ACTIVE }
+      metaData { build(:metaData, status: :ACTIVE) }
       expires_on { 2.months.from_now }
     end
   end
 end
+# rubocop:enable FactoryBot/FactoryAssociationWithStrategy
