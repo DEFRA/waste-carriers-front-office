@@ -14,26 +14,25 @@ GIT
   branch: feature/RUBY-2477-wcr-tech-upgrade-to-rails-7
   specs:
     waste_carriers_engine (0.0.1)
-      aasm
-      countries
-      defra_ruby_address
-      defra_ruby_alert
-      defra_ruby_area
-      defra_ruby_email
-      defra_ruby_govpay
-      defra_ruby_validators (>= 2.5.0)
-      high_voltage (~> 3.1)
-      jbuilder (~> 2.11)
-      mongo_session_store
-      mongoid
-      mongoid-locker
-      nokogiri
-      notifications-ruby-client
-      rails (~> 7.0)
-      rest-client
-      turbolinks
-      uk_postcode
-      wicked_pdf
+      aasm (~> 5.5.0)
+      countries (~> 5.5.0)
+      defra_ruby_address (~> 0.1.0)
+      defra_ruby_alert (~> 2.2.1)
+      defra_ruby_area (~> 2.0.3)
+      defra_ruby_email (~> 1.3.0)
+      defra_ruby_validators (~> 2.5.1)
+      high_voltage (~> 3.1.2)
+      jbuilder (~> 2.11.5)
+      mongo_session_store (~> 3.2.1)
+      mongoid (~> 8.0.3)
+      mongoid-locker (~> 2.0.2)
+      nokogiri (~> 1.15.3)
+      notifications-ruby-client (~> 5.4.0)
+      rails (~> 7.0.5)
+      rest-client (~> 2.1.0)
+      turbolinks (~> 5.2.1)
+      uk_postcode (~> 2.1.8)
+      wicked_pdf (~> 2.6.3)
 
 GEM
   remote: https://rubygems.org/
@@ -112,12 +111,12 @@ GEM
     airbrake-ruby (6.2.1)
       rbtree3 (~> 0.6)
     ast (2.4.2)
-    async (2.6.2)
+    async (2.6.4)
       console (~> 1.10)
       fiber-annotation
       io-event (~> 1.1)
       timers (~> 4.1)
-    async-http (0.60.1)
+    async-http (0.60.2)
       async (>= 1.25)
       async-io (>= 1.28)
       async-pool (>= 0.2)
@@ -128,7 +127,7 @@ GEM
     async-http-faraday (0.12.0)
       async-http (~> 0.42)
       faraday
-    async-io (1.35.0)
+    async-io (1.36.0)
       async
     async-pool (0.4.0)
       async (>= 1.25)
@@ -151,10 +150,10 @@ GEM
       regexp_parser (>= 1.5, < 3.0)
       xpath (~> 3.2)
     concurrent-ruby (1.2.2)
-    console (1.17.2)
+    console (1.23.2)
       fiber-annotation
       fiber-local
-    countries (5.6.0)
+    countries (5.5.0)
       unaccent (~> 0.3)
     crass (1.0.6)
     database_cleaner-core (2.0.1)
@@ -173,11 +172,6 @@ GEM
       notifications-ruby-client
       rails
       sprockets-rails
-    defra_ruby_govpay (0.2.0)
-      rest-client (~> 2.1)
-    defra_ruby_mocks (2.4.2)
-      rails (~> 6.0)
-      sprockets (~> 3.7.2)
     defra_ruby_style (0.3.0)
       rubocop (>= 1.0, < 2.0)
     defra_ruby_template (3.13.0)
@@ -246,7 +240,7 @@ GEM
       domain_name (~> 0.5)
     i18n (1.14.1)
       concurrent-ruby (~> 1.0)
-    io-event (1.2.2)
+    io-event (1.3.2)
     jbuilder (2.11.5)
       actionview (>= 5.0.0)
       activesupport (>= 5.0.0)
@@ -301,7 +295,6 @@ GEM
     mongoid-locker (2.0.2)
       mongoid (>= 5.0, < 9)
     multi_json (1.15.0)
-    multipart-post (2.1.1)
     net-imap (0.3.7)
       date
       net-protocol
@@ -493,7 +486,7 @@ GEM
     websocket-driver (0.7.6)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
-    wicked_pdf (2.7.0)
+    wicked_pdf (2.6.3)
       activesupport
     xpath (3.2.0)
       nokogiri (~> 1.8)
