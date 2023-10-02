@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# rubocop:disable FactoryBot/FactoryAssociationWithStrategy - refactoring code as suggested by rubocop makes entire test suita to fail for no particular reason
 FactoryBot.define do
   factory :registration, class: "WasteCarriersEngine::Registration" do
     sequence :reg_identifier do |n|
@@ -18,3 +19,4 @@ FactoryBot.define do
     end
   end
 end
+# rubocop:enable FactoryBot/FactoryAssociationWithStrategy
