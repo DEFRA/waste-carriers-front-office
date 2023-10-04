@@ -1,7 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/defra-ruby-mocks.git
-  revision: 8056a090711c1339e1265efc5d91552d7d549040
-  branch: rails-7
+  revision: ed7cded33510481241a85905f283fd6378b598fa
   specs:
     defra_ruby_mocks (3.0.0)
       rails (~> 7.0)
@@ -10,8 +9,7 @@ GIT
 
 GIT
   remote: https://github.com/DEFRA/waste-carriers-engine
-  revision: a16843f7a62b24e360e4f3438e3ba4497114d7f3
-  branch: feature/RUBY-2477-wcr-tech-upgrade-to-rails-7
+  revision: 928d39178a56f4fb632d146cd45461345a369370
   specs:
     waste_carriers_engine (0.0.1)
       aasm (~> 5.5.0)

@@ -52,8 +52,7 @@ gem "wicked_pdf"
 
 # Use the waste carriers engine for the user journey
 gem "waste_carriers_engine",
-    git: "https://github.com/DEFRA/waste-carriers-engine",
-    branch: "feature/RUBY-2477-wcr-tech-upgrade-to-rails-7"
+    git: "https://github.com/DEFRA/waste-carriers-engine"
 
 # Use the defra ruby mocks engine to add support for mocking external services
 # in live environment. Essentially with this gem added and enabled the app
@@ -64,8 +63,7 @@ gem "waste_carriers_engine",
 # to call Companies House, instead it will call this app which will mock the end
 # point and return the response expected.
 gem "defra_ruby_mocks",
-    git: "https://github.com/DEFRA/defra-ruby-mocks.git",
-    branch: "rails-7"
+    git: "https://github.com/DEFRA/defra-ruby-mocks.git"
 
 # Allows us to automatically generate the change log from the tags, issues,
 # labels and pull requests on GitHub. Added as a dependency so all dev's have
