@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 source "https://rubygems.org"
-ruby "3.1.2"
+ruby "3.2.2"
 
 # See: https://github.com/sass/sassc-rails/issues/114
 gem "sassc-rails"
@@ -10,33 +10,35 @@ gem "sassc-rails"
 gem "jquery-rails"
 # Use MongoDB as the database, and mongoid as our ORM for it. This version of
 # mongoid supports MongoDb 3.6
-gem "mongoid", "~> 7.5"
+gem "mongoid"
 
-gem "rails", ">= 6.1.7"
+gem "rails", "~> 7.0"
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem "turbolinks"
 # Use Uglifier as compressor for JavaScript assets
-gem "uglifier", ">= 4.2.0"
+gem "uglifier"
 
 # Use CanCanCan for user roles and permissions
-gem "cancancan", "~> 3.3"
+gem "cancancan"
 
 # GOV.UK design system styling
 gem "defra_ruby_template"
 
+gem "defra_ruby_govpay"
+
 # Use Devise for user authentication
-gem "devise", ">= 4.4.3"
-gem "devise_invitable", "~> 2.0"
+gem "devise"
+gem "devise_invitable"
 
 # GOV.UK design system forms
 gem "govuk_design_system_formbuilder"
 
 # Use High Voltage for static pages
-gem "high_voltage", "~> 3.1"
+gem "high_voltage"
 
 # Use Kaminari for pagination
-gem "kaminari", "~> 1.2"
-gem "kaminari-mongoid", "~> 1.0"
+gem "kaminari"
+gem "kaminari-mongoid"
 
 gem "matrix"
 
@@ -44,14 +46,13 @@ gem "net-imap"
 gem "net-pop"
 gem "net-smtp"
 
-gem "secure_headers", "~> 6.3"
+gem "secure_headers"
 
 gem "wicked_pdf"
 
 # Use the waste carriers engine for the user journey
 gem "waste_carriers_engine",
-    git: "https://github.com/DEFRA/waste-carriers-engine",
-    branch: "main"
+    git: "https://github.com/DEFRA/waste-carriers-engine"
 
 # Use the defra ruby mocks engine to add support for mocking external services
 # in live environment. Essentially with this gem added and enabled the app
@@ -61,7 +62,8 @@ gem "waste_carriers_engine",
 # With the environment properly configured, when any app in an environment needs
 # to call Companies House, instead it will call this app which will mock the end
 # point and return the response expected.
-gem "defra_ruby_mocks"
+gem "defra_ruby_mocks",
+    git: "https://github.com/DEFRA/defra-ruby-mocks.git"
 
 # Allows us to automatically generate the change log from the tags, issues,
 # labels and pull requests on GitHub. Added as a dependency so all dev's have
@@ -124,5 +126,5 @@ group :test do
 
   # Generates a test coverage report on every `bundle exec rspec` call. We use
   # the output to feed SonarCloud's stats and analysis
-  gem "simplecov", "~> 0.22.0", require: false
+  gem "simplecov", require: false
 end
