@@ -68,7 +68,27 @@ The seed script also creates registrations to test the renewals process with.
 
 Seed the databases with:
 
-`bundle exec rake db:seed`
+```bash
+bundle exec rake db:seed
+```
+
+### Bulk seed data
+
+It is occasionally necessary to generate large volumes of registration data in development for performance profiling or debugging purposes. This can be done using the `seeds:bulk_registrations` task. This takes the same source data as the regular seed task as a baseline and creates multiple registrations and transient_registrations for each of the seed items. Execute this with:
+
+```bash
+bundle exec rake seeds:bulk_registrations[registration_multiplier,transient_registration_multiplier]
+```
+
+where `registration_multiplier` is the number of registrations to create for each base seed registration and `transient_registration_multiplier` is the number of transient_registrations to create for each base seed registration. There are currently 38 base registrations in the seed data, so the following would generate 760 registrations and 380 transient_registrations:
+
+```bash
+bundle exec rake seeds:bulk_registrations[20,10]
+```
+
+Notes:
+* This is not very efficient. Generating a production-scale (ca. 550,000 registrations) dataset takes in the region of 24 hours. 
+* Rebuilding wcr-vagrant or otherwise resetting your development database will destroy this data. Taking a backup (using `mongodump`) is strongly recommended so that the generated data can easily be reloaded (using `mongorestore`) if needed in the future without having to run the bulk generation process again.
 
 ## Running the app
 
