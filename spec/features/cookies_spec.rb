@@ -13,12 +13,12 @@ RSpec.describe "Cookies" do
     visit "/"
     expect(page).to have_link("View cookies", href: "/fo/pages/cookies")
 
-    click_on "Accept analytics cookies"
+    click_button "Accept analytics cookies"
     expect(page).to have_text("You’ve accepted analytics cookies")
 
     within cookie_banner_div do
       expect(page).to have_link("change your cookie settings", href: "/cookies/edit")
-      click_on "Hide this message"
+      click_button "Hide this message"
     end
 
     expect(page).not_to have_css(cookie_banner_div)
@@ -29,20 +29,20 @@ RSpec.describe "Cookies" do
   # rubocop:disable RSpec/ExampleLength
   it "User rejects analytics cookies and toggles their selection" do
     visit "/"
-    click_on "Reject analytics cookies"
+    click_button "Reject analytics cookies"
     expect(page).to have_text("You’ve rejected analytics cookies")
     expect(page.source).not_to have_text(google_analytics_render_tag)
 
-    click_on "change your cookie settings"
+    click_link "change your cookie settings"
     expect(page).to have_css("h1", text: "Cookie settings on Register as a waste carrier")
 
     choose "Use cookies that measure my website use"
-    click_on "Save changes"
+    click_button "Save changes"
     expect(page.source).to have_text(google_analytics_render_tag)
     expect(page).to have_text("You’ve set your cookie preferences.")
 
     choose "Do not use cookies that measure my website use"
-    click_on "Save changes"
+    click_button "Save changes"
     expect(page.source).not_to have_text(google_analytics_render_tag)
   end
   # rubocop:enable RSpec/ExampleLength
