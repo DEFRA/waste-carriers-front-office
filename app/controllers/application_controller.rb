@@ -10,25 +10,6 @@ class ApplicationController < ActionController::Base
   helper WasteCarriersEngine::ApplicationHelper
   helper WasteCarriersEngine::DataLayerHelper
 
-  # Within our production 'like' environments access to the app can only be
-  # obtained through `/fo`. Therefore to make this clear and ensure there is
-  # no confusion we redirect all requests to `/` to `/fo`
-  # https://stackoverflow.com/a/28822626/6117745
-  def redirect_root_to_dashboard
-    redirect_to root_path
-  end
-
-  # We need to handle users coming to the app via /fo/renew/CBDU12345 that are
-  # first required to sign in, and those that just come straight to the sign in
-  # page. In the first case we need to redirect them back to /fo/renew/CBDU12345
-  # after sign in, which we're able to do thanks to a handy helper method in
-  # Devise which stores the previous url. In the second case we redirect them to
-  # our dashboard.
-  # we always redirect to root_path
-  def after_sign_in_path_for(_resource)
-    root_path
-  end
-
   def after_sign_out_path_for(*)
     root_path
   end
