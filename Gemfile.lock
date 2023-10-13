@@ -9,7 +9,7 @@ GIT
 
 GIT
   remote: https://github.com/DEFRA/waste-carriers-engine
-  revision: 928d39178a56f4fb632d146cd45461345a369370
+  revision: 591e39432ee0581545d1f289544308dd50a7ac57
   specs:
     waste_carriers_engine (0.0.1)
       aasm (~> 5.5.0)
@@ -107,7 +107,7 @@ GEM
       public_suffix (>= 2.0.2, < 6.0)
     airbrake (13.0.3)
       airbrake-ruby (~> 6.0)
-    airbrake-ruby (6.2.1)
+    airbrake-ruby (6.2.2)
       rbtree3 (~> 0.6)
     ast (2.4.2)
     async (2.6.4)
@@ -267,7 +267,7 @@ GEM
       kaminari-core (~> 1.0)
       mongoid
     language_server-protocol (3.17.0.3)
-    loofah (2.21.3)
+    loofah (2.21.4)
       crass (~> 1.0.2)
       nokogiri (>= 1.12.0)
     mail (2.8.1)
@@ -280,7 +280,7 @@ GEM
     method_source (1.0.0)
     mime-types (3.5.1)
       mime-types-data (~> 3.2015)
-    mime-types-data (3.2023.0808)
+    mime-types-data (3.2023.1003)
     mini_mime (1.1.5)
     mini_portile2 (2.8.4)
     minitest (5.20.0)
@@ -448,7 +448,7 @@ GEM
     simplecov-html (0.12.3)
     simplecov_json_formatter (0.1.4)
     spring (4.1.1)
-    sprockets (4.2.0)
+    sprockets (4.2.1)
       concurrent-ruby (~> 1.0)
       rack (>= 2.2.4, < 4)
     sprockets-rails (3.4.2)
