@@ -18,9 +18,6 @@ gem "turbolinks"
 # Use Uglifier as compressor for JavaScript assets
 gem "uglifier"
 
-# Use CanCanCan for user roles and permissions
-gem "cancancan"
-
 # GOV.UK design system styling
 gem "defra_ruby_template"
 
@@ -44,7 +41,6 @@ gem "matrix"
 
 gem "net-imap"
 gem "net-pop"
-gem "net-smtp"
 
 gem "secure_headers"
 

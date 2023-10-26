@@ -138,7 +138,6 @@ GEM
     bson (4.15.0)
     builder (3.2.4)
     byebug (11.1.3)
-    cancancan (3.5.0)
     capybara (3.39.2)
       addressable
       matrix
@@ -499,7 +498,6 @@ PLATFORMS
 DEPENDENCIES
   aws-healthcheck
   byebug
-  cancancan
   capybara
   database_cleaner-mongoid
   defra_ruby_govpay
@@ -520,7 +518,6 @@ DEPENDENCIES
   mongoid
   net-imap
   net-pop
-  net-smtp
   passenger (~> 5.0, >= 5.0.30)
   puma
   rails (~> 7.0)
