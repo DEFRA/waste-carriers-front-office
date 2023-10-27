@@ -7,8 +7,6 @@
 
 The 'Register or renew as a waste carrier' service allows businesses, who deal with waste and have to register according to the regulations, to register online. Once registered, businesses can sign in again to edit their registrations if needed.
 
-The service also allows authorised agency users and NCCC staff to create and manage registrations on other users' behalf, e.g. to support 'Assisted Digital' registrations. The service provides an internal user account management facility which allows authorised administrators to create and manage other agency user accounts.
-
 This project is the front office application which members of the public to renew a registration. It uses the [waste carriers engine](https://github.com/DEFRA/waste-carriers-engine).
 
 ## Prequisites
