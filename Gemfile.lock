@@ -9,7 +9,7 @@ GIT
 
 GIT
   remote: https://github.com/DEFRA/waste-carriers-engine
-  revision: d50b2fa35dd28783bb82d4650fc6851158bfe869
+  revision: d7c81bf93547d4756bbb985e5c27275d590a34d3
   specs:
     waste_carriers_engine (0.0.1)
       aasm (~> 5.5.0)
@@ -193,8 +193,7 @@ GEM
       devise (>= 4.6)
     diff-lcs (1.5.0)
     docile (1.4.0)
-    domain_name (0.5.20190701)
-      unf (>= 0.0.5, < 1.0.0)
+    domain_name (0.6.20231109)
     dotenv (2.8.1)
     dotenv-rails (2.8.1)
       dotenv (= 2.8.1)
@@ -265,7 +264,7 @@ GEM
       kaminari-core (~> 1.0)
       mongoid
     language_server-protocol (3.17.0.3)
-    loofah (2.21.4)
+    loofah (2.22.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.12.0)
     mail (2.8.1)
@@ -467,9 +466,6 @@ GEM
       execjs (>= 0.3.0, < 3)
     uk_postcode (2.1.8)
     unaccent (0.4.0)
-    unf (0.1.4)
-      unf_ext
-    unf_ext (0.0.9)
     unicode-display_width (2.5.0)
     validates_email_format_of (1.7.2)
       i18n
