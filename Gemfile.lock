@@ -9,7 +9,7 @@ GIT
 
 GIT
   remote: https://github.com/DEFRA/waste-carriers-engine
-  revision: d50b2fa35dd28783bb82d4650fc6851158bfe869
+  revision: 4deebed15ba187ffbcac70ed712b5b5aef672198
   specs:
     waste_carriers_engine (0.0.1)
       aasm (~> 5.5.0)
@@ -303,7 +303,7 @@ GEM
     net-smtp (0.4.0)
       net-protocol
     netrc (0.11.0)
-    nio4r (2.5.9)
+    nio4r (2.6.0)
     nokogiri (1.15.4)
       mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
