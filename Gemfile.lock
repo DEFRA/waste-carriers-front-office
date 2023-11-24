@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/defra-ruby-mocks.git
-  revision: 3c88f0edf25c86b61991a7169c897fcf070c3e22
+  revision: 1f3ff58eb6ed51552e05fcfe20c5d242220f8fce
   specs:
     defra_ruby_mocks (4.0.0)
       rails (~> 7.0)
@@ -303,7 +303,7 @@ GEM
     net-smtp (0.4.0)
       net-protocol
     netrc (0.11.0)
-    nio4r (2.6.0)
+    nio4r (2.6.1)
     nokogiri (1.15.5)
       mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
