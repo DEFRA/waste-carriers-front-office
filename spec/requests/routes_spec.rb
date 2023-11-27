@@ -14,11 +14,7 @@ RSpec.describe "Root" do
 
   describe "GET /fo/renew/[registration number]" do
     let(:user) { create(:user) }
-    let(:registration) { create(:registration, :expires_soon, account_email: user.email) }
-
-    before do
-      allow(WasteCarriersEngine::FeatureToggle).to receive(:active?).and_call_original
-    end
+    let(:registration) { create(:registration, :expires_soon) }
 
     it "redirects to the application root page" do
       get "/fo/#{registration.reg_identifier}/renew"

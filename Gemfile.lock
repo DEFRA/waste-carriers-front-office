@@ -1,15 +1,15 @@
 GIT
   remote: https://github.com/DEFRA/defra-ruby-mocks.git
-  revision: 7089c8e5451ca32908d2ad5d9564668648d0b2ea
+  revision: d61f5d6367218890b253131255e689a57c22b6b6
   specs:
-    defra_ruby_mocks (4.0.0)
+    defra_ruby_mocks (4.1.0)
       rails (~> 7.0)
       sprockets
       sprockets-rails
 
 GIT
   remote: https://github.com/DEFRA/waste-carriers-engine
-  revision: 0dc0021d060d695ff21674c3121768b0f1f4efc8
+  revision: 96f2e562f79a4a782bef4a14d8520bd08b532bc1
   specs:
     waste_carriers_engine (0.0.1)
       aasm (~> 5.5.0)
@@ -169,10 +169,13 @@ GEM
       notifications-ruby-client
       rails
       sprockets-rails
-    defra_ruby_govpay (0.2.3)
+    defra_ruby_govpay (0.2.5)
       rest-client (~> 2.1)
-    defra_ruby_style (0.3.0)
+    defra_ruby_style (0.4.0)
       rubocop (>= 1.0, < 2.0)
+      rubocop-factory_bot
+      rubocop-rake
+      rubocop-rspec
     defra_ruby_template (3.13.0)
     defra_ruby_validators (2.5.2)
       activemodel
@@ -193,18 +196,17 @@ GEM
       devise (>= 4.6)
     diff-lcs (1.5.0)
     docile (1.4.0)
-    domain_name (0.5.20190701)
-      unf (>= 0.0.5, < 1.0.0)
+    domain_name (0.6.20231109)
     dotenv (2.8.1)
     dotenv-rails (2.8.1)
       dotenv (= 2.8.1)
       railties (>= 3.2)
     erubi (1.12.0)
     execjs (2.8.1)
-    factory_bot (6.2.1)
+    factory_bot (6.4.1)
       activesupport (>= 5.0.0)
-    factory_bot_rails (6.2.0)
-      factory_bot (~> 6.2.0)
+    factory_bot_rails (6.4.0)
+      factory_bot (~> 6.4)
       railties (>= 5.0.0)
     faraday (2.7.6)
       faraday-net_http (>= 2.0, < 3.1)
@@ -265,7 +267,7 @@ GEM
       kaminari-core (~> 1.0)
       mongoid
     language_server-protocol (3.17.0.3)
-    loofah (2.21.4)
+    loofah (2.22.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.12.0)
     mail (2.8.1)
@@ -282,7 +284,7 @@ GEM
     mini_mime (1.1.5)
     mini_portile2 (2.8.5)
     minitest (5.20.0)
-    mongo (2.19.2)
+    mongo (2.19.3)
       bson (>= 4.14.1, < 5.0.0)
     mongo_session_store (3.2.1)
       actionpack (>= 4.0)
@@ -294,7 +296,7 @@ GEM
     mongoid-locker (2.0.2)
       mongoid (>= 5.0, < 9)
     multi_json (1.15.0)
-    net-imap (0.4.4)
+    net-imap (0.4.6)
       date
       net-protocol
     net-pop (0.1.2)
@@ -304,8 +306,8 @@ GEM
     net-smtp (0.4.0)
       net-protocol
     netrc (0.11.0)
-    nio4r (2.5.9)
-    nokogiri (1.15.4)
+    nio4r (2.6.1)
+    nokogiri (1.15.5)
       mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
     notifications-ruby-client (5.4.0)
@@ -416,10 +418,13 @@ GEM
       rubocop (~> 1.41)
     rubocop-factory_bot (2.24.0)
       rubocop (~> 1.33)
-    rubocop-rails (2.22.1)
+    rubocop-rails (2.22.2)
       activesupport (>= 4.2.0)
       rack (>= 1.1)
       rubocop (>= 1.33.0, < 2.0)
+      rubocop-ast (>= 1.30.0, < 2.0)
+    rubocop-rake (0.6.0)
+      rubocop (~> 1.0)
     rubocop-rspec (2.25.0)
       rubocop (~> 1.40)
       rubocop-capybara (~> 2.17)
@@ -467,9 +472,6 @@ GEM
       execjs (>= 0.3.0, < 3)
     uk_postcode (2.1.8)
     unaccent (0.4.0)
-    unf (0.1.4)
-      unf_ext
-    unf_ext (0.0.8.2)
     unicode-display_width (2.5.0)
     validates_email_format_of (1.7.2)
       i18n
