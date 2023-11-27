@@ -2,7 +2,25 @@
 
 ## [Unreleased](https://github.com/defra/waste-carriers-front-office/tree/HEAD)
 
-[Full Changelog](https://github.com/defra/waste-carriers-front-office/compare/v1.17.0...HEAD)
+[Full Changelog](https://github.com/defra/waste-carriers-front-office/compare/v1.18.0...HEAD)
+
+**Merged pull requests:**
+
+- Bump defra\_ruby\_govpay from 0.2.4 to 0.2.5 [\#1191](https://github.com/DEFRA/waste-carriers-front-office/pull/1191) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump waste\_carriers\_engine from `d50b2fa` to `4deebed` [\#1190](https://github.com/DEFRA/waste-carriers-front-office/pull/1190) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump spring from 4.1.1 to 4.1.2 [\#1189](https://github.com/DEFRA/waste-carriers-front-office/pull/1189) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump defra\_ruby\_mocks from `7089c8e` to `3c88f0e` [\#1187](https://github.com/DEFRA/waste-carriers-front-office/pull/1187) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump net-imap from 0.4.4 to 0.4.5 [\#1186](https://github.com/DEFRA/waste-carriers-front-office/pull/1186) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump waste\_carriers\_engine from `0dc0021` to `d50b2fa` [\#1185](https://github.com/DEFRA/waste-carriers-front-office/pull/1185) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump defra\_ruby\_govpay from 0.2.3 to 0.2.4 [\#1184](https://github.com/DEFRA/waste-carriers-front-office/pull/1184) ([dependabot[bot]](https://github.com/apps/dependabot))
+
+## [v1.18.0](https://github.com/defra/waste-carriers-front-office/tree/v1.18.0) (2023-11-08)
+
+[Full Changelog](https://github.com/defra/waste-carriers-front-office/compare/v1.17.0...v1.18.0)
+
+**Implemented enhancements:**
+
+- Accessibility statement update [\#1160](https://github.com/DEFRA/waste-carriers-front-office/pull/1160) ([timstone](https://github.com/timstone))
 
 **Fixed bugs:**
 
@@ -10,6 +28,7 @@
 
 **Merged pull requests:**
 
+- Version 1.18.0 [\#1182](https://github.com/DEFRA/waste-carriers-front-office/pull/1182) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
 - Bump defra\_ruby\_govpay from 0.2.1 to 0.2.3 [\#1181](https://github.com/DEFRA/waste-carriers-front-office/pull/1181) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump waste\_carriers\_engine from `d9c7ffc` to `0dc0021` [\#1180](https://github.com/DEFRA/waste-carriers-front-office/pull/1180) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump net-imap from 0.4.2 to 0.4.4 [\#1177](https://github.com/DEFRA/waste-carriers-front-office/pull/1177) ([dependabot[bot]](https://github.com/apps/dependabot))
@@ -23,7 +42,6 @@
 - Bump waste\_carriers\_engine from `591e394` to `6e250e0` [\#1165](https://github.com/DEFRA/waste-carriers-front-office/pull/1165) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump mongoid from 8.0.6 to 8.0.7 [\#1163](https://github.com/DEFRA/waste-carriers-front-office/pull/1163) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump net-imap from 0.4.1 to 0.4.2 [\#1162](https://github.com/DEFRA/waste-carriers-front-office/pull/1162) ([dependabot[bot]](https://github.com/apps/dependabot))
-- Accessibility statement update [\#1160](https://github.com/DEFRA/waste-carriers-front-office/pull/1160) ([timstone](https://github.com/timstone))
 - Feature/ruby 2667 wcr full removal of all front office accounts [\#1158](https://github.com/DEFRA/waste-carriers-front-office/pull/1158) ([brujeo](https://github.com/brujeo))
 - Bump devise from 4.9.2 to 4.9.3 [\#1156](https://github.com/DEFRA/waste-carriers-front-office/pull/1156) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump defra\_ruby\_mocks from `ed7cded` to `7089c8e` [\#1154](https://github.com/DEFRA/waste-carriers-front-office/pull/1154) ([dependabot[bot]](https://github.com/apps/dependabot))
