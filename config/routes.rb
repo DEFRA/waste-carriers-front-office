@@ -8,7 +8,7 @@ Rails.application.routes.draw do
              controllers: { sessions: "sessions" },
              skip: :all
 
-  mount WasteCarriersEngine::Engine => "/fo"
+  mount WasteCarriersEngine::Engine => "/fo", as: "basic_app_engine"
 
   mount DefraRubyMocks::Engine => "/fo/mocks"
 
