@@ -9,7 +9,8 @@ GIT
 
 GIT
   remote: https://github.com/DEFRA/waste-carriers-engine
-  revision: b6fa963b3e59d5c67d1a24255ab860db631651c1
+  revision: adaf35d91ef108c80793f022ec1a5ca7a0d16cdf
+  branch: RUBY-2802-wcr-accessibility-replace-pdf-certificate-with-html-version
   specs:
     waste_carriers_engine (0.0.1)
       aasm (~> 5.5.0)

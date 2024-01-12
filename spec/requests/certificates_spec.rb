@@ -2,7 +2,7 @@
 
 require "rails_helper"
 
-RSpec.describe "External Certificates" do
+RSpec.describe "Certificates" do
   let(:registration) do
     create(:registration, :expires_soon, contact_email: "contact@example.com")
       .tap(&:generate_view_certificate_token)
@@ -11,7 +11,7 @@ RSpec.describe "External Certificates" do
 
   let(:valid_email) { registration.contact_email }
   let(:invalid_email) { "invalid@example.com" }
-  let(:base_path) { "/bo/registrations/#{registration.reg_identifier}/external/certificate" }
+  let(:base_path) { "/bo/registrations/#{registration.reg_identifier}/certificate" }
 
   describe "POST process_email" do
     context "with valid email" do
@@ -80,14 +80,14 @@ RSpec.describe "External Certificates" do
       it "redirects to the email confirmation page" do
         get base_path
 
-        expect(response).to redirect_to(registration_external_certificate_confirm_email_path(registration.reg_identifier))
+        expect(response).to redirect_to(registration_certificate_confirm_email_path(registration.reg_identifier))
         expect(response).to have_http_status(:found)
       end
     end
   end
 
   describe "GET pdf" do
-    let(:base_path) { "/bo/registrations/#{registration.reg_identifier}/external/pdf_certificate" }
+    let(:base_path) { "/bo/registrations/#{registration.reg_identifier}/pdf_certificate" }
 
     context "with valid email in session and valid token" do
       before do
@@ -139,7 +139,7 @@ RSpec.describe "External Certificates" do
       it "redirects to the email confirmation page" do
         get "#{base_path}.pdf"
 
-        expect(response).to redirect_to(registration_external_certificate_confirm_email_path(registration.reg_identifier))
+        expect(response).to redirect_to(registration_certificate_confirm_email_path(registration.reg_identifier))
         expect(response).to have_http_status(:found)
       end
     end
@@ -148,7 +148,7 @@ RSpec.describe "External Certificates" do
   describe "GET confirm_email" do
     context "with a valid token" do
       it "renders the confirm email page" do
-        get registration_external_certificate_confirm_email_path(registration.reg_identifier, token: token)
+        get registration_certificate_confirm_email_path(registration.reg_identifier, token: token)
         expect(response).to render_template(:confirm_email)
       end
     end
@@ -159,7 +159,7 @@ RSpec.describe "External Certificates" do
       end
 
       it "redirects due to invalid token" do
-        get registration_external_certificate_confirm_email_path(registration.reg_identifier, token: "invalidtoken")
+        get registration_certificate_confirm_email_path(registration.reg_identifier, token: "invalidtoken")
 
         expect(response).to redirect_to(root_path)
         expect(flash[:notice]).to eq("You do not have permission to view this page")
@@ -173,7 +173,7 @@ RSpec.describe "External Certificates" do
       end
 
       it "redirects due to expired token" do
-        get registration_external_certificate_confirm_email_path(registration.reg_identifier, token: token)
+        get registration_certificate_confirm_email_path(registration.reg_identifier, token: token)
 
         expect(response).to redirect_to(root_path)
         expect(flash[:notice]).to eq("You do not have permission to view this page")
@@ -182,6 +182,6 @@ RSpec.describe "External Certificates" do
   end
 
   def process_email_path
-    registration_external_certificate_process_email_path(registration.reg_identifier)
+    registration_certificate_process_email_path(registration.reg_identifier)
   end
 end

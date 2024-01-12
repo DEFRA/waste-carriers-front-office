@@ -19,4 +19,14 @@ Rails.application.routes.draw do
       post :hide_this_message
     end
   end
+
+  resources :registrations,
+    only: :show,
+    param: :reg_identifier,
+    path: "/bo/registrations" do
+      get "certificate", to: "certificates#show"
+      get "pdf_certificate", to: "certificates#pdf"
+      get "certificate_confirm_email", to: "certificates#confirm_email"
+      post "certificate_process_email", to: "certificates#process_email"
+    end
 end
