@@ -2,10 +2,13 @@
 
 ## [Unreleased](https://github.com/defra/waste-carriers-front-office/tree/HEAD)
 
-[Full Changelog](https://github.com/defra/waste-carriers-front-office/compare/v1.19.1...HEAD)
+[Full Changelog](https://github.com/defra/waste-carriers-front-office/compare/v1.20.0...HEAD)
 
 **Merged pull requests:**
 
+- Bump waste\_carriers\_engine from `24b3974` to `2e31886` [\#1269](https://github.com/DEFRA/waste-carriers-front-office/pull/1269) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Update accessibility statement [\#1268](https://github.com/DEFRA/waste-carriers-front-office/pull/1268) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
+- Update CHANGELOG [\#1266](https://github.com/DEFRA/waste-carriers-front-office/pull/1266) ([jjromeo](https://github.com/jjromeo))
 - Bump defra\_ruby\_template from 3.15.0 to 3.15.1 [\#1265](https://github.com/DEFRA/waste-carriers-front-office/pull/1265) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump mongoid from 8.0.7 to 8.0.8 [\#1260](https://github.com/DEFRA/waste-carriers-front-office/pull/1260) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump waste\_carriers\_engine from `c9cfbf0` to `a4aefb3` [\#1257](https://github.com/DEFRA/waste-carriers-front-office/pull/1257) ([dependabot[bot]](https://github.com/apps/dependabot))
@@ -25,6 +28,10 @@
 - Bump capybara from 3.39.2 to 3.40.0 [\#1236](https://github.com/DEFRA/waste-carriers-front-office/pull/1236) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump rspec-rails from 6.1.0 to 6.1.1 [\#1234](https://github.com/DEFRA/waste-carriers-front-office/pull/1234) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump govuk\_design\_system\_formbuilder from 4.1.1 to 5.0.0 [\#1211](https://github.com/DEFRA/waste-carriers-front-office/pull/1211) ([dependabot[bot]](https://github.com/apps/dependabot))
+
+## [v1.20.0](https://github.com/defra/waste-carriers-front-office/tree/v1.20.0) (2024-03-05)
+
+[Full Changelog](https://github.com/defra/waste-carriers-front-office/compare/v1.19.1...v1.20.0)
 
 ## [v1.19.1](https://github.com/defra/waste-carriers-front-office/tree/v1.19.1) (2024-01-22)
 
