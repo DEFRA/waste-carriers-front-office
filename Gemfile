@@ -120,6 +120,7 @@ group :test do
   gem "database_cleaner-mongoid"
   gem "factory_bot_rails"
   gem "rails-controller-testing"
+  gem "show_me_the_cookies"
 
   # Generates a test coverage report on every `bundle exec rspec` call. We use
   # the output to feed SonarCloud's stats and analysis
