@@ -8,7 +8,6 @@ class ApplicationController < ActionController::Base
   before_action :back_button_cache_buster
 
   helper WasteCarriersEngine::ApplicationHelper
-  helper WasteCarriersEngine::DataLayerHelper
 
   # http://jacopretorius.net/2014/01/force-page-to-reload-on-browser-back-in-rails.html
   def back_button_cache_buster
