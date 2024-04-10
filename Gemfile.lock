@@ -9,7 +9,7 @@ GIT
 
 GIT
   remote: https://github.com/DEFRA/waste-carriers-engine
-  revision: ea8075795811b9487bfc4d62d6143f1b863acbe2
+  revision: 4ed1fd4c9f088fe59df29413fc625b82e8869583
   branch: main
   specs:
     waste_carriers_engine (0.0.1)
@@ -376,7 +376,7 @@ GEM
       thor (~> 1.0)
       zeitwerk (~> 2.5)
     rainbow (3.1.1)
-    rake (13.2.0)
+    rake (13.2.1)
     rbtree3 (0.7.1)
     regexp_parser (2.9.0)
     responders (3.1.1)
