@@ -21,8 +21,6 @@ gem "uglifier"
 # GOV.UK design system styling
 gem "defra_ruby_template"
 
-gem "defra_ruby_govpay"
-
 # Use Devise for user authentication
 gem "devise"
 gem "devise_invitable"
@@ -62,6 +60,10 @@ gem "waste_carriers_engine",
 gem "defra_ruby_mocks",
     git: "https://github.com/DEFRA/defra-ruby-mocks.git",
     branch: "fix/govpay_return_url"
+
+gem "defra_ruby_govpay",
+    git: "https://github.com/DEFRA/defra-ruby-govpay",
+    branch: "debug/govpay_mocks_config"
 
 # Allows us to automatically generate the change log from the tags, issues,
 # labels and pull requests on GitHub. Added as a dependency so all dev's have
