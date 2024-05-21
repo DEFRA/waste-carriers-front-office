@@ -515,7 +515,6 @@ DEPENDENCIES
   byebug
   capybara
   database_cleaner-mongoid
-  defra_ruby_govpay
   defra_ruby_mocks!
   defra_ruby_style
   defra_ruby_template

@@ -21,8 +21,6 @@ gem "uglifier"
 # GOV.UK design system styling
 gem "defra_ruby_template"
 
-gem "defra_ruby_govpay"
-
 # Use Devise for user authentication
 gem "devise"
 gem "devise_invitable"
