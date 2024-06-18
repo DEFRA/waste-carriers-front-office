@@ -2,7 +2,15 @@
 
 ## [Unreleased](https://github.com/defra/waste-carriers-front-office/tree/HEAD)
 
-[Full Changelog](https://github.com/defra/waste-carriers-front-office/compare/v1.20.1...HEAD)
+[Full Changelog](https://github.com/defra/waste-carriers-front-office/compare/v1.20.2...HEAD)
+
+**Fixed bugs:**
+
+- Fix/govpay mocks config [\#1325](https://github.com/DEFRA/waste-carriers-front-office/pull/1325) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
+
+## [v1.20.2](https://github.com/defra/waste-carriers-front-office/tree/v1.20.2) (2024-05-28)
+
+[Full Changelog](https://github.com/defra/waste-carriers-front-office/compare/v1.20.1...v1.20.2)
 
 **Fixed bugs:**
 
@@ -10,6 +18,7 @@
 
 **Merged pull requests:**
 
+- Version 1.20.2 [\#1323](https://github.com/DEFRA/waste-carriers-front-office/pull/1323) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
 - Bump defra\_ruby\_mocks from `d5b563c` to `1df0e15` [\#1322](https://github.com/DEFRA/waste-carriers-front-office/pull/1322) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump defra\_ruby\_mocks from `d3f253a` to `d5b563c` [\#1321](https://github.com/DEFRA/waste-carriers-front-office/pull/1321) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump waste\_carriers\_engine from `d0cca34` to `a7700e0` [\#1320](https://github.com/DEFRA/waste-carriers-front-office/pull/1320) ([dependabot[bot]](https://github.com/apps/dependabot))
