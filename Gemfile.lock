@@ -10,7 +10,7 @@ GIT
 
 GIT
   remote: https://github.com/DEFRA/waste-carriers-engine
-  revision: 66f531a90c0146764fcadff032b109a5185d5a78
+  revision: 90b481aed4304db140279ba77535affbe10cc98a
   branch: feature/RUBY-3143_validate_govpay_callbacks
   specs:
     waste_carriers_engine (0.0.1)
@@ -482,9 +482,9 @@ GEM
     sprockets (4.2.1)
       concurrent-ruby (~> 1.0)
       rack (>= 2.2.4, < 4)
-    sprockets-rails (3.4.2)
-      actionpack (>= 5.2)
-      activesupport (>= 5.2)
+    sprockets-rails (3.5.1)
+      actionpack (>= 6.1)
+      activesupport (>= 6.1)
       sprockets (>= 3.0.0)
     strscan (3.1.0)
     thor (1.3.1)
