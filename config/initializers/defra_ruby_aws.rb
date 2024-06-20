@@ -3,8 +3,12 @@
 require "defra_ruby/aws"
 
 DefraRuby::Aws.configure do |c|
+  bucket_name = ENV.fetch("AWS_DEFRA_RUBY_MOCKS_BUCKET", nil)
+
+  raise StandardError, "Missing required env var 'AWS_DEFRA_RUBY_MOCKS_BUCKET'" if bucket_name.blank?
+
   govpay_mocks_bucket = {
-    name: ENV.fetch("AWS_DEFRA_RUBY_MOCKS_BUCKET", nil),
+    name: bucket_name,
     region: ENV.fetch("AWS_REGION", "eu-west-1"),
     credentials: {
       access_key_id: ENV.fetch("AWS_DEFRA_RUBY_MOCKS_ACCESS_KEY_ID", "dummy"),
