@@ -10,7 +10,7 @@ GIT
 
 GIT
   remote: https://github.com/DEFRA/waste-carriers-engine
-  revision: 90b481aed4304db140279ba77535affbe10cc98a
+  revision: bf3cc1dc4b0d638f13d53de7a352106a65c69ae8
   branch: feature/RUBY-3143_validate_govpay_callbacks
   specs:
     waste_carriers_engine (0.0.1)
