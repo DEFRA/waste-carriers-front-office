@@ -2,11 +2,33 @@
 
 ## [Unreleased](https://github.com/defra/waste-carriers-front-office/tree/HEAD)
 
-[Full Changelog](https://github.com/defra/waste-carriers-front-office/compare/v1.20.2...HEAD)
+[Full Changelog](https://github.com/defra/waste-carriers-front-office/compare/v1.21.0...HEAD)
+
+**Fixed bugs:**
+
+- \[RUBY-3083\] Refactor cookies banner views for consistent formatting and indentation. [\#1341](https://github.com/DEFRA/waste-carriers-front-office/pull/1341) ([jjromeo](https://github.com/jjromeo))
+
+**Merged pull requests:**
+
+- Bump rubocop-rails from 2.25.0 to 2.25.1 [\#1345](https://github.com/DEFRA/waste-carriers-front-office/pull/1345) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump waste\_carriers\_engine from `1ec5136` to `613323b` [\#1344](https://github.com/DEFRA/waste-carriers-front-office/pull/1344) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump net-imap from 0.4.11 to 0.4.14 [\#1342](https://github.com/DEFRA/waste-carriers-front-office/pull/1342) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump rspec-rails from 6.1.2 to 6.1.3 [\#1340](https://github.com/DEFRA/waste-carriers-front-office/pull/1340) ([dependabot[bot]](https://github.com/apps/dependabot))
+- \[RUBY-3223\] Update defra\_ruby\_template gem to version and use new [\#1339](https://github.com/DEFRA/waste-carriers-front-office/pull/1339) ([jjromeo](https://github.com/jjromeo))
+- Bump timecop from 0.9.8 to 0.9.10 [\#1335](https://github.com/DEFRA/waste-carriers-front-office/pull/1335) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump rails from 7.0.8.3 to 7.0.8.4 [\#1331](https://github.com/DEFRA/waste-carriers-front-office/pull/1331) ([dependabot[bot]](https://github.com/apps/dependabot))
+
+## [v1.21.0](https://github.com/defra/waste-carriers-front-office/tree/v1.21.0) (2024-06-18)
+
+[Full Changelog](https://github.com/defra/waste-carriers-front-office/compare/v1.20.2...v1.21.0)
 
 **Fixed bugs:**
 
 - Fix/govpay mocks config [\#1325](https://github.com/DEFRA/waste-carriers-front-office/pull/1325) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
+
+**Merged pull requests:**
+
+- Update CHANGELOG [\#1337](https://github.com/DEFRA/waste-carriers-front-office/pull/1337) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
 
 ## [v1.20.2](https://github.com/defra/waste-carriers-front-office/tree/v1.20.2) (2024-05-28)
 
@@ -1159,6 +1181,7 @@
 
 **Implemented enhancements:**
 
+- Change wording in accessibility statement from exemptions to carriers [\#286](https://github.com/DEFRA/waste-carriers-front-office/pull/286) ([andrewhick](https://github.com/andrewhick))
 - Remove GMT and fix links to accessibility statement [\#284](https://github.com/DEFRA/waste-carriers-front-office/pull/284) ([cintamani](https://github.com/cintamani))
 - Add accessibility statement page and footer link [\#280](https://github.com/DEFRA/waste-carriers-front-office/pull/280) ([cintamani](https://github.com/cintamani))
 
@@ -1169,7 +1192,6 @@
 
 **Merged pull requests:**
 
-- Change wording in accessibility statement from exemptions to carriers [\#286](https://github.com/DEFRA/waste-carriers-front-office/pull/286) ([andrewhick](https://github.com/andrewhick))
 - Bump waste\_carriers\_engine from `c666b9a` to `15a2d01` [\#283](https://github.com/DEFRA/waste-carriers-front-office/pull/283) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 - Bump waste\_carriers\_engine from `49f25cc` to `c666b9a` [\#282](https://github.com/DEFRA/waste-carriers-front-office/pull/282) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 - Bump devise from 4.7.0 to 4.7.1 [\#281](https://github.com/DEFRA/waste-carriers-front-office/pull/281) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
