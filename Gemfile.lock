@@ -555,6 +555,7 @@ DEPENDENCIES
   rails (~> 7.0)
   rails-controller-testing
   rspec-rails
+  rubocop-capybara
   rubocop-rails
   rubocop-rspec
   sassc-rails

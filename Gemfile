@@ -100,6 +100,7 @@ group :development, :test do
   gem "dotenv-rails"
   # Project uses RSpec as its test framework
   gem "rspec-rails"
+  gem "rubocop-capybara", require: false
   gem "rubocop-rails", require: false
   gem "rubocop-rspec", require: false
 end
