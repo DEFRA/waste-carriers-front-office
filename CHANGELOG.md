@@ -2,7 +2,30 @@
 
 ## [Unreleased](https://github.com/defra/waste-carriers-front-office/tree/HEAD)
 
-[Full Changelog](https://github.com/defra/waste-carriers-front-office/compare/v1.21.0...HEAD)
+[Full Changelog](https://github.com/defra/waste-carriers-front-office/compare/v1.22.0...HEAD)
+
+**Merged pull requests:**
+
+- Bump waste\_carriers\_engine from `f834981` to `bc2b22f` [\#1369](https://github.com/DEFRA/waste-carriers-front-office/pull/1369) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump waste\_carriers\_engine from `5c59dff` to `f834981` [\#1367](https://github.com/DEFRA/waste-carriers-front-office/pull/1367) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump net-imap from 0.4.14 to 0.4.15 [\#1366](https://github.com/DEFRA/waste-carriers-front-office/pull/1366) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump rexml from 3.3.3 to 3.3.6 [\#1364](https://github.com/DEFRA/waste-carriers-front-office/pull/1364) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump rspec-rails from 6.1.3 to 6.1.4 [\#1363](https://github.com/DEFRA/waste-carriers-front-office/pull/1363) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump govuk\_design\_system\_formbuilder from 5.4.1 to 5.5.0 [\#1362](https://github.com/DEFRA/waste-carriers-front-office/pull/1362) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump waste\_carriers\_engine from `2daefa3` to `5c59dff` [\#1361](https://github.com/DEFRA/waste-carriers-front-office/pull/1361) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump secure\_headers from 6.5.0 to 6.7.0 [\#1360](https://github.com/DEFRA/waste-carriers-front-office/pull/1360) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump rexml from 3.3.2 to 3.3.3 [\#1359](https://github.com/DEFRA/waste-carriers-front-office/pull/1359) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump waste\_carriers\_engine from `73da607` to `2daefa3` [\#1358](https://github.com/DEFRA/waste-carriers-front-office/pull/1358) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Chore/rubocop rails [\#1356](https://github.com/DEFRA/waste-carriers-front-office/pull/1356) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
+- Bump rubocop-capybara from 2.20.0 to 2.21.0 [\#1355](https://github.com/DEFRA/waste-carriers-front-office/pull/1355) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Add rubocop-capybara gem [\#1354](https://github.com/DEFRA/waste-carriers-front-office/pull/1354) ([PaulDoyle-DEFRA](https://github.com/PaulDoyle-DEFRA))
+- Bump rexml from 3.3.1 to 3.3.2 [\#1353](https://github.com/DEFRA/waste-carriers-front-office/pull/1353) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump waste\_carriers\_engine from `613323b` to `73da607` [\#1352](https://github.com/DEFRA/waste-carriers-front-office/pull/1352) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump govuk\_design\_system\_formbuilder from 5.4.0 to 5.4.1 [\#1349](https://github.com/DEFRA/waste-carriers-front-office/pull/1349) ([dependabot[bot]](https://github.com/apps/dependabot))
+
+## [v1.22.0](https://github.com/defra/waste-carriers-front-office/tree/v1.22.0) (2024-07-22)
+
+[Full Changelog](https://github.com/defra/waste-carriers-front-office/compare/v1.21.0...v1.22.0)
 
 **Fixed bugs:**
 
@@ -10,6 +33,7 @@
 
 **Merged pull requests:**
 
+- Update CHANGELOG [\#1350](https://github.com/DEFRA/waste-carriers-front-office/pull/1350) ([jjromeo](https://github.com/jjromeo))
 - Bump rubocop-rails from 2.25.0 to 2.25.1 [\#1345](https://github.com/DEFRA/waste-carriers-front-office/pull/1345) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump waste\_carriers\_engine from `1ec5136` to `613323b` [\#1344](https://github.com/DEFRA/waste-carriers-front-office/pull/1344) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump net-imap from 0.4.11 to 0.4.14 [\#1342](https://github.com/DEFRA/waste-carriers-front-office/pull/1342) ([dependabot[bot]](https://github.com/apps/dependabot))
