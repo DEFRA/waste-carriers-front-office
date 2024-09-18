@@ -11,12 +11,4 @@ Rails.application.routes.draw do
   mount WasteCarriersEngine::Engine => "/fo"
 
   mount DefraRubyMocks::Engine => "/fo/mocks"
-
-  resource :cookies, only: %i[edit update] do
-    member do
-      post :accept_analytics
-      post :reject_analytics
-      post :hide_this_message
-    end
-  end
 end
