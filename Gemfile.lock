@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/defra-ruby-mocks.git
-  revision: 5d15da81f8f10dff577f488f50488800534d5c07
+  revision: 3ccf0b823c7b537e24eeb9009182908c87c8013b
   specs:
     defra_ruby_mocks (4.2.2)
       defra_ruby_aws (~> 0.5)
@@ -135,20 +135,20 @@ GEM
     aws-eventstream (1.3.0)
     aws-healthcheck (2.0.0)
       railties (>= 3.0)
-    aws-partitions (1.935.0)
-    aws-sdk-core (3.196.1)
+    aws-partitions (1.977.0)
+    aws-sdk-core (3.208.0)
       aws-eventstream (~> 1, >= 1.3.0)
       aws-partitions (~> 1, >= 1.651.0)
-      aws-sigv4 (~> 1.8)
+      aws-sigv4 (~> 1.9)
       jmespath (~> 1, >= 1.6.1)
-    aws-sdk-kms (1.82.0)
-      aws-sdk-core (~> 3, >= 3.193.0)
-      aws-sigv4 (~> 1.1)
-    aws-sdk-s3 (1.151.0)
-      aws-sdk-core (~> 3, >= 3.194.0)
+    aws-sdk-kms (1.93.0)
+      aws-sdk-core (~> 3, >= 3.207.0)
+      aws-sigv4 (~> 1.5)
+    aws-sdk-s3 (1.165.0)
+      aws-sdk-core (~> 3, >= 3.207.0)
       aws-sdk-kms (~> 1)
-      aws-sigv4 (~> 1.8)
-    aws-sigv4 (1.8.0)
+      aws-sigv4 (~> 1.5)
+    aws-sigv4 (1.10.0)
       aws-eventstream (~> 1, >= 1.0.2)
     base64 (0.2.0)
     bcrypt (3.1.20)
