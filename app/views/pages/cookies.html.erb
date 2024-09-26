@@ -21,13 +21,11 @@
         </tr>
       </thead>
       <tbody class="govuk-table__body">
-        <% %i[registrations_session cookies_policy cookies_preferences_set].each do |cookie| %>
-          <tr class="govuk-table__row">
-            <td class="govuk-table__cell"><%= t(".cookies_we_use.#{cookie}.name") %></td>
-            <td class="govuk-table__cell"><%= t(".cookies_we_use.#{cookie}.purpose") %></td>
-            <td class="govuk-table__cell"><%= t(".cookies_we_use.#{cookie}.expires") %></td>
-          </tr>
-        <% end %>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell"><%= t(".cookies_we_use.registrations_session.name") %></td>
+          <td class="govuk-table__cell"><%= t(".cookies_we_use.registrations_session.purpose") %></td>
+          <td class="govuk-table__cell"><%= t(".cookies_we_use.registrations_session.expires") %></td>
+        </tr>
       </tbody>
     </table>
   </div>
