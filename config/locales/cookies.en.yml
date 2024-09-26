@@ -50,11 +50,3 @@ en:
             name: _registrations_session
             purpose: Used for session management and authentication
             expires: When you close your browser
-          cookies_policy:
-            name: cookies_policy
-            purpose: Saves your cookie consent settings
-            expires: 1 year
-          cookies_preferences_set:
-            name: cookies_preferences_set
-            purpose: Tells us about your cookie settings
-            expires: 1 year
