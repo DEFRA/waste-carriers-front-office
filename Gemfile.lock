@@ -10,7 +10,7 @@ GIT
 
 GIT
   remote: https://github.com/DEFRA/waste-carriers-engine
-  revision: ed36a08fec0c2879ba912d6935878a70d1bffbf6
+  revision: 16499c21f1f331ec0930fb3f2a25c4c0ff08d0ea
   branch: logging-govpay-status
   specs:
     waste_carriers_engine (0.0.1)
