@@ -9,7 +9,7 @@ FactoryBot.define do
 
     tier { "UPPER" }
 
-    addresses { [build(:address), build(:address)] }
+    addresses { [build(:address, :registered), build(:address, :contact)] }
 
     metaData { association(:metaData, strategy: :build) }
 
