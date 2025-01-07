@@ -59,7 +59,7 @@ module WasteCarriersFrontOffice
       if ENV["WCRS_MOCK_ENABLED"].to_s.downcase == "true"
         ENV.fetch("WCRS_MOCK_BO_COMPANIES_HOUSE_URL", nil)
       else
-        ENV["WCRS_COMPANIES_HOUSE_URL"] || "https://api.companieshouse.gov.uk/company/"
+        ENV["WCRS_COMPANIES_HOUSE_URL"] || "https://api.companieshouse.gov.uk/"
       end
 
     # Paths
