@@ -2,7 +2,30 @@
 
 ## [Unreleased](https://github.com/defra/waste-carriers-front-office/tree/HEAD)
 
-[Full Changelog](https://github.com/defra/waste-carriers-front-office/compare/v1.23.0...HEAD)
+[Full Changelog](https://github.com/defra/waste-carriers-front-office/compare/v1.24.0...HEAD)
+
+**Merged pull requests:**
+
+- Bump waste\_carriers\_engine from `e0f5ca9` to `1c54e68` [\#1440](https://github.com/DEFRA/waste-carriers-front-office/pull/1440) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump waste\_carriers\_engine from `0323a91` to `e0f5ca9` [\#1439](https://github.com/DEFRA/waste-carriers-front-office/pull/1439) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Use companies house gem [\#1437](https://github.com/DEFRA/waste-carriers-front-office/pull/1437) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
+- Bump webrick from 1.9.0 to 1.9.1 [\#1426](https://github.com/DEFRA/waste-carriers-front-office/pull/1426) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump rails-html-sanitizer from 1.6.0 to 1.6.1 [\#1425](https://github.com/DEFRA/waste-carriers-front-office/pull/1425) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump puma from 6.4.3 to 6.5.0 [\#1424](https://github.com/DEFRA/waste-carriers-front-office/pull/1424) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump waste\_carriers\_engine from `8422a04` to `916aca3` [\#1423](https://github.com/DEFRA/waste-carriers-front-office/pull/1423) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump net-imap from 0.5.0 to 0.5.1 [\#1422](https://github.com/DEFRA/waste-carriers-front-office/pull/1422) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump govuk\_design\_system\_formbuilder from 5.7.0 to 5.7.1 [\#1421](https://github.com/DEFRA/waste-carriers-front-office/pull/1421) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump rspec-rails from 7.0.1 to 7.1.0 [\#1420](https://github.com/DEFRA/waste-carriers-front-office/pull/1420) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump waste\_carriers\_engine from `218201b` to `8422a04` [\#1419](https://github.com/DEFRA/waste-carriers-front-office/pull/1419) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump webrick from 1.8.2 to 1.9.0 [\#1417](https://github.com/DEFRA/waste-carriers-front-office/pull/1417) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump defra\_ruby\_mocks from `19f2f86` to `e9c3fa7` [\#1416](https://github.com/DEFRA/waste-carriers-front-office/pull/1416) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump factory\_bot\_rails from 6.4.3 to 6.4.4 [\#1415](https://github.com/DEFRA/waste-carriers-front-office/pull/1415) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump rubocop-rails from 2.26.2 to 2.27.0 [\#1414](https://github.com/DEFRA/waste-carriers-front-office/pull/1414) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump rubocop-rspec from 3.1.0 to 3.2.0 [\#1412](https://github.com/DEFRA/waste-carriers-front-office/pull/1412) ([dependabot[bot]](https://github.com/apps/dependabot))
+
+## [v1.24.0](https://github.com/defra/waste-carriers-front-office/tree/v1.24.0) (2024-11-05)
+
+[Full Changelog](https://github.com/defra/waste-carriers-front-office/compare/v1.23.0...v1.24.0)
 
 **Implemented enhancements:**
 
@@ -16,6 +39,7 @@
 
 **Merged pull requests:**
 
+- Update CHANGELOG for v1.24.0 [\#1418](https://github.com/DEFRA/waste-carriers-front-office/pull/1418) ([jjromeo](https://github.com/jjromeo))
 - RUBY-3433: Tech Debt : remove devise and cancancan gems + remove front-office users from wcr engine [\#1411](https://github.com/DEFRA/waste-carriers-front-office/pull/1411) ([brujeo](https://github.com/brujeo))
 - Bump rails from 7.0.8.5 to 7.0.8.6 [\#1410](https://github.com/DEFRA/waste-carriers-front-office/pull/1410) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump waste\_carriers\_engine from `5f30b89` to `41f08ab` [\#1409](https://github.com/DEFRA/waste-carriers-front-office/pull/1409) ([dependabot[bot]](https://github.com/apps/dependabot))
