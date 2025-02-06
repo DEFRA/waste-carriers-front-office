@@ -2,10 +2,22 @@
 
 ## [Unreleased](https://github.com/defra/waste-carriers-front-office/tree/HEAD)
 
-[Full Changelog](https://github.com/defra/waste-carriers-front-office/compare/v1.24.0...HEAD)
+[Full Changelog](https://github.com/defra/waste-carriers-front-office/compare/v1.24.1...HEAD)
 
 **Merged pull requests:**
 
+- Bump waste\_carriers\_engine from `1c54e68` to `9b86878` [\#1451](https://github.com/DEFRA/waste-carriers-front-office/pull/1451) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump puma from 6.5.0 to 6.6.0 [\#1447](https://github.com/DEFRA/waste-carriers-front-office/pull/1447) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump rubocop-rspec from 3.3.0 to 3.4.0 [\#1445](https://github.com/DEFRA/waste-carriers-front-office/pull/1445) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump govuk\_design\_system\_formbuilder from 5.7.1 to 5.8.0 [\#1441](https://github.com/DEFRA/waste-carriers-front-office/pull/1441) ([dependabot[bot]](https://github.com/apps/dependabot))
+
+## [v1.24.1](https://github.com/defra/waste-carriers-front-office/tree/v1.24.1) (2025-01-15)
+
+[Full Changelog](https://github.com/defra/waste-carriers-front-office/compare/v1.24.0...v1.24.1)
+
+**Merged pull requests:**
+
+- Update CHANGELOG [\#1442](https://github.com/DEFRA/waste-carriers-front-office/pull/1442) ([jjromeo](https://github.com/jjromeo))
 - Bump waste\_carriers\_engine from `e0f5ca9` to `1c54e68` [\#1440](https://github.com/DEFRA/waste-carriers-front-office/pull/1440) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump waste\_carriers\_engine from `0323a91` to `e0f5ca9` [\#1439](https://github.com/DEFRA/waste-carriers-front-office/pull/1439) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Use companies house gem [\#1437](https://github.com/DEFRA/waste-carriers-front-office/pull/1437) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
