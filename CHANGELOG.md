@@ -2,10 +2,23 @@
 
 ## [Unreleased](https://github.com/defra/waste-carriers-front-office/tree/HEAD)
 
-[Full Changelog](https://github.com/defra/waste-carriers-front-office/compare/v1.24.1...HEAD)
+[Full Changelog](https://github.com/defra/waste-carriers-front-office/compare/v1.24.2...HEAD)
 
 **Merged pull requests:**
 
+- Use TaggedLogging [\#1459](https://github.com/DEFRA/waste-carriers-front-office/pull/1459) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
+- Bump waste\_carriers\_engine from `9b86878` to `abfc86d` [\#1456](https://github.com/DEFRA/waste-carriers-front-office/pull/1456) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump net-imap from 0.5.5 to 0.5.6 [\#1455](https://github.com/DEFRA/waste-carriers-front-office/pull/1455) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump rspec-rails from 7.1.0 to 7.1.1 [\#1452](https://github.com/DEFRA/waste-carriers-front-office/pull/1452) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump rubocop-rails from 2.28.0 to 2.29.1 [\#1446](https://github.com/DEFRA/waste-carriers-front-office/pull/1446) ([dependabot[bot]](https://github.com/apps/dependabot))
+
+## [v1.24.2](https://github.com/defra/waste-carriers-front-office/tree/v1.24.2) (2025-02-06)
+
+[Full Changelog](https://github.com/defra/waste-carriers-front-office/compare/v1.24.1...v1.24.2)
+
+**Merged pull requests:**
+
+- Version 1.24.2 [\#1453](https://github.com/DEFRA/waste-carriers-front-office/pull/1453) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
 - Bump waste\_carriers\_engine from `1c54e68` to `9b86878` [\#1451](https://github.com/DEFRA/waste-carriers-front-office/pull/1451) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump puma from 6.5.0 to 6.6.0 [\#1447](https://github.com/DEFRA/waste-carriers-front-office/pull/1447) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump rubocop-rspec from 3.3.0 to 3.4.0 [\#1445](https://github.com/DEFRA/waste-carriers-front-office/pull/1445) ([dependabot[bot]](https://github.com/apps/dependabot))
