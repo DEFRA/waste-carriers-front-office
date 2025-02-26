@@ -2,10 +2,19 @@
 
 ## [Unreleased](https://github.com/defra/waste-carriers-front-office/tree/HEAD)
 
-[Full Changelog](https://github.com/defra/waste-carriers-front-office/compare/v1.24.2...HEAD)
+[Full Changelog](https://github.com/defra/waste-carriers-front-office/compare/v1.24.3...HEAD)
 
 **Merged pull requests:**
 
+- Bump waste\_carriers\_engine from `f44eeac` to `5eda686` [\#1464](https://github.com/DEFRA/waste-carriers-front-office/pull/1464) ([dependabot[bot]](https://github.com/apps/dependabot))
+
+## [v1.24.3](https://github.com/defra/waste-carriers-front-office/tree/v1.24.3) (2025-02-17)
+
+[Full Changelog](https://github.com/defra/waste-carriers-front-office/compare/v1.24.2...v1.24.3)
+
+**Merged pull requests:**
+
+- Release v1.24.3 [\#1460](https://github.com/DEFRA/waste-carriers-front-office/pull/1460) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
 - Use TaggedLogging [\#1459](https://github.com/DEFRA/waste-carriers-front-office/pull/1459) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
 - Bump waste\_carriers\_engine from `9b86878` to `abfc86d` [\#1456](https://github.com/DEFRA/waste-carriers-front-office/pull/1456) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump net-imap from 0.5.5 to 0.5.6 [\#1455](https://github.com/DEFRA/waste-carriers-front-office/pull/1455) ([dependabot[bot]](https://github.com/apps/dependabot))
