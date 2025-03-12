@@ -12,7 +12,6 @@ gem "jquery-rails"
 # mongoid supports MongoDb 3.6
 gem "mongoid"
 
-gem "rails", "~> 7.0"
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem "turbolinks"
 # Use Uglifier as compressor for JavaScript assets
