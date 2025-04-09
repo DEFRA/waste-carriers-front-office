@@ -2,10 +2,19 @@
 
 ## [Unreleased](https://github.com/defra/waste-carriers-front-office/tree/HEAD)
 
-[Full Changelog](https://github.com/defra/waste-carriers-front-office/compare/v1.25.0...HEAD)
+[Full Changelog](https://github.com/defra/waste-carriers-front-office/compare/v1.25.1...HEAD)
 
 **Merged pull requests:**
 
+- Chore/test mongodb single node [\#1485](https://github.com/DEFRA/waste-carriers-front-office/pull/1485) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
+
+## [v1.25.1](https://github.com/defra/waste-carriers-front-office/tree/v1.25.1) (2025-03-12)
+
+[Full Changelog](https://github.com/defra/waste-carriers-front-office/compare/v1.25.0...v1.25.1)
+
+**Merged pull requests:**
+
+- Update CHANGELOG [\#1474](https://github.com/DEFRA/waste-carriers-front-office/pull/1474) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
 - Chore/ruby 3700 rails 7 2 [\#1473](https://github.com/DEFRA/waste-carriers-front-office/pull/1473) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
 - Chore/ruby 3700 rails 7 2 [\#1471](https://github.com/DEFRA/waste-carriers-front-office/pull/1471) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
 
