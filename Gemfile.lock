@@ -1,8 +1,8 @@
 GIT
   remote: https://github.com/DEFRA/defra-ruby-mocks.git
-  revision: cb3ea0ca2d6d4838f87eb86617752063288e8915
+  revision: 788626a10e64bebf6c6551cec9850cfa8002b554
   specs:
-    defra_ruby_mocks (5.1.0)
+    defra_ruby_mocks (5.1.1)
       defra_ruby_aws (~> 0.5)
       rails (~> 7.0)
       rest-client (~> 2.0)
