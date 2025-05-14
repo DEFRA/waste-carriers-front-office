@@ -193,7 +193,7 @@ GEM
       sprockets-rails
     defra_ruby_govpay (1.0.0)
       rest-client (~> 2.1)
-    defra_ruby_mocks (5.1.1)
+    defra_ruby_mocks (5.1.2)
       defra_ruby_aws (~> 0.5)
       rails (~> 7.0)
       rest-client (~> 2.0)
@@ -311,7 +311,7 @@ GEM
     language_server-protocol (3.17.0.4)
     lint_roller (1.1.0)
     logger (1.7.0)
-    loofah (2.24.0)
+    loofah (2.24.1)
       crass (~> 1.0.2)
       nokogiri (>= 1.12.0)
     mail (2.8.1)
@@ -324,9 +324,9 @@ GEM
     mime-types (3.7.0)
       logger
       mime-types-data (~> 3.2025, >= 3.2025.0507)
-    mime-types-data (3.2025.0507)
+    mime-types-data (3.2025.0514)
     mini_mime (1.1.5)
-    mini_portile2 (2.8.8)
+    mini_portile2 (2.8.9)
     minitest (5.25.5)
     mongo (2.21.0)
       bson (>= 4.14.1, < 6.0.0)
@@ -384,7 +384,7 @@ GEM
     protocol-http2 (0.15.1)
       protocol-hpack (~> 1.4)
       protocol-http (~> 0.18)
-    psych (5.2.4)
+    psych (5.2.6)
       date
       stringio
     public_suffix (5.0.4)
