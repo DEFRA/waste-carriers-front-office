@@ -56,6 +56,7 @@ Rails.application.configure do
   # Without that header, an infinte loop will result if config.force_ssl=true, as Rails will always
   # think the protocol is http and will try and redirect every request to an https equivalent.
   config.force_ssl = true
+  config.ssl_options = { exclude: proc { |env| env["PATH_INFO"].match(%r{/mocks/}) } }
 
   # Use the lowest log level by default to ensure availability of diagnostic information
   # when problems arise, but allow this to be overridden using an environment variable.
