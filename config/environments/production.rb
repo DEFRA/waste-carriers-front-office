@@ -59,9 +59,8 @@ Rails.application.configure do
   # Disable this global setting so we can exclude mocks from forced SSL:
   # config.force_ssl = true
 
-  require Rails.root.join("lib/middleware/skip_ssl_for_engine")
-
   # Insert middleware to skip SSL for the mocks
+  require_relative "../../lib/middleware/skip_ssl_for_mocks_engine"
   config.middleware.insert_before ActionDispatch::SSL, SkipSSLForMocksEngine
   config.middleware.use ActionDispatch::SSL
 
