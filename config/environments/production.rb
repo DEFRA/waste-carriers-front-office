@@ -59,11 +59,11 @@ Rails.application.configure do
   # Disable this global setting so we can exclude mocks from forced SSL:
   # config.force_ssl = true
 
-  # Add custom middleware logic to force SSL for all routes except the mocks:
-  config.middleware.insert_before ActionDispatch::SSL, Rack::SSL, exclude: lambda { |env|
-    request = Rack::Request.new(env)
-    request.path.start_with?("/fo/mocks")
-  }
+  require Rails.root.join("lib/middleware/skip_ssl_for_engine")
+
+  # Insert middleware to skip SSL for the mocks
+  config.middleware.insert_before ActionDispatch::SSL, SkipSSLForMocksEngine
+  config.middleware.use ActionDispatch::SSL
 
   # Use the lowest log level by default to ensure availability of diagnostic information
   # when problems arise, but allow this to be overridden using an environment variable.

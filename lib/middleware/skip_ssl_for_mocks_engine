@@ -1,0 +1,18 @@
+# frozen_string_literal: true
+
+class SkipSSLForMocksEngine
+  def initialize(app)
+    @app = app
+  end
+
+  def call(env)
+    req = Rack::Request.new(env)
+
+    # Skip SSL redirection for engine path
+    if req.scheme == 'http' && req.path.match(/\\/mocks\///)
+      return @app.call(env)
+    end
+
+    @app.call(env)
+  end
+end
