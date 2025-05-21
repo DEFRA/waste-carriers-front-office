@@ -61,7 +61,10 @@ Rails.application.configure do
 
   # Insert middleware to skip SSL for the mocks
   require_relative "../../lib/middleware/skip_ssl_for_mocks_engine"
-  config.middleware.insert_before ActionDispatch::SSL, SkipSSLForMocksEngine
+  if defined?(SkipSSLForMocksEngine)
+    config.middleware.insert_before ActionDispatch::SSL, SkipSSLForMocksEngine
+  end
+
   config.middleware.use ActionDispatch::SSL
 
   # Use the lowest log level by default to ensure availability of diagnostic information

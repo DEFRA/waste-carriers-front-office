@@ -52,6 +52,10 @@ gem "defra_ruby_govpay",
     git: "https://github.com/DEFRA/defra-ruby-govpay",
     branch: "chore/RUBY-3754_debug_govpay_timeout"
 
+gem "defra_ruby_mocks",
+    git: "https://github.com/DEFRA/defra-ruby-mocks",
+    branch: "chore/RUBY-3754_debug_govpay_timeout"
+
 # Use the defra ruby mocks engine to add support for mocking external services
 # in live environment. Essentially with this gem added and enabled the app
 # also becomes a 'mock' for external services like companies house.
@@ -60,7 +64,7 @@ gem "defra_ruby_govpay",
 # With the environment properly configured, when any app in an environment needs
 # to call Companies House, instead it will call this app which will mock the end
 # point and return the response expected.
-gem "defra_ruby_mocks"
+# gem "defra_ruby_mocks"
 
 # Allows us to automatically generate the change log from the tags, issues,
 # labels and pull requests on GitHub. Added as a dependency so all dev's have
