@@ -55,8 +55,15 @@ Rails.application.configure do
   # or the ELB. If X-Forwarded-Proto=https then Rails is happy and will serve secure connections.
   # Without that header, an infinte loop will result if config.force_ssl=true, as Rails will always
   # think the protocol is http and will try and redirect every request to an https equivalent.
-  config.force_ssl = true
-  config.ssl_options = { exclude: proc { |env| env["PATH_INFO"].match(%r{/mocks/}) } }
+
+  # Disable this global setting so we can exclude mocks from forced SSL:
+  # config.force_ssl = true
+
+  # Add custom middleware logic to force SSL for all routes except the mocks:
+  config.middleware.insert_before ActionDispatch::SSL, Rack::SSL, exclude: lambda { |env|
+    request = Rack::Request.new(env)
+    request.path.start_with?("/fo/mocks")
+  }
 
   # Use the lowest log level by default to ensure availability of diagnostic information
   # when problems arise, but allow this to be overridden using an environment variable.
