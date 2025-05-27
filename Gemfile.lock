@@ -8,7 +8,7 @@ GIT
 
 GIT
   remote: https://github.com/DEFRA/defra-ruby-mocks
-  revision: 8ea086260b2c1175586dc74553154c84f8dab11d
+  revision: 07320d5dbe0caf328d6874bdaf0b73410a6caecb
   branch: chore/RUBY-3754_debug_govpay_timeout
   specs:
     defra_ruby_mocks (5.1.3)
@@ -150,7 +150,7 @@ GEM
     aws-eventstream (1.3.2)
     aws-healthcheck (2.0.0)
       railties (>= 3.0)
-    aws-partitions (1.1106.0)
+    aws-partitions (1.1107.0)
     aws-sdk-core (3.224.0)
       aws-eventstream (~> 1, >= 1.3.0)
       aws-partitions (~> 1, >= 1.992.0)

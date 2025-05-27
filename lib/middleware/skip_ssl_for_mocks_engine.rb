@@ -11,7 +11,7 @@ module Middleware
       req = Rack::Request.new(env)
 
       # If the request is to the engine's path AND it's over HTTP
-      if req.scheme == "http" && req.path.match(%r{/[bo|f]/mocks/})
+      if req.scheme == "http" && req.path.match(%r{/mocks/})
         # Pretend the request is HTTPS to skip ActionDispatch::SSL redirection
         env["HTTPS"] = "on"
         env["rack.url_scheme"] = "https"

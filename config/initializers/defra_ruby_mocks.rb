@@ -10,4 +10,7 @@ DefraRubyMocks.configure do |configuration|
 
   # Govpay API mock details. Note FO application point to BO mocks and vice-versa by defafult.
   configuration.govpay_domain = ENV["WCRS_MOCK_FO_GOVPAY_URL"] || "http://localhost:8001/bo/mocks/govpay/v1"
+  configuration.govpay_other_domain = ENV["WCRS_MOCK_BO_GOVPAY_URL"] || "http://localhost:3002/fo/mocks/govpay/v1"
+  Rails.logger.warn ">>> WCRS_MOCK_FO_GOVPAY_URL: \"#{ENV["WCRS_MOCK_FO_GOVPAY_URL"]}\" => configuration.govpay_domain: \"#{configuration.govpay_domain}\""
+  Rails.logger.warn ">>> WCRS_MOCK_BO_GOVPAY_URL: \"#{ENV["WCRS_MOCK_BO_GOVPAY_URL"]}\" => configuration.govpay_other_domain: \"#{configuration.govpay_other_domain}\""
 end
