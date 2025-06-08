@@ -10,6 +10,10 @@ DefraRubyMocks.configure do |configuration|
   configuration.delay = ENV["WCRS_MOCK_DELAY"] || 1000
 
   # Govpay API mock details. Note FO application point to BO mocks and vice-versa by defafult.
-  configuration.govpay_domain = ENV["WCRS_MOCK_FO_GOVPAY_URL"] || "http://localhost:8001/bo/mocks/govpay/v1"
-  configuration.govpay_domain_other = ENV["WCRS_MOCK_BO_GOVPAY_URL"] || "http://localhost:3002/fo/mocks/govpay/v1"
+  configuration.govpay_mocks_external_root_url = ENV["WCRS_MOCK_FO_GOVPAY_URL"] || "http://localhost:8001/bo/mocks/govpay/v1"
+  configuration.govpay_mocks_external_root_url_other = ENV["WCRS_MOCK_BO_GOVPAY_URL"] || "http://localhost:3002/fo/mocks/govpay/v1"
+
+  # On our hosted environments, the FO/BOmocks are accessible to each other via different URLs:
+  configuration.govpay_mocks_internal_root_url = ENV["WCRS_MOCK_FO_GOVPAY_URL_INTERNAL"]
+  configuration.govpay_mocks_internal_root_url_other = ENV["WCRS_MOCK_BO_GOVPAY_URL_INTERNAL"]
 end
