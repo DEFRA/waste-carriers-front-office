@@ -20,7 +20,7 @@ GIT
 
 GIT
   remote: https://github.com/DEFRA/waste-carriers-engine
-  revision: ad64ddeecf9f6f46d80588d19dbd6ea4d850df5d
+  revision: 74ee7873c187530afed51409f16a009a913dd4fd
   branch: fix/RUBY-3754_debug_govpay_timeout
   specs:
     waste_carriers_engine (0.0.1)
@@ -30,7 +30,6 @@ GIT
       defra_ruby_alert (~> 2.2.1)
       defra_ruby_companies_house
       defra_ruby_email (~> 1.3.0)
-      defra_ruby_govpay
       defra_ruby_validators (~> 3.0)
       high_voltage (~> 3.1.2)
       jbuilder (~> 2.11.5)
