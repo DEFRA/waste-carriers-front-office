@@ -9,6 +9,7 @@ require "action_mailer/railtie"
 require "action_view/railtie"
 require "sprockets/railtie"
 require "waste_carriers_engine/detailed_logger"
+require "defra_ruby_govpay"
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
@@ -126,5 +127,6 @@ module WasteCarriersFrontOffice
         Rails.application.config.wcrs_logger_max_filesize
       )
     )
+    DefraRubyGovpay.logger = config.logger
   end
 end
