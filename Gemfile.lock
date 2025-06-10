@@ -12,7 +12,7 @@ GIT
 
 GIT
   remote: https://github.com/DEFRA/waste-carriers-engine
-  revision: 700d88bb33175fee18860c7a63f761f71bc79164
+  revision: ad64ddeecf9f6f46d80588d19dbd6ea4d850df5d
   branch: fix/RUBY-3754_debug_govpay_timeout
   specs:
     waste_carriers_engine (0.0.1)
