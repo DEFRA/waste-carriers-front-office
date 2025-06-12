@@ -9,6 +9,7 @@ require "action_mailer/railtie"
 require "action_view/railtie"
 require "sprockets/railtie"
 require "waste_carriers_engine/detailed_logger"
+require "defra_ruby_govpay"
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
@@ -86,7 +87,7 @@ module WasteCarriersFrontOffice
 
     # Govpay
     config.govpay_url = if ENV["WCRS_MOCK_ENABLED"].to_s.downcase == "true"
-                          ENV.fetch("WCRS_MOCK_FO_GOVPAY_URL", nil)
+                          ENV.fetch("WCRS_MOCK_FO_GOVPAY_URL_INTERNAL", nil)
                         else
                           ENV["WCRS_GOVPAY_URL"] || "https://publicapi.payments.service.gov.uk/v1"
                         end
@@ -126,5 +127,6 @@ module WasteCarriersFrontOffice
         Rails.application.config.wcrs_logger_max_filesize
       )
     )
+    DefraRubyGovpay.logger = config.logger
   end
 end
