@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/waste-carriers-engine
-  revision: 9eb9963292c0c191e02a159bec44941632f2aa24
+  revision: c6f537b9a6a2914ee7ce576230fb10f0f9b8b5d0
   branch: main
   specs:
     waste_carriers_engine (0.0.1)
@@ -153,7 +153,7 @@ GEM
     benchmark (0.4.1)
     bigdecimal (3.2.2)
     bindex (0.8.1)
-    bson (5.1.0)
+    bson (5.1.1)
     builder (3.3.0)
     byebug (12.0.0)
     capybara (3.40.0)
@@ -240,15 +240,15 @@ GEM
     factory_bot_rails (6.5.0)
       factory_bot (~> 6.5)
       railties (>= 6.1.0)
-    faraday (2.12.3)
+    faraday (2.13.1)
       faraday-net_http (>= 2.0, < 3.5)
       json
       logger
     faraday-http-cache (2.5.0)
       faraday (>= 0.8)
-    faraday-net_http (3.4.0)
+    faraday-net_http (3.4.1)
       net-http (>= 0.5.0)
-    faraday-retry (2.3.1)
+    faraday-retry (2.3.2)
       faraday (~> 2.0)
     ffi (1.15.5)
     fiber-annotation (0.2.0)
@@ -321,11 +321,11 @@ GEM
       net-pop
       net-smtp
     marcel (1.0.4)
-    matrix (0.4.2)
+    matrix (0.4.3)
     mime-types (3.7.0)
       logger
       mime-types-data (~> 3.2025, >= 3.2025.0507)
-    mime-types-data (3.2025.0610)
+    mime-types-data (3.2025.0617)
     mini_mime (1.1.5)
     mini_portile2 (2.8.9)
     minitest (5.25.5)
@@ -435,7 +435,7 @@ GEM
     rainbow (3.1.1)
     rake (13.3.0)
     rbtree3 (0.7.1)
-    rdoc (6.14.0)
+    rdoc (6.14.1)
       erb
       psych (>= 4.0.0)
     regexp_parser (2.10.0)
