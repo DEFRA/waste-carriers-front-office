@@ -2,10 +2,41 @@
 
 ## [Unreleased](https://github.com/defra/waste-carriers-front-office/tree/HEAD)
 
-[Full Changelog](https://github.com/defra/waste-carriers-front-office/compare/v1.25.1...HEAD)
+[Full Changelog](https://github.com/defra/waste-carriers-front-office/compare/v1.26.0...HEAD)
+
+**Fixed bugs:**
+
+- Fix/ruby 3754 govpay mocks config [\#1509](https://github.com/DEFRA/waste-carriers-front-office/pull/1509) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
+- Fix/ruby 3754 govpay mocks config [\#1508](https://github.com/DEFRA/waste-carriers-front-office/pull/1508) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
+- Fix/mock webhook fixtures [\#1499](https://github.com/DEFRA/waste-carriers-front-office/pull/1499) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
 
 **Merged pull requests:**
 
+- apply govuk-frontend update [\#1520](https://github.com/DEFRA/waste-carriers-front-office/pull/1520) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
+- bump engine version [\#1515](https://github.com/DEFRA/waste-carriers-front-office/pull/1515) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
+- Bump engine version [\#1512](https://github.com/DEFRA/waste-carriers-front-office/pull/1512) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
+- Bump engine version [\#1511](https://github.com/DEFRA/waste-carriers-front-office/pull/1511) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
+- Update dependencies [\#1504](https://github.com/DEFRA/waste-carriers-front-office/pull/1504) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
+- Bump defra\_ruby\_mocks from 5.1.2 to 5.1.3 [\#1503](https://github.com/DEFRA/waste-carriers-front-office/pull/1503) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump defra\_ruby\_mocks from 5.1.1 to 5.1.2 [\#1501](https://github.com/DEFRA/waste-carriers-front-office/pull/1501) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump defra\_ruby\_mocks from `cb3ea0c` to `788626a` [\#1498](https://github.com/DEFRA/waste-carriers-front-office/pull/1498) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump defra\_ruby\_mocks from `f97c5d8` to `cb3ea0c` [\#1497](https://github.com/DEFRA/waste-carriers-front-office/pull/1497) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump defra\_ruby\_mocks from `e9c3fa7` to `f97c5d8` [\#1495](https://github.com/DEFRA/waste-carriers-front-office/pull/1495) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump govuk\_design\_system\_formbuilder from 5.9.0 to 5.10.0 [\#1494](https://github.com/DEFRA/waste-carriers-front-office/pull/1494) ([dependabot[bot]](https://github.com/apps/dependabot))
+- \[RUBY-3757\] Update `defra_ruby_govpay` gem to latest revision in `Gemfile.lock` [\#1491](https://github.com/DEFRA/waste-carriers-front-office/pull/1491) ([jjromeo](https://github.com/jjromeo))
+- Update dependabot setup [\#1490](https://github.com/DEFRA/waste-carriers-front-office/pull/1490) ([brujeo](https://github.com/brujeo))
+- Bump net-imap from 0.5.6 to 0.5.7 [\#1489](https://github.com/DEFRA/waste-carriers-front-office/pull/1489) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump rubocop-rspec from 3.5.0 to 3.6.0 [\#1488](https://github.com/DEFRA/waste-carriers-front-office/pull/1488) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump dotenv-rails from 3.1.7 to 3.1.8 [\#1487](https://github.com/DEFRA/waste-carriers-front-office/pull/1487) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump waste\_carriers\_engine from `dd9610f` to `2afc745` [\#1476](https://github.com/DEFRA/waste-carriers-front-office/pull/1476) ([dependabot[bot]](https://github.com/apps/dependabot))
+
+## [v1.26.0](https://github.com/defra/waste-carriers-front-office/tree/v1.26.0) (2025-04-10)
+
+[Full Changelog](https://github.com/defra/waste-carriers-front-office/compare/v1.25.1...v1.26.0)
+
+**Merged pull requests:**
+
+- Version 1.26.0 [\#1486](https://github.com/DEFRA/waste-carriers-front-office/pull/1486) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
 - Chore/test mongodb single node [\#1485](https://github.com/DEFRA/waste-carriers-front-office/pull/1485) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
 
 ## [v1.25.1](https://github.com/defra/waste-carriers-front-office/tree/v1.25.1) (2025-03-12)
