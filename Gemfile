@@ -18,7 +18,7 @@ gem "turbolinks"
 gem "uglifier"
 
 # GOV.UK design system styling
-gem "defra_ruby_template", "~> 5.0"
+gem "defra_ruby_template", "~> 5.11"
 
 # Use Devise for user authentication
 gem "devise"

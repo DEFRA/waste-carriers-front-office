@@ -204,7 +204,7 @@ GEM
       rubocop-factory_bot
       rubocop-rake
       rubocop-rspec
-    defra_ruby_template (5.4.1)
+    defra_ruby_template (5.11.0)
     defra_ruby_validators (3.0.0)
       activemodel
       defra_ruby_companies_house
@@ -585,7 +585,7 @@ DEPENDENCIES
   database_cleaner-mongoid
   defra_ruby_mocks
   defra_ruby_style
-  defra_ruby_template (~> 5.0)
+  defra_ruby_template (~> 5.11)
   devise
   devise_invitable
   dotenv-rails
