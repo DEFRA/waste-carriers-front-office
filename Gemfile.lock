@@ -1,7 +1,7 @@
 GIT
   remote: https://github.com/DEFRA/waste-carriers-engine
-  revision: b533660811162f13ac6385cb9e92c880fc3b4a84
-  branch: main
+  revision: 4125dc402ada6f46ec8ee673fcfc4866e224a842
+  branch: fix/RUBY-3682_payment_expired
   specs:
     waste_carriers_engine (0.0.1)
       aasm (~> 5.5.0)
@@ -191,7 +191,7 @@ GEM
       notifications-ruby-client
       rails
       sprockets-rails
-    defra_ruby_govpay (1.0.0)
+    defra_ruby_govpay (1.0.2)
       rest-client (~> 2.1)
     defra_ruby_mocks (5.2.0)
       defra_ruby_aws (~> 0.5)
