@@ -4,12 +4,6 @@ WasteCarriersEngine.configure do |configuration|
   # Companies house API config
   configuration.companies_house_api_key = ENV.fetch("WCRS_COMPANIES_HOUSE_API_KEY", nil)
 
-  # We only want to alter the companies house URL if mocking is enabled. Else
-  # the url is handled by the defra-ruby-validators gem from the wcr engine
-  if ENV["WCRS_MOCK_ENABLED"].to_s.downcase == "true"
-    configuration.companies_house_host = ENV.fetch("WCRS_MOCK_BO_COMPANIES_HOUSE_URL", nil)
-  end
-
   # Last email cache config
   configuration.use_last_email_cache = ENV["WCRS_USE_LAST_EMAIL_CACHE"] || "false"
 
