@@ -2,10 +2,30 @@
 
 ## [Unreleased](https://github.com/defra/waste-carriers-front-office/tree/HEAD)
 
-[Full Changelog](https://github.com/defra/waste-carriers-front-office/compare/v1.27.0...HEAD)
+[Full Changelog](https://github.com/defra/waste-carriers-front-office/compare/v1.27.1...HEAD)
+
+**Implemented enhancements:**
+
+- Feature/ruby 3890 price changes [\#1529](https://github.com/DEFRA/waste-carriers-front-office/pull/1529) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
 
 **Merged pull requests:**
 
+- Bump waste\_carriers\_engine from `f54eeed` to `972ae3b` [\#1538](https://github.com/DEFRA/waste-carriers-front-office/pull/1538) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump waste\_carriers\_engine from `025bce5` to `f54eeed` [\#1535](https://github.com/DEFRA/waste-carriers-front-office/pull/1535) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump defra\_ruby\_mocks from 5.2.0 to 5.3.0 [\#1533](https://github.com/DEFRA/waste-carriers-front-office/pull/1533) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump rubocop-rails from 2.32.0 to 2.33.0 [\#1532](https://github.com/DEFRA/waste-carriers-front-office/pull/1532) ([dependabot[bot]](https://github.com/apps/dependabot))
+- \[RUBY-3896\] Remove duplicate companies house settings [\#1531](https://github.com/DEFRA/waste-carriers-front-office/pull/1531) ([jjromeo](https://github.com/jjromeo))
+- Bump spring from 4.3.0 to 4.4.0 [\#1530](https://github.com/DEFRA/waste-carriers-front-office/pull/1530) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump net-imap from 0.5.8 to 0.5.9 [\#1517](https://github.com/DEFRA/waste-carriers-front-office/pull/1517) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump rspec-rails from 8.0.0 to 8.0.1 [\#1516](https://github.com/DEFRA/waste-carriers-front-office/pull/1516) ([dependabot[bot]](https://github.com/apps/dependabot))
+
+## [v1.27.1](https://github.com/defra/waste-carriers-front-office/tree/v1.27.1) (2025-07-28)
+
+[Full Changelog](https://github.com/defra/waste-carriers-front-office/compare/v1.27.0...v1.27.1)
+
+**Merged pull requests:**
+
+- Version 1.27.1 [\#1527](https://github.com/DEFRA/waste-carriers-front-office/pull/1527) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
 - Bump waste\_carriers\_engine from `082c2ab` to `b533660` [\#1526](https://github.com/DEFRA/waste-carriers-front-office/pull/1526) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump waste\_carriers\_engine from `c6f537b` to `082c2ab` [\#1523](https://github.com/DEFRA/waste-carriers-front-office/pull/1523) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Restoring dependabot settings so it can pull engine updates [\#1522](https://github.com/DEFRA/waste-carriers-front-office/pull/1522) ([brujeo](https://github.com/brujeo))
