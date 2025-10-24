@@ -4,11 +4,9 @@ inherit_gem:
   defra_ruby_style:
     - default.yml
 
-require:
-  - rubocop-factory_bot
-
 plugins:
   - rubocop-capybara
+  - rubocop-factory_bot
   - rubocop-rails
   - rubocop-rspec
   - rubocop-rspec_rails
