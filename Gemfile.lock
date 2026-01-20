@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/waste-carriers-engine
-  revision: ff9eeaaa4f8511797ff3b5425f019f8790e9a8c7
+  revision: 9ae3d0393d576b264421cdd48a05d72dd085a5a9
   branch: main
   specs:
     waste_carriers_engine (0.0.1)
@@ -326,10 +326,10 @@ GEM
     mime-types (3.7.0)
       logger
       mime-types-data (~> 3.2025, >= 3.2025.0507)
-    mime-types-data (3.2025.0924)
+    mime-types-data (3.2026.0113)
     mini_mime (1.1.5)
     mini_portile2 (2.8.9)
-    minitest (6.0.0)
+    minitest (6.0.1)
       prism (~> 1.5)
     mongo (2.22.0)
       base64
@@ -380,7 +380,7 @@ GEM
     pp (0.6.3)
       prettyprint
     prettyprint (0.2.0)
-    prism (1.7.0)
+    prism (1.8.0)
     protocol-hpack (1.4.2)
     protocol-http (0.24.7)
     protocol-http1 (0.15.1)
@@ -439,7 +439,7 @@ GEM
     rainbow (3.1.1)
     rake (13.3.1)
     rbtree3 (0.7.1)
-    rdoc (7.0.1)
+    rdoc (7.1.0)
       erb
       psych (>= 4.0.0)
       tsort
@@ -541,7 +541,7 @@ GEM
       activesupport (>= 6.1)
       sprockets (>= 3.0.0)
     stringio (3.2.0)
-    thor (1.4.0)
+    thor (1.5.0)
     tilt (2.2.0)
     timecop (0.9.10)
     timeout (0.6.0)
