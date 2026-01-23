@@ -46,7 +46,7 @@ gem "wicked_pdf"
 # Use the waste carriers engine for the user journey
 gem "waste_carriers_engine",
     git: "https://github.com/DEFRA/waste-carriers-engine",
-    branch: "main"
+    branch: "feature/RUBY-4163-wcr-tech-debt-implement-os-places-address-lookup-service-in-defra-ruby-address-gem"
 
 # Use the defra ruby mocks engine to add support for mocking external services
 # in live environment. Essentially with this gem added and enabled the app
