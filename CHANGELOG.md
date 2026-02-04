@@ -2,10 +2,27 @@
 
 ## [Unreleased](https://github.com/defra/waste-carriers-front-office/tree/HEAD)
 
-[Full Changelog](https://github.com/defra/waste-carriers-front-office/compare/v1.28.0...HEAD)
+[Full Changelog](https://github.com/defra/waste-carriers-front-office/compare/v1.28.1...HEAD)
 
 **Merged pull requests:**
 
+- Bump waste\_carriers\_engine from `ff9eeaa` to `9ae3d03` [\#1588](https://github.com/DEFRA/waste-carriers-front-office/pull/1588) ([dependabot[bot]](https://github.com/apps/dependabot))
+- mongodb upgrade for github ci [\#1583](https://github.com/DEFRA/waste-carriers-front-office/pull/1583) ([brujeo](https://github.com/brujeo))
+- Bump uri from 1.0.3 to 1.0.4 [\#1582](https://github.com/DEFRA/waste-carriers-front-office/pull/1582) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump passenger from 6.1.0 to 6.1.1 [\#1580](https://github.com/DEFRA/waste-carriers-front-office/pull/1580) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump waste\_carriers\_engine from `7acf2ea` to `ff9eeaa` [\#1579](https://github.com/DEFRA/waste-carriers-front-office/pull/1579) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump waste\_carriers\_engine from `7a32d16` to `7acf2ea` [\#1578](https://github.com/DEFRA/waste-carriers-front-office/pull/1578) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump aws-sdk-s3 from 1.196.1 to 1.208.0 [\#1577](https://github.com/DEFRA/waste-carriers-front-office/pull/1577) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump net-imap from 0.5.12 to 0.6.2 [\#1576](https://github.com/DEFRA/waste-carriers-front-office/pull/1576) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump govuk\_design\_system\_formbuilder from 5.11.0 to 5.13.0 [\#1564](https://github.com/DEFRA/waste-carriers-front-office/pull/1564) ([dependabot[bot]](https://github.com/apps/dependabot))
+
+## [v1.28.1](https://github.com/defra/waste-carriers-front-office/tree/v1.28.1) (2025-11-18)
+
+[Full Changelog](https://github.com/defra/waste-carriers-front-office/compare/v1.28.0...v1.28.1)
+
+**Merged pull requests:**
+
+- Update CHANGELOG [\#1569](https://github.com/DEFRA/waste-carriers-front-office/pull/1569) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
 - Bump waste\_carriers\_engine from `1caef24` to `7a32d16` [\#1563](https://github.com/DEFRA/waste-carriers-front-office/pull/1563) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Add rubocop-factory\_bot gem and update defra\_ruby\_style dependency [\#1561](https://github.com/DEFRA/waste-carriers-front-office/pull/1561) ([brujeo](https://github.com/brujeo))
 - Updated CI configuration to use global sonar token [\#1560](https://github.com/DEFRA/waste-carriers-front-office/pull/1560) ([brujeo](https://github.com/brujeo))
