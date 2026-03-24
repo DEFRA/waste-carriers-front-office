@@ -2,10 +2,30 @@
 
 ## [Unreleased](https://github.com/defra/waste-carriers-front-office/tree/HEAD)
 
-[Full Changelog](https://github.com/defra/waste-carriers-front-office/compare/v1.28.1...HEAD)
+[Full Changelog](https://github.com/defra/waste-carriers-front-office/compare/v1.29.0...HEAD)
+
+**Implemented enhancements:**
+
+- Feature/ruby 4163 wcr tech debt implement os places address lookup service in defra ruby address gem [\#1603](https://github.com/DEFRA/waste-carriers-front-office/pull/1603) ([brujeo](https://github.com/brujeo))
 
 **Merged pull requests:**
 
+- Bump waste\_carriers\_engine from `9ae3d03` to `7473aae` [\#1600](https://github.com/DEFRA/waste-carriers-front-office/pull/1600) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump devise from 5.0.0 to 5.0.2 [\#1598](https://github.com/DEFRA/waste-carriers-front-office/pull/1598) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump secure\_headers from 7.1.0 to 7.2.0 [\#1597](https://github.com/DEFRA/waste-carriers-front-office/pull/1597) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump rspec-rails from 8.0.2 to 8.0.3 [\#1596](https://github.com/DEFRA/waste-carriers-front-office/pull/1596) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump net-imap from 0.6.2 to 0.6.3 [\#1593](https://github.com/DEFRA/waste-carriers-front-office/pull/1593) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump faraday from 2.14.0 to 2.14.1 [\#1592](https://github.com/DEFRA/waste-carriers-front-office/pull/1592) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump webrick from 1.9.1 to 1.9.2 [\#1572](https://github.com/DEFRA/waste-carriers-front-office/pull/1572) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump rubocop-factory\_bot from 2.27.1 to 2.28.0 [\#1567](https://github.com/DEFRA/waste-carriers-front-office/pull/1567) ([dependabot[bot]](https://github.com/apps/dependabot))
+
+## [v1.29.0](https://github.com/defra/waste-carriers-front-office/tree/v1.29.0) (2026-02-04)
+
+[Full Changelog](https://github.com/defra/waste-carriers-front-office/compare/v1.28.1...v1.29.0)
+
+**Merged pull requests:**
+
+- Release v1.29.0 [\#1590](https://github.com/DEFRA/waste-carriers-front-office/pull/1590) ([jjromeo](https://github.com/jjromeo))
 - Bump waste\_carriers\_engine from `ff9eeaa` to `9ae3d03` [\#1588](https://github.com/DEFRA/waste-carriers-front-office/pull/1588) ([dependabot[bot]](https://github.com/apps/dependabot))
 - mongodb upgrade for github ci [\#1583](https://github.com/DEFRA/waste-carriers-front-office/pull/1583) ([brujeo](https://github.com/brujeo))
 - Bump uri from 1.0.3 to 1.0.4 [\#1582](https://github.com/DEFRA/waste-carriers-front-office/pull/1582) ([dependabot[bot]](https://github.com/apps/dependabot))
