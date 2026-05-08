@@ -2,10 +2,20 @@
 
 ## [Unreleased](https://github.com/defra/waste-carriers-front-office/tree/HEAD)
 
-[Full Changelog](https://github.com/defra/waste-carriers-front-office/compare/v1.30.0...HEAD)
+[Full Changelog](https://github.com/defra/waste-carriers-front-office/compare/v1.30.1...HEAD)
 
 **Merged pull requests:**
 
+- Bump waste\_carriers\_engine from `1bb166d` to `33cc560` [\#1632](https://github.com/DEFRA/waste-carriers-front-office/pull/1632) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump activesupport from 7.2.3 to 7.2.3.1 [\#1614](https://github.com/DEFRA/waste-carriers-front-office/pull/1614) ([dependabot[bot]](https://github.com/apps/dependabot))
+
+## [v1.30.1](https://github.com/defra/waste-carriers-front-office/tree/v1.30.1) (2026-04-16)
+
+[Full Changelog](https://github.com/defra/waste-carriers-front-office/compare/v1.30.0...v1.30.1)
+
+**Merged pull requests:**
+
+- Release/v1.30.1 [\#1624](https://github.com/DEFRA/waste-carriers-front-office/pull/1624) ([brujeo](https://github.com/brujeo))
 - Bump gem dependencies 2026-04-15 [\#1623](https://github.com/DEFRA/waste-carriers-front-office/pull/1623) ([brujeo](https://github.com/brujeo))
 - enabling cross-app mocks [\#1617](https://github.com/DEFRA/waste-carriers-front-office/pull/1617) ([brujeo](https://github.com/brujeo))
 - Bump waste\_carriers\_engine from `22be190` to `9379f29` [\#1616](https://github.com/DEFRA/waste-carriers-front-office/pull/1616) ([dependabot[bot]](https://github.com/apps/dependabot))
