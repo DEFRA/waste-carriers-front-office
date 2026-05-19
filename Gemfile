@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 source "https://rubygems.org"
-ruby "3.2.2"
+ruby "3.4.6"
 
 # See: https://github.com/sass/sassc-rails/issues/114
 gem "sassc-rails"
@@ -117,6 +117,7 @@ group :test do
   gem "capybara"
   gem "database_cleaner-mongoid"
   gem "factory_bot_rails"
+  gem "observer"
   gem "rails-controller-testing"
   gem "show_me_the_cookies"
 
