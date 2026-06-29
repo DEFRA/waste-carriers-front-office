@@ -2,10 +2,25 @@
 
 ## [Unreleased](https://github.com/defra/waste-carriers-front-office/tree/HEAD)
 
-[Full Changelog](https://github.com/defra/waste-carriers-front-office/compare/v1.30.1...HEAD)
+[Full Changelog](https://github.com/defra/waste-carriers-front-office/compare/v1.30.2...HEAD)
 
 **Merged pull requests:**
 
+- Bump waste\_carriers\_engine from `9e7db7a` to `0bb3c95` [\#1661](https://github.com/DEFRA/waste-carriers-front-office/pull/1661) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Feature/ruby 4335 wcr security enable bundler cooldown give new gems a few days to be vetted [\#1660](https://github.com/DEFRA/waste-carriers-front-office/pull/1660) ([brujeo](https://github.com/brujeo))
+- Bump waste\_carriers\_engine from `3f7611e` to `9e7db7a` [\#1653](https://github.com/DEFRA/waste-carriers-front-office/pull/1653) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump waste\_carriers\_engine from `33cc560` to `3f7611e` [\#1651](https://github.com/DEFRA/waste-carriers-front-office/pull/1651) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump net-imap from 0.6.4 to 0.6.4.1 [\#1650](https://github.com/DEFRA/waste-carriers-front-office/pull/1650) ([dependabot[bot]](https://github.com/apps/dependabot))
+- RUBY-4265 Update Ruby to 3.4.6 [\#1639](https://github.com/DEFRA/waste-carriers-front-office/pull/1639) ([jjromeo](https://github.com/jjromeo))
+- Bump faraday from 2.14.1 to 2.14.2 [\#1638](https://github.com/DEFRA/waste-carriers-front-office/pull/1638) ([dependabot[bot]](https://github.com/apps/dependabot))
+
+## [v1.30.2](https://github.com/defra/waste-carriers-front-office/tree/v1.30.2) (2026-05-09)
+
+[Full Changelog](https://github.com/defra/waste-carriers-front-office/compare/v1.30.1...v1.30.2)
+
+**Merged pull requests:**
+
+- Release/v1.30.2 [\#1634](https://github.com/DEFRA/waste-carriers-front-office/pull/1634) ([brujeo](https://github.com/brujeo))
 - Bump waste\_carriers\_engine from `1bb166d` to `33cc560` [\#1632](https://github.com/DEFRA/waste-carriers-front-office/pull/1632) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump activesupport from 7.2.3 to 7.2.3.1 [\#1614](https://github.com/DEFRA/waste-carriers-front-office/pull/1614) ([dependabot[bot]](https://github.com/apps/dependabot))
 
