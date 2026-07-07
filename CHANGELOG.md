@@ -2,10 +2,19 @@
 
 ## [Unreleased](https://github.com/defra/waste-carriers-front-office/tree/HEAD)
 
-[Full Changelog](https://github.com/defra/waste-carriers-front-office/compare/v1.30.2...HEAD)
+[Full Changelog](https://github.com/defra/waste-carriers-front-office/compare/v1.30.3...HEAD)
 
 **Merged pull requests:**
 
+- Bump waste\_carriers\_engine from `0bb3c95` to `2fef54b` [\#1665](https://github.com/DEFRA/waste-carriers-front-office/pull/1665) ([dependabot[bot]](https://github.com/apps/dependabot))
+
+## [v1.30.3](https://github.com/defra/waste-carriers-front-office/tree/v1.30.3) (2026-06-29)
+
+[Full Changelog](https://github.com/defra/waste-carriers-front-office/compare/v1.30.2...v1.30.3)
+
+**Merged pull requests:**
+
+- Update CHANGELOG.md [\#1662](https://github.com/DEFRA/waste-carriers-front-office/pull/1662) ([brujeo](https://github.com/brujeo))
 - Bump waste\_carriers\_engine from `9e7db7a` to `0bb3c95` [\#1661](https://github.com/DEFRA/waste-carriers-front-office/pull/1661) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Feature/ruby 4335 wcr security enable bundler cooldown give new gems a few days to be vetted [\#1660](https://github.com/DEFRA/waste-carriers-front-office/pull/1660) ([brujeo](https://github.com/brujeo))
 - Bump waste\_carriers\_engine from `3f7611e` to `9e7db7a` [\#1653](https://github.com/DEFRA/waste-carriers-front-office/pull/1653) ([dependabot[bot]](https://github.com/apps/dependabot))
