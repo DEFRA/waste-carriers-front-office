@@ -2,10 +2,22 @@
 
 ## [Unreleased](https://github.com/defra/waste-carriers-front-office/tree/HEAD)
 
-[Full Changelog](https://github.com/defra/waste-carriers-front-office/compare/v1.30.4...HEAD)
+[Full Changelog](https://github.com/defra/waste-carriers-front-office/compare/v1.30.5...HEAD)
 
 **Merged pull requests:**
 
+- Bump waste\_carriers\_engine from `e058483` to `144a324` [\#1698](https://github.com/DEFRA/waste-carriers-front-office/pull/1698) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump waste\_carriers\_engine from `62e65bb` to `e058483` [\#1691](https://github.com/DEFRA/waste-carriers-front-office/pull/1691) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump json from 2.21.1 to 2.21.2 [\#1690](https://github.com/DEFRA/waste-carriers-front-office/pull/1690) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump activestorage from 7.2.3.1 to 7.2.3.2 [\#1686](https://github.com/DEFRA/waste-carriers-front-office/pull/1686) ([dependabot[bot]](https://github.com/apps/dependabot))
+
+## [v1.30.5](https://github.com/defra/waste-carriers-front-office/tree/v1.30.5) (2026-07-30)
+
+[Full Changelog](https://github.com/defra/waste-carriers-front-office/compare/v1.30.4...v1.30.5)
+
+**Merged pull requests:**
+
+- Release/v1.30.5 [\#1683](https://github.com/DEFRA/waste-carriers-front-office/pull/1683) ([brujeo](https://github.com/brujeo))
 - Bump waste\_carriers\_engine from `2fef54b` to `6f26c2e` [\#1670](https://github.com/DEFRA/waste-carriers-front-office/pull/1670) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Add release preparation and completion scripts [\#1669](https://github.com/DEFRA/waste-carriers-front-office/pull/1669) ([brujeo](https://github.com/brujeo))
 
