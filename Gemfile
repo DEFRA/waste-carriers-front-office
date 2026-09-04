@@ -3,8 +3,8 @@
 source "https://rubygems.org", cooldown: 7
 ruby "3.4.6"
 
-# See: https://github.com/sass/sassc-rails/issues/114
-gem "sassc-rails"
+# Use Dart Sass with the Sprockets asset pipeline
+gem "dartsass-sprockets"
 
 # Use jquery as the JavaScript library
 gem "jquery-rails"
@@ -18,7 +18,7 @@ gem "turbolinks"
 gem "uglifier"
 
 # GOV.UK design system styling
-gem "defra_ruby_template", "~> 5.11"
+gem "defra_ruby_template", "~> 6.4"
 
 # Use Devise for user authentication
 gem "devise"
