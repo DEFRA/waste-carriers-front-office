@@ -231,7 +231,7 @@ GEM
       actionmailer (>= 5.0)
       devise (>= 4.6)
     diff-lcs (1.6.2)
-    domain_name (0.6.20240107)
+    domain_name (0.6.20260829)
     dotenv (3.2.0)
     dotenv-rails (3.2.0)
       dotenv (= 3.2.0)
@@ -358,7 +358,7 @@ GEM
       mongoid (>= 5.0, < 9)
     net-http (0.9.1)
       uri (>= 0.11.1)
-    net-imap (0.6.4.1)
+    net-imap (0.6.6)
       date
       net-protocol
     net-pop (0.1.2)
@@ -541,7 +541,7 @@ GEM
     show_me_the_cookies (6.0.0)
       capybara (>= 2, < 4)
     simplecov (1.0.2)
-    simpleidn (0.2.3)
+    simpleidn (0.3.0)
     spring (4.7.0)
     sprockets (4.4.1)
       concurrent-ruby (~> 1.1)
