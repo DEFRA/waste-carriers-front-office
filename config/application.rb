@@ -20,9 +20,7 @@ module WasteCarriersFrontOffice
     config.load_defaults 8.1
 
     # Keep button_to rendering <input type="submit"> rather than the <button>
-    # element that became the default in Rails 7.0. The stylesheets
-    # (input.button-link) and the acceptance-test page objects depend on the
-    # input markup; switching to <button> is a separate change.
+    # element that became the default in Rails 7.0
     config.action_view.button_to_generates_button_tag = false
 
     # Settings in config/environments/* take precedence over those specified here.
