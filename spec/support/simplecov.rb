@@ -16,13 +16,13 @@ SimpleCov.start("rails") do
   # We filter the spec folder, mainly to ensure that any dummy apps don't get
   # included in the coverage report. However our intent is that nothing in the
   # spec folder should be included
-  add_filter "/spec/"
+  skip "/spec/"
   # Our db folder contains migrations and seeding, functionality we are ok not
   # to have tests for
-  add_filter "/db/"
+  skip "/db/"
 
-  add_group "Forms", "app/forms"
-  add_group "Presenters", "app/presenters"
-  add_group "Services", "app/services"
-  add_group "Validators", "app/validators"
+  group "Forms", "app/forms"
+  group "Presenters", "app/presenters"
+  group "Services", "app/services"
+  group "Validators", "app/validators"
 end
