@@ -2,7 +2,18 @@
 
 ## [Unreleased](https://github.com/defra/waste-carriers-front-office/tree/HEAD)
 
-[Full Changelog](https://github.com/defra/waste-carriers-front-office/compare/v1.30.5...HEAD)
+[Full Changelog](https://github.com/defra/waste-carriers-front-office/compare/v1.30.6...HEAD)
+
+**Merged pull requests:**
+
+- Bump waste\_carriers\_engine from `0911766` to `7bd1056` [\#1703](https://github.com/DEFRA/waste-carriers-front-office/pull/1703) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump waste\_carriers\_engine from `144a324` to `0911766` [\#1702](https://github.com/DEFRA/waste-carriers-front-office/pull/1702) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Upgrade to Rails 8.1 and adjust dependencies and configurations [\#1701](https://github.com/DEFRA/waste-carriers-front-office/pull/1701) ([brujeo](https://github.com/brujeo))
+- WCR: Update defra-ruby-template to version 6.4.0 [\#1694](https://github.com/DEFRA/waste-carriers-front-office/pull/1694) ([jjromeo](https://github.com/jjromeo))
+
+## [v1.30.6](https://github.com/defra/waste-carriers-front-office/tree/v1.30.6) (2026-09-03)
+
+[Full Changelog](https://github.com/defra/waste-carriers-front-office/compare/v1.30.5...v1.30.6)
 
 **Merged pull requests:**
 
