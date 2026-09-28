@@ -6,6 +6,7 @@
 
 **Merged pull requests:**
 
+- Bump waste\_carriers\_engine from `be226a9` to `8d7576f` [\#1711](https://github.com/DEFRA/waste-carriers-front-office/pull/1711) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump waste\_carriers\_engine from `0911766` to `7bd1056` [\#1703](https://github.com/DEFRA/waste-carriers-front-office/pull/1703) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump waste\_carriers\_engine from `144a324` to `0911766` [\#1702](https://github.com/DEFRA/waste-carriers-front-office/pull/1702) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Upgrade to Rails 8.1 and adjust dependencies and configurations [\#1701](https://github.com/DEFRA/waste-carriers-front-office/pull/1701) ([brujeo](https://github.com/brujeo))
