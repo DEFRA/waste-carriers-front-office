@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
-source "https://rubygems.org"
-ruby "3.2.2"
+source "https://rubygems.org", cooldown: 7
+ruby "3.4.6"
 
-# See: https://github.com/sass/sassc-rails/issues/114
-gem "sassc-rails"
+# Use Dart Sass with the Sprockets asset pipeline
+gem "dartsass-sprockets"
 
 # Use jquery as the JavaScript library
 gem "jquery-rails"
@@ -18,7 +18,7 @@ gem "turbolinks"
 gem "uglifier"
 
 # GOV.UK design system styling
-gem "defra_ruby_template", "~> 5.11"
+gem "defra_ruby_template", "~> 6.4"
 
 # Use Devise for user authentication
 gem "devise"
@@ -117,6 +117,7 @@ group :test do
   gem "capybara"
   gem "database_cleaner-mongoid"
   gem "factory_bot_rails"
+  gem "observer"
   gem "rails-controller-testing"
   gem "show_me_the_cookies"
 

@@ -17,8 +17,12 @@ Bundler.require(*Rails.groups)
 
 module WasteCarriersFrontOffice
   class Application < Rails::Application
-    config.load_defaults 6.1
-    config.autoloader = :classic
+    config.load_defaults 8.1
+
+    # Keep button_to rendering <input type="submit"> rather than the <button>
+    # element that became the default in Rails 7.0
+    config.action_view.button_to_generates_button_tag = false
+
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
@@ -65,13 +69,20 @@ module WasteCarriersFrontOffice
         ENV["WCRS_COMPANIES_HOUSE_URL"] || "https://api.companieshouse.gov.uk/"
       end
 
+    # OS Placess postcode lookup config
+    config.os_places_api_key = ENV.fetch("WCRS_OSPLACES_KEY", nil)
+    config.os_places_service_url =
+      if ENV["WCRS_MOCK_ENABLED"].to_s.downcase == "true"
+        ENV.fetch("WCRS_MOCK_BO_OSPLACES_URL", nil)
+      else
+        ENV["WCRS_OSPLACES_URL"] || "https://api.os.uk/search/places/v1"
+      end
+
     # Paths
     # This is the domain to use on URLs for FO services such as renewal and deregistration
     config.wcrs_fo_link_domain = ENV["WCRS_RENEWALS_DOMAIN"] || "http://localhost:3002"
-
     config.wcrs_frontend_url = ENV["WCRS_FRONTEND_DOMAIN"] || "http://localhost:3000"
     config.wcrs_services_url = ENV["WCRS_SERVICES_DOMAIN"] || "http://localhost:8003"
-    config.os_places_service_url = ENV["WCRS_OS_PLACES_DOMAIN"] || "http://localhost:8005"
     config.host = config.wcrs_fo_link_domain
 
     # Fees
@@ -114,6 +125,7 @@ module WasteCarriersFrontOffice
 
     # prevent comments showing ruby version:
     config.sass.line_comments = false
+    config.sass.silence_deprecations = ["import"]
 
     # Logger
     config.wcrs_logger_max_files = ENV.fetch("WCRS_LOGGER_MAX_FILES", 3).to_i

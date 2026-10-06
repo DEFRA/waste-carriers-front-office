@@ -6,7 +6,7 @@ Rails.application.configure do
   # In the development environment your application's code is reloaded on
   # every request. This slows down response time but is perfect for development
   # since you don't have to restart the web server when you make code changes.
-  config.cache_classes = false
+  config.enable_reloading = true
 
   # Do not eager load code on boot.
   config.eager_load = false
@@ -61,4 +61,8 @@ Rails.application.configure do
   # https://github.com/rails/web-console#configuration
   # https://stackoverflow.com/a/29417509
   config.web_console.allowed_ips = ENV.fetch("SSH_CLIENT", "127.0.0.1").split.first
+
+  # Allow requests from docker container hostnames for cross-app mocks
+  config.hosts << "front-office"
+  config.hosts << "back-office"
 end
