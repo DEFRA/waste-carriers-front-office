@@ -1,3 +1,1 @@
 ---
-renew_via_magic_link:
-  active: <%= ENV["RENEW_VIA_MAGIC_LINK"] %>
