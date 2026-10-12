@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DEFRA/waste-carriers-engine
-  revision: 83b0f78c9f805b2ee03faeec9331c8015cf07569
+  revision: 13c9d32559aa48fd59c1cce335310ef83c211bd0
   branch: main
   specs:
     waste_carriers_engine (0.0.1)
@@ -609,7 +609,7 @@ DEPENDENCIES
   dotenv-rails
   factory_bot_rails
   faraday-retry
-  github_changelog_generator
+  github_changelog_generator (~> 1.18.0)
   govuk_design_system_formbuilder
   high_voltage
   jquery-rails
