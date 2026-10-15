@@ -16,6 +16,8 @@ gem "mongoid"
 gem "turbolinks"
 # Use Uglifier as compressor for JavaScript assets
 gem "uglifier"
+# Pin json to 2.x for execjs compatibility (json 3.0 removed create_additions keyword)
+gem "json", "~> 2.9"
 
 # GOV.UK design system styling
 gem "defra_ruby_template", "~> 6.4"
