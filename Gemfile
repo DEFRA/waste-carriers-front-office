@@ -20,7 +20,7 @@ gem "uglifier"
 gem "json", "~> 2.9"
 
 # GOV.UK design system styling
-gem "defra_ruby_template", "~> 6.4"
+gem "defra_ruby_template", "6.4.0"
 
 # Use Devise for user authentication
 gem "devise"
