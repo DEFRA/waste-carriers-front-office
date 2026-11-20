@@ -125,7 +125,6 @@ module WasteCarriersFrontOffice
 
     # prevent comments showing ruby version:
     config.sass.line_comments = false
-    config.sass.silence_deprecations = ["import"]
 
     # Logger
     config.wcrs_logger_max_files = ENV.fetch("WCRS_LOGGER_MAX_FILES", 3).to_i
