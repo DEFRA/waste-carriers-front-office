@@ -11,7 +11,7 @@ This project is the front office application which members of the public to rene
 
 ## Prequisites
 
-You'll need [Ruby 2.7.1](https://www.ruby-lang.org/en/) installed plus the [Bundler](http://bundler.io/) gem.
+You'll need [Ruby](https://www.ruby-lang.org/en/) (version specified in `.ruby-version`) installed plus the [Bundler](http://bundler.io/) gem.
 
 ## Installation
 
