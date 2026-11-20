@@ -2,7 +2,24 @@
 
 ## [Unreleased](https://github.com/defra/waste-carriers-front-office/tree/HEAD)
 
-[Full Changelog](https://github.com/defra/waste-carriers-front-office/compare/v1.30.8...HEAD)
+[Full Changelog](https://github.com/defra/waste-carriers-front-office/compare/v1.30.9...HEAD)
+
+**Implemented enhancements:**
+
+- \[RUBY-4371\] Add service closed page [\#1757](https://github.com/DEFRA/waste-carriers-front-office/pull/1757) ([tobyprivett](https://github.com/tobyprivett))
+
+**Merged pull requests:**
+
+- Avoid pinning ruby version in README [\#1767](https://github.com/DEFRA/waste-carriers-front-office/pull/1767) ([tobyprivett](https://github.com/tobyprivett))
+- \[RUBY-4602\] Update to ruby 3.4.13 [\#1765](https://github.com/DEFRA/waste-carriers-front-office/pull/1765) ([tobyprivett](https://github.com/tobyprivett))
+- Bump waste\_carriers\_engine from `95c4913` to `c9662e5` [\#1764](https://github.com/DEFRA/waste-carriers-front-office/pull/1764) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Chore/dependabot defra ruby [\#1763](https://github.com/DEFRA/waste-carriers-front-office/pull/1763) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
+- Exclude defra\_ruby\_\* gems from Dependabot cooldown [\#1761](https://github.com/DEFRA/waste-carriers-front-office/pull/1761) ([PaulDoyle-EA](https://github.com/PaulDoyle-EA))
+- Bump passenger from 6.2.1 to 6.2.2 [\#1758](https://github.com/DEFRA/waste-carriers-front-office/pull/1758) ([dependabot[bot]](https://github.com/apps/dependabot))
+
+## [v1.30.9](https://github.com/defra/waste-carriers-front-office/tree/v1.30.9) (2026-11-16)
+
+[Full Changelog](https://github.com/defra/waste-carriers-front-office/compare/v1.30.8...v1.30.9)
 
 **Fixed bugs:**
 
@@ -10,6 +27,7 @@
 
 **Merged pull requests:**
 
+- Update CHANGELOG [\#1756](https://github.com/DEFRA/waste-carriers-front-office/pull/1756) ([tobyprivett](https://github.com/tobyprivett))
 - Bump waste\_carriers\_engine [\#1754](https://github.com/DEFRA/waste-carriers-front-office/pull/1754) ([tobyprivett](https://github.com/tobyprivett))
 - Bump rspec-rails from 8.0.4 to 8.1.0 [\#1753](https://github.com/DEFRA/waste-carriers-front-office/pull/1753) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Consolidate dependabot gem updates [\#1752](https://github.com/DEFRA/waste-carriers-front-office/pull/1752) ([tobyprivett](https://github.com/tobyprivett))
