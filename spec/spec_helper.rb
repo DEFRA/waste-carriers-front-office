@@ -5,7 +5,7 @@
 require "./spec/support/simplecov"
 
 # Support debugging in the tests
-require "byebug"
+require "debug"
 
 require "rails-controller-testing"
 Rails::Controller::Testing.install

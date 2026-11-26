@@ -162,8 +162,6 @@ GEM
       bigdecimal
       ostruct
     builder (3.3.0)
-    byebug (13.0.0)
-      reline (>= 0.6.0)
     capybara (3.40.0)
       addressable
       matrix
@@ -194,6 +192,9 @@ GEM
       database_cleaner-core (~> 2.0.0)
       mongoid
     date (3.6.0)
+    debug (1.11.1)
+      irb (~> 1.10)
+      reline (>= 0.3.8)
     defra_ruby_address (0.4.0)
       rest-client (~> 2.0)
     defra_ruby_alert (2.2.1)
@@ -608,10 +609,10 @@ PLATFORMS
 
 DEPENDENCIES
   aws-healthcheck
-  byebug
   capybara
   dartsass-sprockets
   database_cleaner-mongoid
+  debug
   defra_ruby_mocks
   defra_ruby_style
   defra_ruby_template (= 6.4.0)
