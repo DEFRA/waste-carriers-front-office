@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-source "https://rubygems.org", cooldown: 7
-ruby "3.4.6"
+source "https://rubygems.org"
+ruby "3.4.13"
 
 # Use Dart Sass with the Sprockets asset pipeline
 gem "dartsass-sprockets"
