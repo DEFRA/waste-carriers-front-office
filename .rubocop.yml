@@ -4,6 +4,9 @@ inherit_gem:
   defra_ruby_style:
     - default.yml
 
+AllCops:
+  TargetRubyVersion: 4.0
+
 plugins:
   - rubocop-capybara
   - rubocop-factory_bot

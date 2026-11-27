@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 source "https://rubygems.org"
-ruby "3.4.13"
+ruby "4.0.10"
 
 # Use Dart Sass with the Sprockets asset pipeline
 gem "dartsass-sprockets"
@@ -76,8 +76,8 @@ gem "timecop"
 gem "passenger", "~> 6.0", require: "phusion_passenger/rack_handler"
 
 group :development, :test do
-  # Call "byebug" anywhere in the code to stop execution and get a debugger console
-  gem "byebug"
+  # Call "debugger" anywhere in the code to stop execution and get a debugger console
+  gem "debug"
   # Apply our style guide to ensure consistency in how the code is written
   gem "defra_ruby_style"
   # Shim to load environment variables from a .env file into ENV in development
